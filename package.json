@@ -1,7 +1,7 @@
 {
   "name": "badging-website",
   "version": "1.0.0",
-  "description": "A Platform the CHAOSS DEI Badging Project",
+  "description": "A Platform for the CHAOSS DEI Badging Project",
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint .",
