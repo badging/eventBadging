@@ -16,17 +16,21 @@ module.exports = {
         use: "babel-loader",
       },
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.(c|sa|sc)ss$/,
+        use: ['style-loader','css-loader', 'sass-loader']
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
+        test: /\.(png|jp(e*)g|svg|gif|ttf|woff(2)?|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: ["file-loader"],
       },
       {
         test: /\.svg$/,
         use: ["@svgr/webpack"],
       },
+      {
+        test: /\.(png|gif|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader',
+      }
     ],
   },
   plugins: [
