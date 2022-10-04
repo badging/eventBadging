@@ -65,7 +65,7 @@ const Home = () => {
             The primary motivation to apply for a CHAOSS D&I event or project
             Badge, is for the badge itself! The awarded event or project can
             show the open source community that they foster healthy D&I
-            practices with a CHAOSS badge.{" "}
+            practices with a CHAOSS badge{" "}
           </p>
         </div>
         <div className="badging-image-container">
