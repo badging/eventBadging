@@ -1,13 +1,9 @@
-import { Header, Footer } from "./components";
-
 const About = () => {
-    return (
-        <>
-            <Header />
-            <h1>About</h1>
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <h1>About</h1>
+    </>
+  );
 };
 
 export default About;
