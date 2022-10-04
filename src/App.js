@@ -1,14 +1,12 @@
 import { Header, Footer } from "./components";
+import Home from "./views/Home";
 
 const App = () => {
-
   return (
     <>
-      <Header />
-      <h1>Badging Website</h1>
-      <Footer />
+      <Home />
     </>
-  )
+  );
 };
 
 export default App;
