@@ -1,8 +1,9 @@
 name: Build and Deploy
 on:
+  push:
+    branches: [staging]
   pull_request:
-    branches:
-      - staging
+    branches: [staging]
 permissions:
   contents: write
 jobs:
