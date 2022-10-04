@@ -1,13 +1,9 @@
-import { Header, Footer } from "./components";
-
 const Apply = () => {
-    return (
-        <>
-            <Header />
-            <h1>Apply For Badge</h1>
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <h1>Apply For Badge</h1>
+    </>
+  );
 };
 
 export default Apply;
