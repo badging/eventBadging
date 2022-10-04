@@ -4,22 +4,13 @@ on:
     branches: [staging]
   pull_request:
     branches: [staging]
-permissions:
-  contents: write
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }}
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-
-      - name: Install and Build 🔧
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          folder: build
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "badging-staging"
+          heroku_email: "ekaxada@gmail.com"
