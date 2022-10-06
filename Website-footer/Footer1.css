@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.logo{
+	width: 100px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	
+}
+
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #090909;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-text{
+	color: #bbbbbb;
+	font-size: 14px;
+	font-weight: 400;
+	font-size:14px;
+	line-height:164%;
+	font-style: normal;
+	font-family:'poppins';
+}
+.link{
+	font-style: 'poppins';
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+	text-decoration-line: none;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 500;
+	position: relative;
+}
+/**.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #2123b6;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}*/
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.slack2{
+	width:30px;
+	height: 30px;
+	margin-bottom: 0px;
+}
+.rect{
+	height: 25px;
+	width: 58px;
+	background: rgb(71, 3, 71);
+	text-align: right;
+	margin-top: 6px;
+	float: center;
+	border-radius: 3px;
+	display: inline-flex;
+	padding: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+.rect-icon{
+	height: 900px;
+	width: 900px;
+
+
+}
+.dei{
+	margin-bottom: 20px;
+	margin-right: 4px;
+}
+.badging{
+	width: 55px;
+	height: 21px;
+	text-transform: capitalize;
+	color: #f6f1f1;
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 9px;
+	margin-right: 145px;
+	font-size: 16px;
+}
+
+hr{
+	color: rgb(251, 247, 247);
+	margin-top: 7%;
+	height: 1px;
+	margin: 40px;
+}
+.copy{
+	margin-top: 2%;
+	text-align: center;
+	color: #bbbbbb;
+	font-family: poppins;
+    justify-content: center;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
