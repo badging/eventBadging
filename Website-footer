@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/home/delight/.cache/.fr-9EpzoT/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+  <footer class="footer">
+  	 <div class="container">
+		<img src="/home/delight/Downloads/chaoss-logo.png" class="logo">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>COMMUNITY</h4>
+				<pr class="footer-text"> CHAOSS is an open source project 
+					the Linux Foundation focused
+					on creating analytics and metrics
+					to help define community health.
+		            Work in the CHAOSS Project 
+					community is largely organized
+					around software and metrics.</pr><br>
+				 <a href="https://chaoss.community/" class="link">learn more</a>
+  	 			
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Join Us</h4>
+				<pr class="footer-text"> CHAOSS is an open source project at the Linux Foundation focused on creating analytics and metrics to help define community health. Work in the CHAOSS Project community is largely organized around software and metrics.
+					<br> 
+				<a href="https://chaoss.community/" class="link">learn more</a>
+				</pr>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>QUICK LINKS</h4>
+  	 			<ul>
+  	 				<li><a href="#">About us</a></li>
+  	 				<li><a href="#">Event badging</a></li>
+  	 				<li><a href="#">Contact us</a></li>
+  	 				<li><a href="#">Project badging</a></li>
+					   <li><a href="#">FAQS</a></li>
+  	 				<li><a href="#">Site map</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>SOCIAL MEDIA</h4>
+  	 			<div class="social-links">
+				<img src="twitter.png" class="slack2">
+  	 		   <img src="facebook.png" class="slack2">
+				<img src="linkedin.png" class="slack2">
+
+				<img src="slack2.png" class="slack2">
+				</div>
+                
+				<div class="rect">
+					
+					<h4 class="dei">DEI</h4>
+  	 			</div>
+				<div class="badging">
+				<h5>BADGING</h5>
+				</div>
+  	 		</div>
+			</div>
+			<div>
+				<hr width="92%">
+				<p class="copy">2022 copyright &copy; CHAOSS Community | All Rights Reserved </pr>
+			</div>
+	 </div>
+
+  </footer>
+
+</body>
+</html>
