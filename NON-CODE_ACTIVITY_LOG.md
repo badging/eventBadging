@@ -22,3 +22,5 @@ This file contains a table that shows all non-code contributions made in the CHA
 |               |               |               |
 |               |               |               |
 |               |               |               |
+|               |               |               |
+|               |               |               |
