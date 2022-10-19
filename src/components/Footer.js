@@ -1,17 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/styles/variables.scss";
-import Mylogo from "../../assets/logos/chaoss-white.png";
+import Mylogo from "../../assets/logos/chaoss-logo.png";
+import Deilogo from "../../assets/images/deigit.png";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faLinkedin,
-  faSlack,
-} from "@fortawesome/free-brands-svg-icons";
-// import { FaFacebookSquare } from "react-icons/fa";
+import slack2 from "../../assets/images/slack.png"
+import facebook from "../../assets/images/facebook.png"
+import twitter from "../../assets/images/twitter.png"
+import linkedin from "../../assets/images/linkedin.png"
+
 
 const Footer = () => {
   return (
@@ -22,41 +20,23 @@ const Footer = () => {
           <div className="innerdiv">
             <h2>Community</h2>
             <ReactReadMoreReadLess
-              charLimit={200}
+              charLimit={220}
               readMoreText={"Learn more "}
               readLessText={"Show less "}
               readMoreClassName="readMoreClassName"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&aposs standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              CHAOSS is an open source project at the Linux Foundation focused on creating analytics and metrics to help define community health. Work in the CHAOSS Project community is largely organized around software and metrics. More
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
             <h2>Join us</h2>
             <ReactReadMoreReadLess
-              charLimit={200}
+              charLimit={220}
               readMoreText={"Learn more"}
               readLessText={"Show less"}
               readMoreClassName="readMoreClassName"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&aposs standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              CHAOSS is an open source project at the Linux Foundation focused on creating analytics and metrics to help define community health. Work in the CHAOSS Project community is largely organized around software and metrics. More
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
@@ -82,31 +62,25 @@ const Footer = () => {
           </div>
           <div className="innerdiv">
             <h2>Social Media</h2>
-            <a href="https://twitter.com">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="social-media-black"
-              />
-            </a>
-            <a href="https://facebook.com">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="social-media-black"
-              />
-            </a>
-            <a href="https://linkedin.com">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="social-media-black"
-              />
-            </a>
-            <a href="https://slack.com">
-              <FontAwesomeIcon icon={faSlack} className="social-media-black" />
-            </a>
+            <div className="social-media">
+              <a href="https://twitter.com">
+                <img width="40px" src={twitter} alt="slack logo" />
+              </a>
+              <a href="https://facebook.com">
+                <img width="43px" src={facebook} alt="slack logo" />
+              </a>
+              <a href="https://linkedin.com">
+                <img width="40px" src={linkedin} alt="slack logo" />
+              </a>
+              <a href="https://slack.com">
+                <img width="40px" src={slack2} alt="slack logo" />
+              </a>
+            </div>
+            <div className="dei1" ><img src={Deilogo} alt="Dei  logo" /> </div>
           </div>
         </div>
         <hr />
-        <p>2022 Copyright &#169; CHAOSS community | All Rights Reserved</p>
+        <p>2022 Copyright CHAOSS Community | All Rights Reserved</p>
       </div>
     </footer>
   );
