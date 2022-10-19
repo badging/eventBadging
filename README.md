@@ -16,6 +16,6 @@ To learn more about DEI Badging, please check out the CHAOSS Community Handbook.
 This website was created to help event organizers easily register their events to get badged. This evnt badge focuses on the experience of the event attendees(everyone present at the event), improving DEI in open-source events.
 
 # Contributing To this Project
-To contribute to this project please follow the guidelines found in our [CONTRIBUTING.md](CONTRIBUTING.md)! file. This project is open for contribution to all from newbie to expert regardless if you're working on your 1000th contribution to open source or your 1st. 
+To contribute to this project please follow the guidelines found in our [CONTRIBUTION.md](CONTRIBUTION.md)! file. This project is open for contribution to all from newbie to expert regardless if you're working on your 1000th contribution to open source or your 1st. 
 
 # Website Maintainers
