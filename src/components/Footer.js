@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/styles/variables.scss";
 import Mylogo from "../../assets/logos/chaoss-logo.png";
-import Deilogo from "../../assets/images/deigit.png";
+import Deilogo from "../../assets/images/DEIlogo.png";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 
 import slack2 from "../../assets/images/slack.png"
@@ -87,3 +87,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
