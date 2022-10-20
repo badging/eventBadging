@@ -1,22 +1,13 @@
-cd![Frame68](https://user-images.githubusercontent.com/71280528/195633476-a3f93d6e-3917-4d1b-8ac6-d8fdb4b9daf2.png)
+# Badging Website
+Home of the CHAOSS DEI Badging, a CHAOSS Project
 
-# DEI Badging
+## how to contribute
+This project has issues that are organized on [this github project board](https://github.com/orgs/badging/projects/2). There are two ways you could contribute to this project;
 
-The DEI Badging initiative is an award system whereby open-source events earn badges and enhance their events to be more inclusive using the feedback they get from reviewers. The DEI badges help nurture a system that promotes leadership, self-reflection, and self-improvement on issues critical to building the Internet as a social good.
+#### 1. Website Design 
+-----------------------------------------
+We are currently working with on [figma designs](https://www.figma.com/file/7tiuJbwakgDu15mOjzKTDK/Badging-Website) that are being translated into the code. Most of the Design contributions are made on request to access the file. Issues that are related to Designing the UI/UX will be labelled with the `design` label
 
-## Aim of the DEI Badging
-- Establish an environment where events can engage in the badging program
-- Aligning the badging program with best practices, guidelines, and recommendations from Diversity & Inclusion efforts on the CHAOSS project
-- Connect with existing badging standards of IMS Global including
-- Building an open, peer-review system for the D&I Badging Program
-
-To learn more about DEI Badging, please check out the CHAOSS Community Handbook.
-
-## Badging Website
-This website was created to help event organizers easily register their events to get badged. This evnt badge focuses on the experience of the event attendees(everyone present at the event), improving DEI in open-source events.
-
-# Contributing To this Project
-To contribute to this project please follow the guidelines found in our [CONTRIBUTION.md](CONTRIBUTION.md)! file. This project is open for contribution to all from newbie to expert regardless if you're working on your 1000th contribution to open source or your 1st. 
 
 # Project Setup Guidelines
 The repository has two main branches,
@@ -49,7 +40,7 @@ npm run dev
 ## Build the App
 Incase you want to build the application before pushing it.
 
-1. Create an `.env` file in the website folder and supply a port number
+1. create an `.env` file and supply a port number
 ```ini
 # supply a port number
 PORT=3000
