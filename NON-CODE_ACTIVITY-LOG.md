@@ -11,7 +11,7 @@ To the table below.
 
 | Author Name  | Contribution Type  | Link to Contribution |
 |---------------|---------------|---------------|
-|               |               |               |
+|    Ruth test           |  Test Contribution             |   N/A            |
 |               |               |               |
 |               |               |               |
 |               |               |               |
