@@ -11,7 +11,7 @@ To the table below.
 
 | Author Name  | Contribution Type  | Link to Contribution |
 |---------------|---------------|---------------|
-|               |               |               |
+|  Victoria Ottah             |      Landing page and about us mobile design         |               |
 |               |               |               |
 |               |               |               |
 |               |               |               |
