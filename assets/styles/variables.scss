@@ -1,5 +1,97 @@
-$primary-color: #46BA8A;
-$secondary-color: #D61B5E;
-$background-color: #F5F5F5;
-$primary-container-color: #AFFFEC;
-$secondary-container-color: #FFE7EF;
+$primary-color: #46ba8a;
+$secondary-color: #d61b5e;
+$background-color: #070010;
+$primary-container-color: #afffec;
+$secondary-container-color: #ffe7ef;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: $background-color;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 50px 0 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 164%;
+  p {
+    margin: 12px 0;
+  }
+  h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.readMoreClassName {
+  display: block;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.minidiv {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.innerdiv {
+  flex-basis: 20%;
+  margin: 20px 0 40px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 164%;
+
+  .social-media a > img {
+    display: inline;
+    margin-right: 8px;
+  }
+  .dei1 img {
+    width: 250px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.links {
+  display: block;
+}
+
+.main-div {
+  width: 90%;
+  margin: auto;
+  p {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
