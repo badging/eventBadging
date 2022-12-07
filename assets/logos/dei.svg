@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.52637in" height="0.966681in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1800 689"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="667" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Arial">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="D" horiz-adv-x="722"><path d="M76.999 0l0 715.998 246.668 0c55.6684,0 98.166,-3.33356 127.498,-10.1642 40.9996,-9.4996 76.002,-26.6685 105.002,-51.3326 37.8349,-32.0011 66.0014,-72.6685 84.6683,-122.334 18.8304,-49.6659 28.1665,-106.5 28.1665,-170.333 0,-54.3339 -6.33482,-102.502 -18.9992,-144.498 -12.6696,-42.0018 -28.9999,-76.8354 -48.8377,-104.337 -19.9961,-27.4966 -41.6642,-49.1648 -65.3315,-64.8304 -23.4984,-15.8344 -51.9972,-27.8342 -85.3329,-35.9993 -33.4991,-8.17039 -71.8351,-12.1686 -115.166,-12.1686l-258.335 0zm95.0012 83.9984l152.669 0c47.1657,0 84.1619,4.33574 110.999,13.1707 26.832,8.82972 48.1679,21.1618 64.1658,37.165 22.3328,22.5015 39.834,52.8306 52.3348,90.8343 12.4956,37.9984 18.8304,83.9984 18.8304,138.163 0,74.9999 -12.3321,132.667 -36.8327,173.002 -24.5006,40.335 -54.3339,67.3306 -89.4998,80.9971 -25.334,9.83717 -66.1649,14.6687 -122.498,14.6687l-150.169 0 0 -548.002z"/></glyph>
+   <glyph unicode="I" horiz-adv-x="277"><path d="M93.0022 0l0 715.998 94.996 0 0 -715.998 -94.996 0z"/></glyph>
+   <glyph unicode="E" horiz-adv-x="667"><path d="M78.998 0l0 715.998 517.003 0 0 -83.9984 -422.002 0 0 -219.999 395.001 0 0 -83.9984 -395.001 0 0 -244.004 439.002 0 0 -83.9984 -534.003 0z"/></glyph>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";src:url("#FontID0") format(svg)}
+    .fil5 {fill:none}
+    .fil6 {fill:#FEFEFE}
+    .fil4 {fill:#1D9BD6}
+    .fil0 {fill:#5E318E}
+    .fil3 {fill:#6BC7BA}
+    .fil2 {fill:#C09CCA}
+    .fil1 {fill:#D61D60}
+    .fnt0 {font-weight:normal;font-size:531.857px;font-family:'Arial'}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M395 85c138,0 249,113 249,252 0,139 -111,252 -249,252 -138,0 -249,-113 -249,-252 0,-139 111,-252 249,-252zm0 78c95,0 172,78 172,174 0,96 -77,174 -172,174 -95,0 -172,-78 -172,-174 0,-96 77,-174 172,-174z"/>
+   </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="1800" height="689" rx="69" ry="69"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+    <polygon class="fil1" points="223,110 286,217 261,407 177,478 93,298 "/>
+    <polygon class="fil2" points="531,367 661,369 566,613 327,603 212,528 287,465 499,459 "/>
+    <polygon class="fil3" points="547,132 632,205 651,304 551,301 503,206 "/>
+    <polygon class="fil4" points="289,92 396,63 496,95 449,179 335,177 "/>
+   </g>
+  </g>
+  <path class="fil5" d="M395 85c138,0 249,113 249,252 0,139 -111,252 -249,252 -138,0 -249,-113 -249,-252 0,-139 111,-252 249,-252zm0 78c95,0 172,78 172,174 0,96 -77,174 -172,174 -95,0 -172,-78 -172,-174 0,-96 77,-174 172,-174z"/>
+  <text x="753" y="518"  class="fil6 fnt0">DEI</text>
+ </g>
+</svg>

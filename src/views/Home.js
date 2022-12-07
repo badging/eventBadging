@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Header, Footer } from "../components";
 import "../../assets/styles/home.css";
 import heroPic from "../../assets/images/Rectangle6.png";
 import DI from "../../assets/images/Group 13.png";
