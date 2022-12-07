@@ -1,3 +1,6 @@
+* > * {
+    font-family: "Poppins";
+}
 .flex-row {
     display: flex;
 }
