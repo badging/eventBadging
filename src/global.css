@@ -29,6 +29,7 @@ a {
     padding: 15px;
     border: 1px solid #000;
     background-color: transparent;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 790px) {
