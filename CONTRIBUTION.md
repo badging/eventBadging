@@ -5,7 +5,7 @@ This project has issues that are organized on [this github project board](https:
 We are currently working with on [figma designs](https://www.figma.com/file/7tiuJbwakgDu15mOjzKTDK/Badging-Website) for this website that are being translated into the code. Most of the Design contributions are made on request to access the file. Issues that are related to Designing the UI/UX will be labelled with the `design` label in the issues tab.
 
 ## 2. Code Contribution
-1. When making a code contribution to this repository, ensure you folow the **Project Setup Guidelines** in the [README.md](README.md) file.
+1. When making a code contribution to this repository, ensure you follow the **Project Setup Guidelines** in the [README.md](README.md) file.
 2. Create a new branch
 ```sh
 git checkout -b branch-name
