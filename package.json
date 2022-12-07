@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "build": "webpack --mode production",
     "dev": "webpack serve",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
