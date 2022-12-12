@@ -1,4 +1,4 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Faq from "./faq/Faq";
+import Testimonial from "./testimonial/Testimonial";
 
-export { Header, Footer };
+export { Faq, Testimonial};

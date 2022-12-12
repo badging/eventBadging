@@ -1,6 +1,6 @@
-import { Header, Footer } from "./components";
+import { Header, Footer } from "../layouts";
 
-const Event = () => {
+const EventBadging = () => {
     return (
         <>
             <Header />
@@ -10,4 +10,4 @@ const Event = () => {
     )
 };
 
-export default Event;
+export default EventBadging;
