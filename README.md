@@ -18,6 +18,6 @@ This website provides all the information you may need to know about the DEI Bad
 
 ## Contributing To this Project
 
-To contribute to this project please follow the guidelines found in our [CONTRIBUTION.md](CONTRIBUTION.md) file. This project is open for contribution to all from newbie to expert regardless if you're working on your 1000th contribution to open source or your 1st.
+To contribute to this project please follow the guidelines found in our [CONTRIBUTING.md](CONTRIBUTING.md) file. This project is open for contribution to all from newbie to expert regardless if you're working on your 1000th contribution to open source or your 1st.
 
 ## Website Maintainers
