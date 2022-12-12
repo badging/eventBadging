@@ -1,6 +1,6 @@
-import { Header, Footer } from "./components";
+import { Header, Footer } from "../layouts";
 
-const Apply = () => {
+const ApplyForBadging = () => {
     return (
         <>
             <Header />
@@ -10,4 +10,4 @@ const Apply = () => {
     )
 };
 
-export default Apply;
+export default ApplyForBadging;

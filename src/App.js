@@ -1,5 +1,5 @@
-import { Header, Footer } from "./components";
-import Home from "./views/Home";
+import { Header, Footer } from "./layouts";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
