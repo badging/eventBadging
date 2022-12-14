@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/variables.scss";
 import Mylogo from "../assets/logos/chaoss-logo.png";
-import Deilogo from "../assets/logo/DEIlogo.png";
+import Deilogo from "../assets/logos/dei-logo.png";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 
 import slack2 from "../assets/social/slack.png"
