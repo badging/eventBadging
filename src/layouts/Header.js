@@ -1,5 +1,5 @@
-import '../global.css'
-import logo from "../../assets/logos/chaoss-logo.png"
+import '../assets/styles/global.css'
+import logo from "../assets/logos/chaoss-logo.png"
 const Header = () => {
     return (
         <>

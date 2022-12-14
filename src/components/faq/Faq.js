@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./faqitem.css";
+import "./faq.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-const FaqItem = ({ question, answer }) => {
+const Faq = ({ question, answer }) => {
   const [showAnswer, setShowAnswer] = useState(false);
 
   return (
@@ -21,4 +21,4 @@ const FaqItem = ({ question, answer }) => {
   );
 };
 
-export default FaqItem;
+export default Faq;
