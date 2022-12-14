@@ -1,4 +1,4 @@
-import { Header, Footer } from "../layouts";
+import { Header, Footer, ErrorPage } from "../layouts";
 
 const ErrorPage = () => {
   return (

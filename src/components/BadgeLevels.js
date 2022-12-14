@@ -1,7 +1,7 @@
-import PassingBadge from "../../assets/badges/passing.svg";
-import PendingBadge from "../../assets/badges/pending.svg";
-import GoldBadge from "../../assets/badges/gold.svg";
-import SilverBadge from "../../assets/badges/silver.svg";
+import PassingBadge from "../assets/badges/passing.svg";
+import PendingBadge from "../assets/badges/pending.svg";
+import GoldBadge from "../assets/badges/gold.svg";
+import SilverBadge from "../assets/badges/silver.svg";
 
 const BadgeLevels = () => {
   return (
