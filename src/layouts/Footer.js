@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../../assets/styles/variables.scss";
-import Mylogo from "../../assets/logos/chaoss-logo.png";
-import Deilogo from "../../assets/images/DEIlogo.png";
+import "../assets/styles/variables.scss";
+import Mylogo from "../assets/logos/chaoss-logo.png";
+import Deilogo from "../assets/logos/dei-logo.png";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 
-import slack2 from "../../assets/images/slack.png"
-import facebook from "../../assets/images/facebook.png"
-import twitter from "../../assets/images/twitter.png"
-import linkedin from "../../assets/images/linkedin.png"
+import slack2 from "../assets/social/slack.png"
+import facebook from "../assets/social/facebook.png"
+import twitter from "../assets/social/twitter.png"
+import linkedin from "../assets/social/linkedin.png"
 
 
 const Footer = () => {

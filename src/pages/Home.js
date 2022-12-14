@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-import "../../assets/styles/home.css";
-import heroPic from "../../assets/images/Rectangle6.png";
-import DI from "../../assets/images/Group 13.png";
-import osDI from "../../assets/images/Frame 68.png";
-import gold from "../../assets/images/Frame 46.png";
-import silver from "../../assets/images/Frame 49.png";
-import passing from "../../assets/images/Frame 50.png";
-import pending from "../../assets/images/Frame 51.png";
-import eventBadging from "../../assets/images/Frame 40.png";
-import man from "../../assets/images/man.png";
-import { testimonialData } from "../components/testimonial/testimonialData";
+import { Header, Footer } from "../layouts";
+import "../assets/styles/global.css";
+import heroBackground from "../assets/images/hero-bg.png";
+import heroLogoTwo from "../assets/images/dei-02.png";
+import heroLogoOne from "../assets/images/dei-01.png";
+import gold from "../assets/images/gold.png";
+import silver from "../assets/images/silver.png";
+import passing from "../assets/images/passing.png";
+import pending from "../assets/images/pending.png";
+import eventBadging from "../assets/images/event-badging.png";
 import { Link } from "react-router-dom";
-import { FAQData } from "../components/faq/FAQData";
-import FaqItem from "../components/faq/FaqItem";
-import Testimonial from "../components/testimonial/Testimonial";
+
+import {Testimonial, Faq} from "../components"
+import { testimonialData } from "../components/testimonial/testimonialData";
+import { faqData } from "../components/faq/FAQData";
+// import Faq from "../components/faq/Faq";
+// import Testimonial from "../components/testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -21,14 +23,14 @@ const Home = () => {
       <div
         className="hero-section"
         style={{
-          backgroundImage: `url(${heroPic})`,
+          backgroundImage: `url(${heroBackground})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
         <div className="hero-section-text">
           <div className="hero-main">
-            <img src={osDI} />
+            <img src={heroLogoOne} />
             <div className="hero-main-text">
               <p>
                 The primary motivation to apply for a CHAOSS D&I event or
@@ -52,7 +54,7 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-logo">
-            <img src={DI} alt="rect" />
+            <img src={heroLogoTwo} alt="rect" />
           </div>
         </div>
       </div>
@@ -115,8 +117,8 @@ const Home = () => {
           </div>
 
           <div className="faqs">
-            {FAQData.map(({ question, answer }, id) => {
-              return <FaqItem key={id} question={question} answer={answer} />;
+            {faqData.map(({ question, answer }, id) => {
+              return <Faq key={id} question={question} answer={answer} />;
             })}
           </div>
         </div>

@@ -1,4 +1,4 @@
-export const FAQData = [
+export const faqData = [
   {
     question: "What requrements are needed before i apply for a badge ?",
     answer:

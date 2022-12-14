@@ -1,9 +1,9 @@
 import { BadgeLevels } from "../components";
-import Frame68 from "../../assets/logos/Frame68.png";
-import ChaossWhite from "../../assets/logos/chaoss-white.png";
-import LinuxFoundation from "../../assets/logos/linuxfoundation-logo.png";
-import OsSustainAfrica from "../../assets/logos/os+sustainAfrica.png";
-import SheCodeAfrica from "../../assets/logos/shecodeafrica-logo.png";
+import Frame68 from "../assets/logos/Frame68.png";
+import ChaossWhite from "../assets/logos/chaoss-white.png";
+import LinuxFoundation from "../assets/logos/linuxfoundation-logo.png";
+import OsSustainAfrica from "../assets/logos/os+sustainAfrica.png";
+import SheCodeAfrica from "../assets/logos/shecodeafrica-logo.png";
 
 const About = () => {
   return (

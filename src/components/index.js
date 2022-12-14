@@ -1,5 +1,5 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Faq from "./faq/Faq";
+import Testimonial from "./testimonial/Testimonial";
 import BadgeLevels from "./BadgeLevels";
 
-export { Header, Footer, BadgeLevels };
+export { Faq, Testimonial, BadgeLevels};
