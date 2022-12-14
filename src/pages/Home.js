@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 import {Testimonial, Faq} from "../components"
 import { testimonialData } from "../components/testimonial/testimonialData";
-import { faqData } from "../components/faq/faqData";
+import { faqData } from "../components/faq/FAQData";
 // import Faq from "../components/faq/Faq";
 // import Testimonial from "../components/testimonial/Testimonial";
 
