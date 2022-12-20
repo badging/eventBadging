@@ -16,7 +16,15 @@ const Footer = () => {
   return (
     <footer>
       <div className="main-div">
-        <img src={Mylogo} alt="chaoss logo" className="logo" />
+        <div className="footer-logos">
+          <img src={Mylogo} alt="chaoss logo" className="logo" />
+          <div className="line"></div>
+          <img
+            src={Deilogo}
+            alt="Dei logo"
+            className="next-to-chaoss-logo"
+          />{" "}
+        </div>
         <div className="minidiv">
           <div className="innerdiv">
             <h2>Community</h2>
@@ -88,7 +96,7 @@ const Footer = () => {
               <input type="text" placeholder="What are you looking for?" />
             </div>
             <div className="dei1">
-              <img src={Deilogo} alt="Dei  logo" />{" "}
+              <img src={Deilogo} alt="Dei logo" />{" "}
             </div>
           </div>
         </div>
