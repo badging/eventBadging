@@ -103,10 +103,23 @@ footer {
 }
 
 .minidiv {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  column-gap: 4em;
+  row-gap: 3em;
+  grid-template-columns: repeat(2, 1fr);
+
+  div:nth-of-type(1){
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  div:nth-of-type(2){
+    grid-area: 2 / 1 / 2 / 2;
+  }
+  div:nth-of-type(3){
+    grid-area: 2 / 2 / 2 / 2;
+  }
+  div:nth-of-type(4){
+    grid-area: 1 / 2 / 2 / 2;
+  }
   h2 {
     text-transform: uppercase;
     font-weight: 600;
