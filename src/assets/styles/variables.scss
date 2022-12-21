@@ -63,6 +63,20 @@ footer {
     }
 }
 
+  .footer-logos {
+    display: flex;
+    width: 10%;
+    gap: 2em;
+
+    .line{
+      display: none;
+      height: 1.5em;
+      border-left: 1px solid #fff;
+    }
+
+    .next-to-chaoss-logo {
+      display: none;
+    }
 .readMoreClassName {
   display: block;
   font-weight: bold;
