@@ -33,6 +33,30 @@ footer {
     font-size: 14px;
     margin-bottom: 10px;
   }
+  .footer-input {
+    display: none;
+
+    input[type=text] {
+      width: 100%;
+      background-color: $background-color;
+      border: 0.21em solid #fff;
+      height: 3em;
+    }
+      input[type=text]::placeholder {
+      padding-block: 3em;
+      padding-left: 2.5em;
+    }
+
+    .search-icon {
+      display: block;
+      position: absolute;
+      width: 1em;
+      height: 2.2em;
+      padding-left: 0.5em;
+      pointer-events: none;
+      font-size: 1.3em;
+      text-align: center;
+    }
 }
 
 .readMoreClassName {
