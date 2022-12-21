@@ -140,9 +140,10 @@ footer {
   font-size: 14px;
   line-height: 164%;
 
-  .social-media a > img {
-    display: inline;
-    margin-right: 8px;
+  .social-media  {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
   }
   .dei1 img {
     width: 250px;
