@@ -120,10 +120,15 @@ footer {
   div:nth-of-type(4){
     grid-area: 1 / 2 / 2 / 2;
   }
+
   h2 {
     text-transform: uppercase;
     font-weight: 600;
   }
+  @media (min-width: 1024px) {
+    display: flex;
+    gap: 4em;
+ }
 }
 
 .innerdiv {
