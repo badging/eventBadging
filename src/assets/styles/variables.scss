@@ -77,6 +77,20 @@ footer {
     .next-to-chaoss-logo {
       display: none;
     }
+    @media (min-width: 1024px) {
+      .line {
+          display: flex;
+          height: 1.5em;
+          border-left: 1px solid #fff;
+        }
+      
+        .next-to-chaoss-logo {
+          display: flex;
+        }
+    }
+  }
+}
+
 .readMoreClassName {
   display: block;
   font-weight: bold;
