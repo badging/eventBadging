@@ -57,6 +57,10 @@ footer {
       font-size: 1.3em;
       text-align: center;
     }
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
 }
 
 .readMoreClassName {
