@@ -29,7 +29,7 @@ footer {
   p {
     margin: 12px 0;
   }
-  
+
   h2 {
     font-size: 14px;
     margin-bottom: 10px;
@@ -66,28 +66,42 @@ footer {
 
   .footer-logos {
     display: flex;
-    width: 10%;
+    width: 25%;
     gap: 2em;
+    align-items: center;
 
     .line{
       display: none;
-      height: 1.5em;
+      height: 2em;
       border-left: 1px solid #fff;
     }
 
     .next-to-chaoss-logo {
       display: none;
     }
+
+    @media (min-width: 758px) {
+        width: 20%;
+    }
+    
     @media (min-width: 1024px) {
       .line {
           display: flex;
-          height: 1.5em;
-          border-left: 1px solid #fff;
         }
       
         .next-to-chaoss-logo {
           display: flex;
+          width: 20rem;
         }
+    }
+
+    
+
+    @media (min-width: 1550px){
+      .next-to-chaoss-logo {
+        display: flex;
+        width: 15rem;
+      }
     }
   }
 }
@@ -99,8 +113,7 @@ footer {
 }
 
 .logo, .next-to-chaoss-logo {
-  width: 100px;
-  margin-bottom: 1em;
+  width: 10rem;
 }
 
 .minidiv {
