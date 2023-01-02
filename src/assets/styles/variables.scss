@@ -19,6 +19,8 @@ body {
 
 footer {
   background-color: $background-color;
+  position: absolute;
+  bottom: 0;
   color: #fff;
   padding: 50px 0 30px;
   font-family: "Poppins";
@@ -29,82 +31,9 @@ footer {
   p {
     margin: 12px 0;
   }
-
   h2 {
     font-size: 14px;
     margin-bottom: 10px;
-  }
-  .footer-input {
-    display: none;
-
-    input[type=text] {
-      width: 100%;
-      background-color: $background-color;
-      border: 0.21em solid #fff;
-      height: 3em;
-    }
-      input[type=text]::placeholder {
-      padding-block: 3em;
-      padding-left: 2.5em;
-    }
-
-    .search-icon {
-      display: block;
-      position: absolute;
-      width: 1em;
-      height: 2.2em;
-      padding-left: 0.5em;
-      pointer-events: none;
-      font-size: 1.3em;
-      text-align: center;
-    }
-
-    @media (min-width: 1024px) {
-      display: flex;
-    }
-}
-
-  .footer-logos {
-    display: flex;
-    width: 25%;
-    gap: 2em;
-    align-items: center;
-
-    .line{
-      display: none;
-      height: 2em;
-      border-left: 1px solid #fff;
-    }
-
-    .next-to-chaoss-logo {
-      display: none;
-    }
-
-    @media (min-width: 758px) {
-        width: 20%;
-      }
-      
-      @media (min-width: 1024px) {
-      width: 10%;
-      
-      .line {
-          display: flex;
-        }
-      
-        .next-to-chaoss-logo {
-          display: flex;
-          width: 20rem;
-        }
-    }
-
-    
-
-    @media (min-width: 1550px){
-      .next-to-chaoss-logo {
-        display: flex;
-        width: 15rem;
-      }
-    }
   }
 }
 
@@ -114,37 +43,20 @@ footer {
   width: fit-content;
 }
 
-.logo, .next-to-chaoss-logo {
-  width: 10rem;
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
 }
 
 .minidiv {
-  display: grid;
-  column-gap: 4em;
-  row-gap: 3em;
-  grid-template-columns: repeat(2, 1fr);
-
-  div:nth-of-type(1){
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  div:nth-of-type(2){
-    grid-area: 2 / 1 / 2 / 2;
-  }
-  div:nth-of-type(3){
-    grid-area: 2 / 2 / 2 / 2;
-  }
-  div:nth-of-type(4){
-    grid-area: 1 / 2 / 2 / 2;
-  }
-
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
   h2 {
     text-transform: uppercase;
     font-weight: 600;
   }
-  @media (min-width: 1024px) {
-    display: flex;
-    gap: 4em;
- }
 }
 
 .innerdiv {
@@ -156,19 +68,12 @@ footer {
   font-size: 14px;
   line-height: 164%;
 
-  .social-media  {
-    display: flex;
-    gap: 1em;
-    margin-bottom: 2em;
+  .social-media a > img {
+    display: inline;
+    margin-right: 8px;
   }
   .dei1 img {
-    width: 200px;
-  }
-
-  @media (min-width: 1024px) {
-    .dei1 {
-      display: none;
-    }
+    width: 250px;
   }
 }
 
