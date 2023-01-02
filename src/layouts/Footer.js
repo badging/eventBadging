@@ -1,30 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/variables.scss";
-import Mylogo from "../assets/logos/chaoss-white.png";
+import Mylogo from "../assets/logos/chaoss-logo.png";
 import Deilogo from "../assets/logos/dei-logo.png";
 import ReactReadMoreReadLess from "react-read-more-read-less";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-import slack2 from "../assets/social/slack.png";
-import facebook from "../assets/social/facebook.png";
-import twitter from "../assets/social/twitter.png";
-import linkedin from "../assets/social/linkedin.png";
+import slack2 from "../assets/social/slack.png"
+import facebook from "../assets/social/facebook.png"
+import twitter from "../assets/social/twitter.png"
+import linkedin from "../assets/social/linkedin.png"
+
 
 const Footer = () => {
   return (
     <footer>
       <div className="main-div">
-        <div className="footer-logos">
-          <img src={Mylogo} alt="chaoss logo" className="logo" />
-          <div className="line"></div>
-          <img
-            src={Deilogo}
-            alt="Dei logo"
-            className="next-to-chaoss-logo"
-          />{" "}
-        </div>
+        <img src={Mylogo} alt="chaoss logo" className="logo" />
         <div className="minidiv">
           <div className="innerdiv">
             <h2>Community</h2>
@@ -34,10 +25,7 @@ const Footer = () => {
               readLessText={"Show less "}
               readMoreClassName="readMoreClassName"
             >
-              CHAOSS is an open source project at the Linux Foundation focused
-              on creating analytics and metrics to help define community health.
-              Work in the CHAOSS Project community is largely organized around
-              software and metrics. More
+              CHAOSS is an open source project at the Linux Foundation focused on creating analytics and metrics to help define community health. Work in the CHAOSS Project community is largely organized around software and metrics. More
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
@@ -48,10 +36,7 @@ const Footer = () => {
               readLessText={"Show less"}
               readMoreClassName="readMoreClassName"
             >
-              CHAOSS is an open source project at the Linux Foundation focused
-              on creating analytics and metrics to help define community health.
-              Work in the CHAOSS Project community is largely organized around
-              software and metrics. More
+              CHAOSS is an open source project at the Linux Foundation focused on creating analytics and metrics to help define community health. Work in the CHAOSS Project community is largely organized around software and metrics. More
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
@@ -91,13 +76,7 @@ const Footer = () => {
                 <img width="40px" src={slack2} alt="slack logo" />
               </a>
             </div>
-            <div className="footer-input">
-              <FontAwesomeIcon icon={faSearch} className="search-icon" />
-              <input type="text" placeholder="What are you looking for?" />
-            </div>
-            <div className="dei1">
-              <img src={Deilogo} alt="Dei logo" />{" "}
-            </div>
+            <div className="dei1" ><img src={Deilogo} alt="Dei  logo" /> </div>
           </div>
         </div>
         <hr />
@@ -108,3 +87,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
