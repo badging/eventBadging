@@ -20,6 +20,7 @@ import { faqData } from "../components/faq/FAQData";
 const Home = () => {
   return (
     <div className="home">
+      <Header/>
       <div
         className="hero-section"
         style={{
@@ -123,6 +124,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
