@@ -233,12 +233,20 @@ a {
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
+    width: 70%;
+    margin: 0 auto;
   }
   
   .testimonial-container > .title {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  /* Carousel css styling */
+
+  .swiper{
+    padding: 50px !important;
   }
   
   .title > h2 {
@@ -255,6 +263,7 @@ a {
     align-items: center;
     flex-direction: row;
     column-gap: 40px;
+    width: 100%;
   }
   
   .faq-container {

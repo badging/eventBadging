@@ -1,13 +1,11 @@
 .testimonial {
-  width: 310px;
-  height: 310px;
   background: #ffffff;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding: 50px 20px 0px 20px;
+  width: 100%;
 }
-
 .testimonial > .user {
   display: flex;
   flex-direction: row;
@@ -45,3 +43,4 @@
   line-height: 200%;
   margin-top: 20px;
 }
+

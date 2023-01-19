@@ -11,16 +11,29 @@ import pending from "../assets/images/pending.png";
 import eventBadging from "../assets/images/event-badging.png";
 import { Link } from "react-router-dom";
 
-import {Testimonial, Faq} from "../components"
+import { Testimonial, Faq } from "../components";
 import { testimonialData } from "../components/testimonial/testimonialData";
 import { faqData } from "../components/faq/FAQData";
 // import Faq from "../components/faq/Faq";
 // import Testimonial from "../components/testimonial/Testimonial";
 
+import {Swiper, SwiperSlide} from 'swiper/react'
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
+import Carousel from "react-multi-carousel";
+
+
 const Home = () => {
+
+
   return (
     <div className="home">
-      <Header/>
+      <Header />
       <div
         className="hero-section"
         style={{
@@ -97,18 +110,17 @@ const Home = () => {
             <h2>-Testimonial-</h2>
           </div>
           <div className="testimonials">
-            {testimonialData.map((item, id) => {
-              let { image, name, title, message } = item;
-
-              return (
-                <Testimonial
-                  image={image}
-                  name={name}
-                  title={title}
-                  message={message}
-                />
-              );
-            })}
+            <Swiper slidesPerView={3} spaceBetween={30} pagination={{clickable: true,}} modules={[Pagination]}>
+              {testimonialData.map((item, id) => {
+                let { image, name, title, message } = item;
+                return (
+                        <SwiperSlide>
+                          <Testimonial image={image} name={name} title={title} message={message} />  
+                        </SwiperSlide>
+                );
+              })}
+            </Swiper>
+            
           </div>
         </div>
 
@@ -124,9 +136,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
-};
 
+          }
 export default Home;
