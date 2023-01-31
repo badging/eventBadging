@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <p>2022 Copyright CHAOSS Community | All Rights Reserved</p>
+        <p>2023 Copyright CHAOSS Community | All Rights Reserved</p>
       </div>
     </footer>
   );
