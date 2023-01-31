@@ -1,16 +1,42 @@
 .testimonial {
-  width: 310px;
-  height: 310px;
   background: #ffffff;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  padding: 50px 20px 0px 20px;
+  padding: 50px;
+  margin-right: 40px;
+  overflow: hidden;
+ 
 }
-
 .testimonial > .user {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 1025px){
+  .testimonial{
+    height: auto;
+  }
+  .testimonial > .user {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .user > img {
+    width: 50px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px){
+  .testimonial {
+    margin: 0;
+    padding: 10px;
+  }
+  .rec-arrow-left, .rec-arrow-right{
+    display: none;
+  }
+}
+.rec-slider-container{
+  margin: 0 50px !important;
 }
 
 .user > img {
@@ -35,6 +61,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
+  padding: 5px;
 }
 
 .message > p {
@@ -45,3 +72,4 @@
   line-height: 200%;
   margin-top: 20px;
 }
+

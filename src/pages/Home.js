@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Header, Footer } from "../layouts";
 import "../assets/styles/global.css";
 import heroBackground from "../assets/images/hero-bg.png";
-import heroLogoTwo from "../assets/images/dei-02.png";
 import heroLogoOne from "../assets/images/dei-01.png";
+import heroLogoTwo from "../assets/images/dei-02.png";
 import gold from "../assets/images/gold.png";
 import silver from "../assets/images/silver.png";
 import passing from "../assets/images/passing.png";
@@ -11,16 +11,26 @@ import pending from "../assets/images/pending.png";
 import eventBadging from "../assets/images/event-badging.png";
 import { Link } from "react-router-dom";
 
-import {Testimonial, Faq} from "../components"
+import { Testimonial, Faq } from "../components";
 import { testimonialData } from "../components/testimonial/testimonialData";
 import { faqData } from "../components/faq/FAQData";
 // import Faq from "../components/faq/Faq";
 // import Testimonial from "../components/testimonial/Testimonial";
 
+import Carousel  from "react-elastic-carousel";
+
 const Home = () => {
+const responsive = [
+  {width: 1, itemsToShow: 1},
+  {width: 550, itemsToShow: 2},
+  {width: 768, itemsToShow: 2},
+  {width: 1200, itemsToShow: 3},
+  {width: 1440, itemsToShow: 3}
+]
+  
   return (
     <div className="home">
-      <Header/>
+      <Header />
       <div
         className="hero-section"
         style={{
@@ -97,18 +107,20 @@ const Home = () => {
             <h2>-Testimonial-</h2>
           </div>
           <div className="testimonials">
-            {testimonialData.map((item, id) => {
-              let { image, name, title, message } = item;
-
-              return (
-                <Testimonial
-                  image={image}
-                  name={name}
-                  title={title}
-                  message={message}
-                />
-              );
-            })}
+            <Carousel breakPoints={responsive} infinite={true}>
+              {testimonialData.map((item, id) => {
+                let { image, name, title, message } = item;
+                return (
+                    <Testimonial
+                      image={image}
+                      name={name}
+                      title={title}
+                      message={message}
+                    />
+                );
+              })}
+            </Carousel>
+            {/* </Swiper> */}
           </div>
         </div>
 
@@ -124,9 +136,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
-
 export default Home;
