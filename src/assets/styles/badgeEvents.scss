@@ -1,0 +1,75 @@
+$primary-color: #46ba8a;
+$secondary-color: #d61b5e;
+$background-color: #070010;
+$primary-container-color: #afffec;
+$secondary-container-color: #ffe7ef;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.badge-events{
+    background-color: $background-color;
+    margin-top: 3rem;
+    padding: 3rem 10rem;
+    color: white;
+
+    h2{
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .buttons{
+        margin-top: 2rem;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        button{
+            background-color: white;
+            padding: 0.5rem 0;
+            width: 300px;
+            color: black;
+        }
+    }
+
+    .logos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+        align-items: center;
+
+        .image-container{
+            width: 150px;
+
+            img{
+              width: 100%
+            }
+        }
+
+        .image-container-os{
+            width: 200px;
+
+            img{
+                width: 100%
+            }
+        }
+        .image-container-sca{
+            width: 50px;
+
+            img{
+                width: 100%
+            }
+        }
+    }
+
+}
