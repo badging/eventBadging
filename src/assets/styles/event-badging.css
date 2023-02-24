@@ -35,12 +35,12 @@
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
-	width: 70%;
 } 
 
 .button-container button {
 	padding: 18px;
 	border-radius: 4px;
+	width: 192px;
 }
 
 
@@ -78,6 +78,5 @@
 	}
 
 	.button-container button {
-		width: 192px;
 	}
 }
