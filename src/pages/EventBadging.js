@@ -1,4 +1,5 @@
 import { Header, Footer } from "../layouts";
+import Roadmap from "../components/roadmap/Roadmap";
 import "../assets/styles/event-badging.css";
 import heroBg from "../assets/images/event-badging/bg/event-badging-hero-bg.png";
 
@@ -27,6 +28,8 @@ const EventBadging = () => {
                     </button>
                 </div>
             </div>
+            <Roadmap />
+            
             <Footer />
         </>
     )

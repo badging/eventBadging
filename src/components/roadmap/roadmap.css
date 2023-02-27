@@ -1,0 +1,131 @@
+:root {
+	--secondary-color:  #D61B5E;
+}
+
+/*
+ 	== MOBILE STYLES ==
+*/
+
+.roadmap-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 22px;
+	background-color: black;
+	color: white;
+	padding-top: 98px;
+}
+
+.roadmap-section h2 {
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 43px;
+}
+
+.roadmap {
+	display: flex;
+	flex-direction: column;
+}
+
+.roadmap-screenshot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 376px;
+	margin: 16px;
+	border: solid #8E7880 5px;
+	border-radius: 10px;
+	background-color: #655875;
+
+}
+
+.roadmap-screenshot p {
+	text-align: center;
+}
+
+
+.roadmap-item {
+	display: flex;
+	align-items: center;
+	gap:  24px;
+	padding: 16px;
+}
+
+.roadmap-item-count {
+	height: 48px;
+	width: 48px;
+	background: white;
+	color: black;
+	border-radius: 1000px;
+}
+
+.roadmap-item-count p {
+	width: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-weight: 900;
+}
+
+.roadmap-item-details {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 16px;
+	border: solid 0.5px var(--secondary-color);
+	border-radius: 4px;
+}
+
+.roadmap-item-details h3 {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+/*
+ 	== DESKTOP STYLES ==
+*/
+@media (min-width: 768px) { 
+	.roadmap-section {
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 5%;
+	}
+
+	.roadmap-section h2 {
+		font-size: 48px;
+	}
+
+	.roadmap {
+		flex-direction: row-reverse;
+		gap: 33px;
+	}
+
+	.roadmap > * {
+		flex: 1;
+	}
+
+	.roadmap-item {
+		gap: 74px;
+		padding: 16px 0px;
+	}
+
+	.roadmap-screenshot {
+		height: auto;
+	}
+
+	.roadmap-item-count {
+		font-size:  22px;
+	}
+
+	.roadmap-item-details {
+		padding: 32px;
+	}
+
+	.roadmap-item-details h3 {
+		font-size: 24px;
+	}
+
+	.roadmap-item-details p {
+		line-height: 32px;
+	}
+}
