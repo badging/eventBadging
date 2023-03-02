@@ -1,0 +1,91 @@
+:root {
+	--secondary-color:  #D61B5E;
+}
+
+.tabs-toggle {
+	display: flex;
+	flex-direction: column;
+	gap:  24px;
+	background-color: white;
+	border-radius: 4px;
+	padding:  49px 17px;
+}
+
+.tabs-toggle-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tabs-toggle-header h3 {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.tabs-toggle-header img {
+	width: 13px;
+	height: 7px;
+}
+
+.tabs-toggle-sections {
+	display: flex;
+	flex-direction: column;
+	gap:  30px;
+	font-size: 14px;
+	line-height: 15px;
+	color:  #666;
+}
+
+.tabs-toggle-section {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.tabs-toggle-section h4 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	line-height: 20px;
+	color: black;
+	font-weight: 600;
+}
+
+.tabs-toggle-section h5 {
+	font-weight: 600;
+}
+
+.tabs-toggle-section ul {
+	padding-left: 20px;
+}
+.tabs-toggle-section li {
+	list-style-type:  disc;
+}
+
+/*
+ 	== DESKTOP STYLES ==
+*/
+@media (min-width: 768px) {
+	.tabs-toggle {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		gap:  48px;
+		border-radius: 20px;
+		margin-top: 30px;
+	}
+
+	.tabs-toggle-header {
+		color:  #B0ADB3;
+	}
+	.tabs-toggle-header .active {
+		box-shadow: 0 6px 2px -4px var(--secondary-color);
+	} 
+
+	.tabs-toggle-header h3 {
+		font-size: 24px;
+		line-height: 48px;
+	}
+
+	.tabs-toggle-header img {
+		display: none;
+	}
+}

@@ -56,6 +56,25 @@
 }
 
 
+/* Before You Apply Section */
+.before-apply {
+	display: flex;
+	flex-direction: column;
+	gap:  20px;
+	padding: 54px 20px;
+	background-color: #E7E7E7;
+}
+.before-apply h2 {
+	font-size: 34px;
+	line-height: 43px;
+	font-weight: 500;
+}
+
+.before-apply > p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+}
 
 /*
  	== DESKTOP STYLES ==
@@ -85,5 +104,16 @@
 		gap: 12px;
 	}
 
-	/* ===== Roadmap Section ===== */
+	/* Before You Apply Section */
+	.before-apply {
+		padding:  5%;
+	}
+
+	.before-apply h2 {
+		font-size: 42px;
+	}
+	.before-apply > p {
+		max-width: 1074px;
+	}
+
 }

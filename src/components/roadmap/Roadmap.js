@@ -13,7 +13,6 @@ export default function Roadmap(){
   const onActive = (index) => {
     setActiveItem({id: index, status:'active-item'});
   }
-  console.log('test', activeItem);
 
   return (
     <div className="roadmap-section">
