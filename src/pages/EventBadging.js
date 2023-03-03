@@ -1,6 +1,7 @@
 import { Header, Footer } from "../layouts";
+import { beforeApply } from "..components/TabSwitcher/tabSwitcher-info";
 import Roadmap from "../components/roadmap/Roadmap";
-import TabsToggle from "../components/tabsToggle/TabsToggle"
+import TabSwitcher from "../components/TabSwitcher/TabSwitcher";
 import "../assets/styles/event-badging.css";
 import heroBg from "../assets/images/event-badging/bg/event-badging-hero-bg.png";
 
@@ -40,7 +41,7 @@ const EventBadging = () => {
                     fusce molestie. Etiam placerat varius tristique nulla urna amet. 
                     Dignissim amet auctor eget dui orci. 
                 </p>
-                <TabsToggle />
+                <TabSwitcher info={beforeApply} />
             </section>
             <Footer />
         </>
