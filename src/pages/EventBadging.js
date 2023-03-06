@@ -1,5 +1,5 @@
 import { Header, Footer } from "../layouts";
-import { beforeApply } from "..components/TabSwitcher/tabSwitcher-info";
+import { beforeApplyData } from "../components/TabSwitcher/tabSwitcher-data";
 import Roadmap from "../components/roadmap/Roadmap";
 import TabSwitcher from "../components/TabSwitcher/TabSwitcher";
 import "../assets/styles/event-badging.css";
@@ -41,7 +41,7 @@ const EventBadging = () => {
                     fusce molestie. Etiam placerat varius tristique nulla urna amet. 
                     Dignissim amet auctor eget dui orci. 
                 </p>
-                <TabSwitcher info={beforeApply} />
+                <TabSwitcher data={beforeApplyData} />
             </section>
             <Footer />
         </>
