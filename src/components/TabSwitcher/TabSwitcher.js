@@ -38,8 +38,5 @@ export default function TabSwitcher( {data} ) {
         {tabViews}
       </Suspense>
     </div>
-  );
-  
-  
-  
+  );  
 } 

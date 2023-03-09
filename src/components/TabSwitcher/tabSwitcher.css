@@ -27,10 +27,9 @@
 .tab-switcher__content {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
 	color: #999999;
-
-
+	font-size: 12px;
+	gap: 5px
 }
 
 .tab-switcher__content__title {
@@ -40,8 +39,11 @@
 }
 
 .tab-switcher__content__description {
-	font-size: 12px;
 	line-height: 16px;
+}
+
+.tab-switcher__content__list {
+	padding: 0 20px;
 }
 
 

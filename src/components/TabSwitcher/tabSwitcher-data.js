@@ -4,21 +4,21 @@ export const beforeApplyData = [
         content: [
             { header: "Responsibilities" },
             { paragraph: `Applicants would be the primary stakeholders for any CHAOSS Badging review. They will be responsible for:` },
-            // { list: [
-            //     "Applying for an Event/Project related badge.",
-            //     "Making improvements according to reviewer feedback.",
-            //     "Possibly be the single point of contact between their own community, other participants and CHAOSS."
-            // ] },
-            // { header: "GitHub Permission" },
-            // { paragraph: "Things applicants will be able to do:"},
-            // { list: [
-            //     "Submit details required for a Badging review.",
-            //     "Edit details and make improvements in their application.",
-            // ]},
-            // { paragraph: "Things applicants will not be able to do:"},
-            // { list: [   
-            //     "Edit the Review Checklist."
-            // ]},
+            { list: [
+                "Applying for an Event/Project related badge.",
+                "Making improvements according to reviewer feedback.",
+                "Possibly be the single point of contact between their own community, other participants and CHAOSS."
+            ] },
+            { header: "GitHub Permission" },
+            { paragraph: "Things applicants will be able to do:"},
+            { list: [
+                "Submit details required for a Badging review.",
+                "Edit details and make improvements in their application.",
+            ]},
+            { paragraph: "Things applicants will not be able to do:"},
+            { list: [   
+                "Edit the Review Checklist."
+            ]},
         ]
     },
     {
