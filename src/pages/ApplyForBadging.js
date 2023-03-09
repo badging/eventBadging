@@ -39,7 +39,15 @@ const ApplyForBadging = () => {
 					</Text>
 				</Box>
             </Box>
-            
+            <Box 
+                as={"section"}
+                backgroundColor={'#199AD6'}
+                height={'2093px'}
+			    width={'90%'}
+                gap={'48px'}
+                my={'80px'}
+                ml={'80px'}
+                borderRadius={'20px'}></Box> 
             <Footer />
         </>
     )
