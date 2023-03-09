@@ -31,7 +31,7 @@ const Home = () => {
       >
         <div className="hero-section-text">
           <div className="hero-main">
-            <img src={heroLogoOne} />
+            <img src={heroLogoOne} alt="HeroLogo" />
             <div className="hero-main-text">
               <p>
                 The primary motivation to apply for a CHAOSS D&I event or
@@ -102,6 +102,7 @@ const Home = () => {
 
               return (
                 <Testimonial
+                  key={id}
                   image={image}
                   name={name}
                   title={title}
