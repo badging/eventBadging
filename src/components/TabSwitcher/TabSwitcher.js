@@ -14,7 +14,7 @@ export default function TabSwitcher( {data} ) {
           const TabLabel = importTabContentCompnent(tabData);  
           return (
             <div key={index} className="tab-switcher__container">
-              <TabLabel data={tabData.label}/>
+              <TabLabel data={tabData.tabLabel}/>
               <div className="tab-switcher__content">
                 {tabData.content.map((contentItem, i) => {
                   const TabContent = importTabContentCompnent(contentItem);
@@ -43,10 +43,3 @@ export default function TabSwitcher( {data} ) {
   
   
 } 
-
-/* <div className="tab-switcher__content__title">
-<h4>{console.log(data)}</h4>
-</div>
-<div className="tab-switcher__info__description">
-<p>testing</p>
-</div> */

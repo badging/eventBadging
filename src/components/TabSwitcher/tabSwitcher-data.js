@@ -1,9 +1,9 @@
 export const beforeApplyData = [
     {
-        label: "Applicants Role",
+        tabLabel: "Applicants Role",
         content: [
             { header: "Responsibilities" },
-            // { paragraph: `Applicants would be the primary stakeholders for any CHAOSS Badging review. They will be responsible for:` },
+            { paragraph: `Applicants would be the primary stakeholders for any CHAOSS Badging review. They will be responsible for:` },
             // { list: [
             //     "Applying for an Event/Project related badge.",
             //     "Making improvements according to reviewer feedback.",
@@ -22,16 +22,16 @@ export const beforeApplyData = [
         ]
     },
     {
-        label: "Submission Requirements",
+        tabLabel: "Submission Requirements",
         content: [
             { header: " Working with checklists" },
-            // { paragraph: `A CHAOSS Badging application starts when an Applicant opens an issue on the event badging repository. 
-            //             They fill out a form to create a GitHub issue, which contains the information a reviewer looks at. Upon 
-            //             being assigned an issue, a checklist is generated in the form of a comment. This will contain the name of the reviewer.
-            //             During a review, a Reviewer would analyse the information given by an Applicant using the Review Checklist. ` },
+            { paragraph: `A CHAOSS Badging application starts when an Applicant opens an issue on the event badging repository. 
+                        They fill out a form to create a GitHub issue, which contains the information a reviewer looks at. Upon 
+                        being assigned an issue, a checklist is generated in the form of a comment. This will contain the name of the reviewer.
+                        During a review, a Reviewer would analyse the information given by an Applicant using the Review Checklist. ` },
 
-            // { header: "Guidelines" },
-            // { paragraph: "For all submissions" },
+            { header: "Guidelines" },
+            { paragraph: "For all submissions" },
             // { list: [
             //     "Make sure the Initial checks are met. These are the basic requirements which help to ensure that the application is at a bare minimum standard.",
             //     "Mark your observations according to the Review Checklist, and give feedback on how an application can be improved if certain checks are not met.",
