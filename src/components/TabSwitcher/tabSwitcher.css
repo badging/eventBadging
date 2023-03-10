@@ -2,6 +2,12 @@
 	--secondary-color:  #D61B5E;
 }
 
+
+.tab-switcher {
+	display: flex;
+	flex-direction: column;
+}
+
 .tab-switcher__container {
 	display: flex;
 	padding: 49px 20px;
@@ -51,5 +57,12 @@
  	== DESKTOP STYLES ==
 */
 @media (min-width: 768px) {
+	.tab-switcher{
+		flex-direction: row;
+	}
+
+	.tab-switcher__label > img {
+		display: none;
+	}
 	
 }

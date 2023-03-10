@@ -1,42 +1,22 @@
-import { lazy, useEffect, useState, Suspense } from 'react';
+import React, { lazy, useEffect, useState, Suspense } from 'react';
+import tabSwitcherIcon from "../../assets/images/event-badging/icons/toggle-icon.png";
 import "./tabSwitcher.css";
 
-const importTabContentCompnent = ( contentItem ) => {
-  const tabContentComponent = Object.keys(contentItem)[0];
-  return  lazy(() => import(`./${tabContentComponent}`));
-}
 
-export default function TabSwitcher( {data} ) {
-  const [tabViews, setTabViews] =   useState([]);
-
-  useEffect(() => { 
-        const tabsContent = data.map((tabData, index) => {
-          const TabLabel = importTabContentCompnent(tabData);  
-          return (
-            <div key={index} className="tab-switcher__container">
-              <TabLabel data={tabData.tabLabel}/>
-              <div className="tab-switcher__content">
-                {tabData.content.map((contentItem, i) => {
-                  const TabContent = importTabContentCompnent(contentItem);
-                  return (
-                      <TabContent key={i} contentItem={contentItem} />
-                  );
-                })}
-              </div>
-            </div>
-          );
-        });
-        setTabViews(tabsContent);
-
-  }, [data]);
-
-
-
+export default function TabSwitcher({ tabs, activeTab, onTabChange }){
   return (
-    <div className="tab-switcher">
-      <Suspense fallback={<div>Loading...</div>}>
-        {tabViews}
-      </Suspense>
-    </div>
-  );  
-} 
+  <div className='tab-switcher'>
+    <ul className='tab-labels'>
+      {tabs.map((tab, index) => {
+        return (
+          <li key={index} className={activeTab === tab ? 'active' : ''} onClick={() => onTabChange(tab)}>
+            <span>{tab.label}</span>
+            <img src={tabSwitcherIcon} alt="tab-switcher-icon" />
+          </li>
+        )
+      })}
+    </ul>
+    <div className="tab-content">{tabs[activeTab].content}</div>
+  </div>)
+}
+ 
