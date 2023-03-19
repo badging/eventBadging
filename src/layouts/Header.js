@@ -1,5 +1,5 @@
 import '../assets/styles/global.css'
-import logo from "../assets/logos/chaoss-logo.png"
+import logo from "../assets/logos/chaoss-badging-logo.png"
 import { Link } from 'react-router-dom'
 
 const Header = () => {

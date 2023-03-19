@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/variables.scss";
-import Mylogo from "../assets/logos/chaoss-logo.png";
+import Mylogo from "../assets/logos/chaoss-badging-logo.png";
 import Deilogo from "../assets/logos/dei-logo.png";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 

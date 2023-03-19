@@ -42,7 +42,7 @@ const Home = () => {
             </div>
             <div className="hero-main-buttons">
               <button className="button badged-event" type="button">
-                <Link className="link" to={"#"}>
+                <Link className="link" to="/badged-events">
                   Badged Events
                 </Link>
               </button>
