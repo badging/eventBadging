@@ -1,0 +1,88 @@
+:root {
+	--secondary-color:  #D61B5E;
+}
+
+
+/*
+ 	== MOBILE STYLES ==
+*/
+
+/* ===== Hero section ===== */
+.event-badging-hero-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	gap:  32px;
+	align-items: center;
+	height: 844px;
+	color:  white;
+	padding:  24px;
+}
+
+.event-badging-hero-section h1 {
+	font-size: 40px;
+	line-height: 60px;
+	font-weight: 600;
+}
+
+.event-badging-hero-section p {
+	line-height: 30px;
+	margin-bottom: 80px;
+}
+
+
+.button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+} 
+
+.button-container button {
+	padding: 18px;
+	border-radius: 4px;
+	width: 192px;
+}
+
+
+.in-person-button {
+	background-color: var(--secondary-color);
+}
+
+.virtual-button {
+	background-color: #fff;
+	color:  black;
+}
+
+
+/*
+ 	== DESKTOP STYLES ==
+*/
+@media (min-width: 768px) {
+	/* ===== Hero section ===== */
+	.event-badging-hero-section {
+		align-items: flex-start;
+		height: 478px;
+		padding: 5%;
+	}
+
+	.event-badging-hero-section h1 {
+		font-size: 60px;
+	}
+
+	.event-badging-hero-section p {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 34px;
+		width: 1074px;
+		margin-bottom: 40px;
+	}
+
+	.button-container {
+		flex-direction: row;
+		gap: 12px;
+	}
+
+}
