@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Header, Footer } from "../layouts";
-import EventBadgingHeroSection from "../components/EventBadgingHeroSection";
-import RoadmapSection from '../components/RoadmapSection';
-import Roadmap from '../components/Roadmap';
-import roadmapData from '../components/Roadmap/roadmap-data.json';
+import { EventBadgingHeroSection } from "../components/EventBadgingSections";
+import { RoadmapSection, Roadmap } from "../components/RoadmapComponents";
+import { TabSwitcherSection, TabSwitcher } from '../components/TabSwitcherComponents';
+
+import roadmapData from '../components/RoadmapComponents/roadmap-data.json';
+import beforeYouApplyInfo from '../components/TabSwitcherComponents/before-you-apply.json';
 
 const EventBadging = () => {
     return (
@@ -13,7 +15,13 @@ const EventBadging = () => {
             <RoadmapSection>
                 <h2>Badging Roadmap</h2>
                 <Roadmap roadmapData={roadmapData}/>
-            </RoadmapSection>               
+            </RoadmapSection> 
+            <TabSwitcherSection>
+                <h2>Before You Apply</h2>
+                <TabSwitcher tabs={beforeYouApplyInfo}/>
+
+            </TabSwitcherSection>
+
 
             <Footer />
         </>

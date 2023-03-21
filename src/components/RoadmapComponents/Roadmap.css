@@ -5,6 +5,22 @@
 /*
  	== MOBILE STYLES ==
 */
+.roadmap-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 22px;
+	background-color: black;
+	color: white;
+	padding-top: 98px;
+}
+
+.roadmap-section >  h2 {
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 43px;
+}
 
 .roadmap {
 	display: flex;
@@ -76,6 +92,16 @@
  	== DESKTOP STYLES ==
 */
 @media (min-width: 768px) { 
+	.roadmap-section {
+		justify-content: flex-start;
+		align-items: stretch;
+		padding: 5%;
+	}
+
+	.roadmap-section > h2 {
+		font-size: 48px;
+	}
+	
 	.roadmap {
 		flex-direction: row-reverse;
 		gap: 33px;

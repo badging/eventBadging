@@ -1,12 +1,13 @@
-import React, { lazy, useEffect, useState, Suspense } from 'react';
-import tabSwitcherIcon from "../../assets/images/event-badging/icons/toggle-icon.png";
-import "./tabSwitcher.css";
+// import tabSwitcherIcon from "../../assets/images/event-badging/icons/toggle-icon.png";
+import TabLabels from './TabLabels';
+import "./TabSwitcher.css";
 
 
 export default function TabSwitcher({ tabs, activeTab, onTabChange }){
   return (
   <div className='tab-switcher'>
-    <ul className='tab-labels'>
+    <TabLabels tabs={tabs} activeTab={activeTab} onTabChange={onTabChange}/>
+    {/* <ul className='tab-labels'>
       {tabs.map((tab, index) => {
         return (
           <li key={index} className={activeTab === tab ? 'active' : ''} onClick={() => onTabChange(tab)}>
@@ -16,7 +17,7 @@ export default function TabSwitcher({ tabs, activeTab, onTabChange }){
         )
       })}
     </ul>
-    <div className="tab-content">{tabs[activeTab].content}</div>
+    <div className="tab-content">{tabs[activeTab].content}</div> */}
   </div>)
 }
  
