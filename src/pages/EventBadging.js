@@ -18,8 +18,12 @@ const EventBadging = () => {
             </RoadmapSection> 
             <TabSwitcherSection>
                 <h2>Before You Apply</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Pharetra elementum, morbi metus et, fusce molestie. Etiam placerat varius 
+                    tristique nulla urna amet. Dignissim amet auctor eget dui orci. 
+                </p>
                 <TabSwitcher tabs={beforeYouApplyInfo}/>
-
             </TabSwitcherSection>
 
 
