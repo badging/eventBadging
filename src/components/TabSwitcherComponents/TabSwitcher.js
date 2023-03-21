@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import TabLabels from './TabLabels';
+import React, { useState } from 'react';
+import LabelItem from './LabelItem';
+import TabContent from './TabContent';
 
 export default function TabSwitcher({ tabs }){
   const [activeTab, setActiveTab] = useState(0);
@@ -8,11 +9,23 @@ export default function TabSwitcher({ tabs }){
     setActiveTab(index);
   };
 
-  console.log(tabs);
   return (
-  <div className='tab-switcher'>
-    <TabLabels tabs={tabs} activeTab={activeTab} onTabChange={onTabChange}/>
-    {/* <div className="tab-content">{tabs[activeTab].content}</div> */}
-  </div>);
+    <ul className='tab-switcher'>
+        {tabs.map((tab, index) => {
+            return (
+                <React.Fragment key={index}>
+                    <LabelItem
+                        tab={tab}
+                        index={index}
+                        activeTab={activeTab}
+                        onTabChange={onTabChange}
+                        key={index}
+                    />
+                    { index === activeTab ? <TabContent content={tabs[activeTab].content} /> : <></>}
+                </React.Fragment>
+            );
+        })}
+    </ul>
+);
 }
  
