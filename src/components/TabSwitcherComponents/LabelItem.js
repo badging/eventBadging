@@ -1,15 +1,15 @@
 import ToggleIcon from './icons/toggle-icon.png';
 
 export default function Item({ tab, index, activeTab, onTabChange}) {
-    const isActive = index + 1 === activeTab.id;
-    const activeClass = isActive ? activeTab.status : "";
+    const isActive = index === activeTab;
+    const activeTabClass = isActive ? "active-tab" : "";
+    console.log(tab);
 
     return (
-        <li 
-            className={activeClass=== tab ? 'active' : ''} 
-            onClick={() => onTabChange(tab)}>
-            <span>{tab.label}</span>
-            <img src={ToggleIcon} alt="toggle-icon" />
+        <li className={`tab-switcher__label ${activeTabClass}`} 
+            onClick={() => onTabChange(index)}>
+                <span>{tab.label}</span>
+                <img src={ToggleIcon} alt="toggle-icon" />
         </li>
     );
 }

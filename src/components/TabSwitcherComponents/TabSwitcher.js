@@ -1,23 +1,18 @@
-// import tabSwitcherIcon from "../../assets/images/event-badging/icons/toggle-icon.png";
+import { useState } from 'react';
 import TabLabels from './TabLabels';
-import "./TabSwitcher.css";
 
+export default function TabSwitcher({ tabs }){
+  const [activeTab, setActiveTab] = useState(0);
 
-export default function TabSwitcher({ tabs, activeTab, onTabChange }){
+  const onTabChange = (index) => {
+    setActiveTab(index);
+  };
+
+  console.log(tabs);
   return (
   <div className='tab-switcher'>
     <TabLabels tabs={tabs} activeTab={activeTab} onTabChange={onTabChange}/>
-    {/* <ul className='tab-labels'>
-      {tabs.map((tab, index) => {
-        return (
-          <li key={index} className={activeTab === tab ? 'active' : ''} onClick={() => onTabChange(tab)}>
-            <span>{tab.label}</span>
-            <img src={tabSwitcherIcon} alt="tab-switcher-icon" />
-          </li>
-        )
-      })}
-    </ul>
-    <div className="tab-content">{tabs[activeTab].content}</div> */}
-  </div>)
+    {/* <div className="tab-content">{tabs[activeTab].content}</div> */}
+  </div>);
 }
  

@@ -1,6 +1,6 @@
 [
     {
-        "tabLabel": "Applicants Role",        
+        "label": "Applicants Role",        
         "content": [
             { "header": "Responsibilities" },
             { "paragraph": "Applicants would be the primary stakeholders for any CHAOSS Badging review. They will be responsible for:" },
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "tabLabel": "Submission Requirements",
+        "label": "Submission Requirements",
         "content": [
             { "header": " Working with checklists" },
             { "paragraph": "A CHAOSS Badging application starts when an Applicant opens an issue on the event badging repository. They fill out a form to create a GitHub issue, which contains the information a reviewer looks at. Upon being assigned an issue, a checklist is generated in the form of a comment. This will contain the name of the reviewer. During a review, a Reviewer would analyse the information given by an Applicant using the Review Checklist."},
@@ -44,6 +44,6 @@
         ]
     },
     {
-        "tabLabel": "Submission Guidelines"
+        "label": "Submission Guidelines"
     }
 ]

@@ -2,7 +2,7 @@ import LabelItem from './LabelItem';
 
 export default function TabLabels({ tabs, activeTab, onTabChange }) {
     return (
-        <ul>
+        <ul className='tab-switcher__labels'>
             {tabs.map((tab, index) => (
                 <LabelItem
                     tab={tab}

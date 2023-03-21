@@ -2,24 +2,47 @@
 	--secondary-color:  #D61B5E;
 }
 
-
-.tab-switcher {
+.tab-switcher-section {
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
+	padding: 40px 25px;
+	background-color: #e7e7e7;
+}
+.tab-switcher-section > h2 {
+	font-weight: 500;
+	font-size: 34px;
 }
 
-.tab-switcher__container {
+.tab-switcher-section > p {
+	font-size: 16px;
+	line-height: 32px;
+}
+
+/* .tab-switcher {
+	display: flex;
+	flex-direction: column;
+} */
+
+.tab-switcher {
 	display: flex;
 	padding: 49px 20px;
 	flex-direction: column;
 	background-color: white;
+	border-radius: 4px;
 }
+
+.tab-switcher__labels {
+	display: flex;
+	flex-direction: column;
+}
+
 
 .tab-switcher__label {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 25px;
 	padding-bottom: 20px;
@@ -57,8 +80,28 @@
  	== DESKTOP STYLES ==
 */
 @media (min-width: 768px) {
-	.tab-switcher{
+	.tab-switcher-section {
+		padding: 5%;
+	}
+
+	.tab-switcher-section > h2 {
+		font-size: 48px;
+	}
+
+	.tab-switcher {
 		flex-direction: row;
+	}
+
+	.tab-switcher__labels {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.tab-switcher__label {
+		font-size: 24px;
+		color: #B0ADB3;
+
 	}
 
 	.tab-switcher__label > img {

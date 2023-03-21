@@ -1,3 +1,5 @@
+import "./TabSwitcher.css";
+
 export default function TabSwitcherSection( { children }){
-    return (<div>{children}</div>);
-  }
+  return (<div className="tab-switcher-section">{children}</div>);
+}
