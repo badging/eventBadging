@@ -81,7 +81,7 @@
 
 	.tab-switcher {
 		display: grid;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: repeat(3, 1fr);
 		width: 100%;
 		border-radius: 4px;
 		padding: 48px 62px;
@@ -91,8 +91,9 @@
 	.tab-switcher__content {
 		grid-column: 1 / span 3;
 		grid-row: 2;
-		min-height: 600px;
-		
+		height: 600px;
+		color: #070010;
+
 	}
 
 	.tab-switcher__content * {
@@ -103,7 +104,8 @@
 	.tab-switcher__label {
 		font-size: 24px;
 		color: #B0ADB3;
-		justify-self: center;
+		place-self: center;
+		
 	}
 
 	.tab-switcher__label > img {
