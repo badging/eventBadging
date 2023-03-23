@@ -48,7 +48,7 @@ const Home = () => {
               </button>
 
               <button className="button apply" type="button">
-                <Link className="link" to={"#"}>
+                <Link className="link" to="/apply">
                   Apply for badging
                 </Link>
               </button>

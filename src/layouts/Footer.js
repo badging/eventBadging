@@ -47,17 +47,8 @@ const Footer = () => {
             <NavLink className="links" to="/event">
               Event badging
             </NavLink>
-            <NavLink className="links" to="/contact">
-              Contact us
-            </NavLink>
-            <NavLink className="links" to="/project">
-              Project badging
-            </NavLink>
             <NavLink className="links" to="/faq">
               FAQs
-            </NavLink>
-            <NavLink className="links" to="/site">
-              Site map
             </NavLink>
           </div>
           <div className="innerdiv">
