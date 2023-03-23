@@ -92,6 +92,12 @@
 		grid-column: 1 / span 3;
 		grid-row: 2;
 		min-height: 600px;
+		
+	}
+
+	.tab-switcher__content * {
+		font-size: 20px;
+		line-height: 40px;
 	}
 
 	.tab-switcher__label {
@@ -103,5 +109,14 @@
 	.tab-switcher__label > img {
 		display: none;
 	}
-	
+
+	.tab-switcher__content__title {
+		font-weight: 700;
+	}
+
+	.active-tab {
+		color: black;
+		box-shadow: -1px 5px 2px -4px var(--secondary-color);
+	}
+
 }
