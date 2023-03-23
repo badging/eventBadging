@@ -3,6 +3,7 @@ import { Header, Footer } from "../layouts";
 import { EventBadgingHeroSection } from "../components/EventBadgingSections";
 import { RoadmapSection, Roadmap } from "../components/RoadmapComponents";
 import { TabSwitcherSection, TabSwitcher } from '../components/TabSwitcherComponents';
+import { BadgeLevels } from '../components';
 
 import roadmapData from '../components/RoadmapComponents/roadmap-data.json';
 import beforeYouApplyInfo from '../components/TabSwitcherComponents/before-you-apply.json';
@@ -27,7 +28,7 @@ const EventBadging = () => {
                 </p>
                 <TabSwitcher tabs={beforeYouApplyInfo}/>
             </TabSwitcherSection>
-
+            <BadgeLevels />
             <TabSwitcherSection key="how-applications-are-reviewed">
                 <h2>How applications are reviewed</h2>
                 <p>
