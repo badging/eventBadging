@@ -3,7 +3,7 @@ import { Header, Footer } from "../layouts";
 import { EventBadgingHeroSection, DEIBadingTeamSection } from "../components/EventBadgingSections";
 import { RoadmapSection, Roadmap } from "../components/RoadmapComponents";
 import { TabSwitcherSection, TabSwitcher } from '../components/TabSwitcherComponents';
-import { BadgeLevels } from '../components';
+import { BadgeLevels, BadgeEvents } from '../components';
 
 import roadmapData from '../components/RoadmapComponents/roadmap-data.json';
 import beforeYouApplyInfo from '../components/TabSwitcherComponents/before-you-apply.json';
@@ -43,6 +43,7 @@ const EventBadging = () => {
 
             <DEIBadingTeamSection />
 
+            <BadgeEvents />
             <Footer />
         </>
     )
