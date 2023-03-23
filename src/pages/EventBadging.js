@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Header, Footer } from "../layouts";
-import { EventBadgingHeroSection } from "../components/EventBadgingSections";
+import { EventBadgingHeroSection, DEIBadingTeamSection } from "../components/EventBadgingSections";
 import { RoadmapSection, Roadmap } from "../components/RoadmapComponents";
 import { TabSwitcherSection, TabSwitcher } from '../components/TabSwitcherComponents';
 import { BadgeLevels } from '../components';
@@ -28,7 +28,9 @@ const EventBadging = () => {
                 </p>
                 <TabSwitcher tabs={beforeYouApplyInfo}/>
             </TabSwitcherSection>
+
             <BadgeLevels />
+
             <TabSwitcherSection key="how-applications-are-reviewed">
                 <h2>How applications are reviewed</h2>
                 <p>
@@ -38,6 +40,9 @@ const EventBadging = () => {
                 </p>
                 <TabSwitcher tabs={howApplicationsAreReviewedInfo}/>
             </TabSwitcherSection>
+
+            <DEIBadingTeamSection />
+
             <Footer />
         </>
     )

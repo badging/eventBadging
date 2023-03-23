@@ -1,0 +1,63 @@
+.badging-team-section {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    padding: 49px 16px;
+    background-color: #DFF8F5;
+
+}
+
+.badging-team-section__header > h2 {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.badging-team-section__header > p {
+    font-size: 16px;
+    line-height: 32px;
+} 
+
+.badging-team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.badging-team-members h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.badging-team-members ul {
+    list-style-type: none;
+}
+
+
+.badging-team-members li {
+    font-size: 16px;
+    box-shadow: -1px 5px 2px -4px #999999;
+    padding: 12px 0;
+}
+
+/*
+ 	== DESKTOP STYLES ==
+*/
+
+@media (min-width: 768px) {
+    .badging-team-section {
+        padding: 5%;
+    }
+
+    .badging-team-section__header > h2 {
+        font-size: 48px;
+    }
+
+    .badging-team-section__header h3 {
+        font-size: 24px;
+    }
+
+    .badging-team-members {
+        grid-template-columns: repeat(6, auto);
+    }
+}
+
