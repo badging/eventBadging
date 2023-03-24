@@ -31,3 +31,19 @@
   font-size: 16px;
   line-height: 200%;
 }
+
+@media screen and (max-width: 480px) {
+  .faq {
+    max-width: 350px;
+    padding: 10px;
+  }
+
+  .head > header {
+    font-size: 16px;
+    line-height: 27px;
+    max-width: 224px;
+  }
+  .answer > .ans {
+    font-size: 14px;
+  }
+}

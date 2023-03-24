@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Header, Footer } from "../layouts";
-import "../assets/styles/global.css";
+// import "../assets/styles/global.css";
+import "../assets/styles/home.css";
 import heroBackground from "../assets/images/hero-bg.png";
 import heroLogoTwo from "../assets/images/dei-02.png";
 import heroLogoOne from "../assets/images/dei-01.png";
@@ -11,16 +12,18 @@ import pending from "../assets/images/pending.png";
 import eventBadging from "../assets/images/event-badging.png";
 import { Link } from "react-router-dom";
 
-import {Testimonial, Faq} from "../components"
+import { Testimonial, Faq } from "../components";
 import { testimonialData } from "../components/testimonial/testimonialData";
 import { faqData } from "../components/faq/FAQData";
+import { useSnapCarousel } from "react-snap-carousel";
 // import Faq from "../components/faq/Faq";
 // import Testimonial from "../components/testimonial/Testimonial";
 
 const Home = () => {
+  const { scrollRef } = useSnapCarousel();
   return (
     <div className="home">
-      <Header/>
+      <Header />
       <div
         className="hero-section"
         style={{
@@ -41,13 +44,13 @@ const Home = () => {
               </p>
             </div>
             <div className="hero-main-buttons">
-              <button className="button badged-event" type="button">
+              <button type="button">
                 <Link className="link" to={"#"}>
                   Badged Events
                 </Link>
               </button>
 
-              <button className="button apply" type="button">
+              <button type="button">
                 <Link className="link" to={"#"}>
                   Apply for badging
                 </Link>
@@ -110,6 +113,22 @@ const Home = () => {
               );
             })}
           </div>
+          <div className="carosel-container" ref={scrollRef}>
+            {testimonialData.map((item, id) => {
+              let { image, name, title, message } = item;
+
+              return (
+                <div className="carosel-testimonials">
+                  <Testimonial
+                    image={image}
+                    name={name}
+                    title={title}
+                    message={message}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         <div className="faq-container">
@@ -124,7 +143,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <div className="section-7">
+        <Footer />
+      </div>
     </div>
   );
 };

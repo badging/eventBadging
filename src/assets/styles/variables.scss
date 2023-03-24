@@ -19,7 +19,7 @@ body {
 
 footer {
   background-color: $background-color;
-  // position: absolute;
+  height: 100vh;
   bottom: 0;
   color: #fff;
   padding: 50px 0 30px;
@@ -41,11 +41,6 @@ footer {
   display: block;
   font-weight: bold;
   width: fit-content;
-}
-
-.logo {
-  width: 100px;
-  margin-bottom: 20px;
 }
 
 .minidiv {
@@ -72,9 +67,6 @@ footer {
     display: inline;
     margin-right: 8px;
   }
-  .dei1 img {
-    width: 250px;
-  }
 }
 
 a {
@@ -89,9 +81,57 @@ a {
 .main-div {
   width: 90%;
   margin: auto;
+
   p {
     text-align: center;
     padding-top: 30px;
   }
 }
+.dei1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+.logo {
+  width: 100px;
+}
+.logo2 {
+  width: 100px;
+}
 
+// media queries
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 15px;
+    p {
+    }
+    h2 {
+    }
+  }
+
+  .readMoreClassName {
+  }
+
+  .logo {
+  }
+
+  .minidiv {
+  }
+
+  .innerdiv {
+    flex-basis: 20%;
+    margin: 20px 0 40px;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 164%;
+
+    .social-media a > img {
+      display: inline;
+      margin-right: 8px;
+    }
+  }
+}
