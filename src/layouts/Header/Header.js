@@ -1,6 +1,7 @@
-import '../assets/styles/global.css'
-import logo from "../assets/logos/chaoss-badging-logo.png"
+import '../../assets/styles/global.css'
+import logo from "../../assets/logos/chaoss-badging-logo.png"
 import { Link } from 'react-router-dom'
+import './Header.scss'
 
 const Header = () => {
     return (
