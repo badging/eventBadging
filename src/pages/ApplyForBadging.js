@@ -2,18 +2,16 @@ import React, { useState } from "react";
 import { Header, Footer } from "../layouts";
 import heroBackground from "../assets/images/hero-bg.png";
 import badgingLogo from "../assets/images/about/icons/dei-logo.png";
+import EventDemographics from "../components/EventDemographics";
 import {
   Box,
   HStack,
   Text,
   Img,
-  Checkbox,
   VStack,
   FormControl,
   FormLabel,
-  Input,
-  Textarea,
-  Button
+  Input
 } from "@chakra-ui/react";
 // import "../assets/styles/global.css";
 import { Link } from "react-router-dom";
@@ -106,64 +104,61 @@ const ApplyForBadging = () => {
               color="#000"
             >
               Make sure to fill out all the fields. Please, note that once you
-              click "submit", you must use your GitHub account to finalize the
+              click &quot;submit&quot;, you must use your GitHub account to finalize the
               issue on their Website by clicking&quot;Create New Issue&quot;.
             </Text>
           </VStack>
-         
-            <FormControl>
-              <FormLabel>Event Name</FormLabel>
-              <Input
-                type="text"
-                value={inputValues.event_name}
-                name="event_name"
-                onChange={handleInputChange}
-                size='lg'
 
-              />
-              <FormLabel>Link to the Event Website</FormLabel>
-              <Input
-                type="text"
-                value={inputValues.event_website}
-                name="event_website"
-                onChange={handleInputChange}
-                size='lg'
-              />
-              <FormLabel>Are you an organizer of this event?</FormLabel>
-              <Input
-                type="text"
-                value={inputValues.event_organizer}
-                name="event_organizer"
-                onChange={handleInputChange}
-                size='lg'
-              />
-              <Text>Event Demographics</Text>
-              <Checkbox
-                value={inputValues.speaker_diversity_and_inclusion}
-                name="speaker_diversity_and_inclusion"
-                onChange={handleInputChange}
-              >
-                This event commits to speaker diversity and inclusion
-              </Checkbox>
-              <FormLabel>Detail the process for measuring even Demographics</FormLabel>
-              <Textarea 
-                value={inputValues.process_for_measuring_even_demographics}
-                onChange={handleInputChange}
-                size='lg' />
-                <FormLabel>Provide an example of an opt-out option on the Event registration page if available.</FormLabel>
-              <Textarea 
-                value={inputValues.process_for_measuring_even_demographics}
-                onChange={handleInputChange}
-                size='lg' />
-                <FormLabel>Provide an example of a demographics text input box on the Event registration page if available.
-</FormLabel>
-              <Textarea 
-                value={inputValues.process_for_measuring_even_demographics}
-                onChange={handleInputChange}
-                size='lg' />
-
-            </FormControl>
-          
+          <FormControl>
+            <FormLabel
+              fontWeight={500}
+              fontSize={"20px"}
+              lineHeight="40px"
+              letterSpacing={"2%"}
+            >
+              Event Name
+            </FormLabel>
+            <Input
+              type="text"
+              value={inputValues.event_name}
+              name="event_name"
+              onChange={handleInputChange}
+              size="lg"
+            />
+            <FormLabel
+              fontWeight={500}
+              fontSize={"20px"}
+              lineHeight="40px"
+              letterSpacing={"2%"}
+              mt={"24px"}
+            >
+              Link to the Event Website
+            </FormLabel>
+            <Input
+              type="text"
+              value={inputValues.event_website}
+              name="event_website"
+              onChange={handleInputChange}
+              size="lg"
+            />
+            <FormLabel
+              fontWeight={500}
+              fontSize={"20px"}
+              lineHeight="40px"
+              letterSpacing={"2%"}
+              mt={"24px"}
+            >
+              Are you an organizer of this event?
+            </FormLabel>
+            <Input
+              type="text"
+              value={inputValues.event_organizer}
+              name="event_organizer"
+              onChange={handleInputChange}
+              size="lg"
+            />
+            <EventDemographics />
+          </FormControl>
         </VStack>
       </Box>
       <Footer />
