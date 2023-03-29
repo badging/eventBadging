@@ -1,6 +1,13 @@
 import { Header, Footer } from "./layouts";
 import { Route, Routes } from "react-router-dom";
-import { Home, About, EventBadging, ApplyForBadge, ErrorPage, BadgedEvents } from "./pages";
+import {
+  Home,
+  About,
+  EventBadging,
+  ApplyForBadge,
+  ErrorPage,
+  BadgedEvents,
+} from "./pages";
 
 const App = () => {
   return (

@@ -3,8 +3,18 @@ import { Footer, Header } from "../../layouts";
 import { Box, Grid, Flex, HStack, Text, Img } from "@chakra-ui/react";
 import BadgeEvents from "../../components/BadgeEvents";
 
-import {alignIcon, connectIcon, establishIcon, openIcon, DEIMiniLogo,sheCodeAfricaLogo,osSustainAfricaLogo,linuxFoundationLogo, heroTwo, chaossWhiteLogo } from "../../assets/images"
-
+import {
+  alignIcon,
+  connectIcon,
+  establishIcon,
+  openIcon,
+  DEIMiniLogo,
+  sheCodeAfricaLogo,
+  osSustainAfricaLogo,
+  linuxFoundationLogo,
+  heroTwo,
+  chaossWhiteLogo,
+} from "../../assets/images";
 
 const About = () => {
   return (

@@ -1,6 +1,11 @@
 import React from "react";
 import "../assets/styles/badgeEvents.scss";
-import {linuxFoundationLogo, osSustainAfricaLogo, chaossWhiteLogo, sheCodeAfricaLogo } from "../assets/images";
+import {
+  linuxFoundationLogo,
+  osSustainAfricaLogo,
+  chaossWhiteLogo,
+  sheCodeAfricaLogo,
+} from "../assets/images";
 
 const BadgeEvents = () => {
   return (

@@ -2,8 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/styles/variables.scss";
 import ReactReadMoreReadLess from "react-read-more-read-less";
-import {slackLogo, linkedinLogo, twitterLogo, facebookLogo, DEIBadgingLogo, DEIMiniLogo} from "../../assets/images";
-
+import {
+  slackLogo,
+  linkedinLogo,
+  twitterLogo,
+  facebookLogo,
+  DEIBadgingLogo,
+  DEIMiniLogo,
+} from "../../assets/images";
 
 const Footer = () => {
   return (
@@ -19,7 +25,10 @@ const Footer = () => {
               readLessText={"Show less "}
               readMoreClassName="readMoreClassName"
             >
-              CHAOSS is an open source project at the Linux Foundation focused on creating analytics and metrics to help define community health. Work in the CHAOSS Project community is largely organized around software and metrics. More
+              CHAOSS is an open source project at the Linux Foundation focused
+              on creating analytics and metrics to help define community health.
+              Work in the CHAOSS Project community is largely organized around
+              software and metrics. More
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
@@ -30,7 +39,10 @@ const Footer = () => {
               readLessText={"Show less"}
               readMoreClassName="readMoreClassName"
             >
-              CHAOSS is an open source project at the Linux Foundation focused on creating analytics and metrics to help define community health. Work in the CHAOSS Project community is largely organized around software and metrics. More
+              CHAOSS is an open source project at the Linux Foundation focused
+              on creating analytics and metrics to help define community health.
+              Work in the CHAOSS Project community is largely organized around
+              software and metrics. More
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
@@ -61,7 +73,9 @@ const Footer = () => {
                 <img width="40px" src={slackLogo} alt="slack logo" />
               </a>
             </div>
-            <div className="dei1" ><img src={DEIMiniLogo} alt="Dei  logo" /> </div>
+            <div className="dei1">
+              <img src={DEIMiniLogo} alt="Dei  logo" />{" "}
+            </div>
           </div>
         </div>
         <hr />
@@ -72,4 +86,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

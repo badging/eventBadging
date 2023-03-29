@@ -1,4 +1,4 @@
-import {boy,girl,geek} from "../../assets/images"
+import { boy, girl, geek } from "../../assets/images";
 
 export const testimonialData = [
   {

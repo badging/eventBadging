@@ -3,9 +3,18 @@ import { Header, Footer } from "../../layouts";
 import "../../assets/styles/global.css";
 import { Link } from "react-router-dom";
 
-import { pendingBadge, passingBadge, silverBadge, goldBadge, eventBadging, DEIBadgingLogo, award, heroOne} from "../../assets/images"
+import {
+  pendingBadge,
+  passingBadge,
+  silverBadge,
+  goldBadge,
+  eventBadging,
+  DEIBadgingLogo,
+  award,
+  heroOne,
+} from "../../assets/images";
 
-import {Testimonial, Faq} from "../../components"
+import { Testimonial, Faq } from "../../components";
 import { testimonialData } from "../../components/testimonial/testimonialData";
 import { faqData } from "../../components/faq/FAQData";
 // import Faq from "../components/faq/Faq";
@@ -14,7 +23,7 @@ import { faqData } from "../../components/faq/FAQData";
 const Home = () => {
   return (
     <div className="home">
-      <Header/>
+      <Header />
       <div
         className="hero-section"
         style={{
@@ -118,7 +127,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

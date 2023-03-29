@@ -1,4 +1,9 @@
-import {goldBadgeSVG, silverBadgeSVG, passingBadgeSVG, pendingBadgeSVG} from "../assets/images"
+import {
+  goldBadgeSVG,
+  silverBadgeSVG,
+  passingBadgeSVG,
+  pendingBadgeSVG,
+} from "../assets/images";
 
 const BadgeLevels = () => {
   return (
