@@ -1,7 +1,4 @@
-import PassingBadge from "../assets/badges/passing.svg";
-import PendingBadge from "../assets/badges/pending.svg";
-import GoldBadge from "../assets/badges/gold.svg";
-import SilverBadge from "../assets/badges/silver.svg";
+import {goldBadgeSVG, silverBadgeSVG, passingBadgeSVG, pendingBadgeSVG} from "../assets/images"
 
 const BadgeLevels = () => {
   return (
@@ -14,7 +11,7 @@ const BadgeLevels = () => {
             itself! The awarded event can show the open source community that
             they foster healthy D&I practices with a CHAOSS badge.
           </p>
-          <img src={PassingBadge} alt="Passing Badge" />
+          <img src={passingBadgeSVG} alt="Passing Badge" />
           <p>
             Applying for a badge supports D&I efforts within an open source
             community by expressing that your event is willing to improve the
@@ -40,25 +37,25 @@ const BadgeLevels = () => {
         </section>
         <section>
           <p>Pending</p>
-          <img src={PendingBadge} alt="Pending Badge" />
+          <img src={pendingBadgeSVG} alt="Pending Badge" />
           <p>Less than 40%</p>
         </section>
         <hr />
         <section>
           <p>Passing</p>
-          <img src={PassingBadge} alt="Passing Badge" />
+          <img src={passingBadgeSVG} alt="Passing Badge" />
           <p>Greater than or equal to 40% and less than 60%</p>
         </section>
         <hr />
         <section>
           <p>Silver</p>
-          <img src={SilverBadge} alt="Silver Badge" />
+          <img src={silverBadgeSVG} alt="Silver Badge" />
           <p>Greater than 60% or less than 80%</p>
         </section>
         <hr />
         <section>
           <p>Gold</p>
-          <img src={GoldBadge} alt="Gold Badge" />
+          <img src={goldBadgeSVG} alt="Gold Badge" />
           <p>Greater than 80%</p>
         </section>
       </article>

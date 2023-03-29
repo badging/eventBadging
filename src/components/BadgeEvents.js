@@ -1,9 +1,6 @@
 import React from "react";
 import "../assets/styles/badgeEvents.scss";
-import Linuxfoundationlogo from "../assets/logos/linuxfoundation-logo.png";
-import Ossustainafrica from "../assets/logos/os+sustainAfrica.png";
-import Chaosswhite from "../assets/logos/chaoss-white.png";
-import Shecodeafrica from "../assets/logos/shecodeafrica.png";
+import {linuxFoundationLogo, osSustainAfricaLogo, chaossWhiteLogo, sheCodeAfricaLogo } from "../assets/images";
 
 const BadgeEvents = () => {
   return (
@@ -28,16 +25,16 @@ const BadgeEvents = () => {
         </p>
         <div className="logos">
           <div className="image-container">
-            <img src={Chaosswhite} />
+            <img src={chaossWhiteLogo} />
           </div>
           <div className="image-container">
-            <img src={Linuxfoundationlogo} />
+            <img src={linuxFoundationLogo} />
           </div>
           <div className="image-container-os">
-            <img src={Ossustainafrica} />
+            <img src={osSustainAfricaLogo} />
           </div>
           <div className="image-container-sca">
-            <img src={Shecodeafrica} />
+            <img src={sheCodeAfricaLogo} />
           </div>
         </div>
       </div>

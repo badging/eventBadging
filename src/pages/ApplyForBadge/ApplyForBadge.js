@@ -1,6 +1,6 @@
-import { Header, Footer } from "../layouts";
+import { Header, Footer } from "../../layouts";
 
-const ApplyForBadging = () => {
+const ApplyForBadge = () => {
     return (
         <>
             <Header />
@@ -10,4 +10,4 @@ const ApplyForBadging = () => {
     )
 };
 
-export default ApplyForBadging;
+export default ApplyForBadge;

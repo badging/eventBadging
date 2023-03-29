@@ -1,10 +1,10 @@
-import { Header, Footer } from "../layouts";
+import { Header, Footer } from "../../layouts";
 
 const EventBadging = () => {
     return (
         <>
             <Header />
-            <h1>Event Badging</h1>
+            <h1>Apply For Badge</h1>
             <Footer />
         </>
     )

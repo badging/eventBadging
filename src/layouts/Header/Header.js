@@ -1,5 +1,5 @@
 import '../../assets/styles/global.css'
-import logo from "../../assets/logos/chaoss-badging-logo.png"
+import {chaossBadgingLogo} from "../../assets/images"
 import { Link } from 'react-router-dom'
 import './Header.scss'
 
@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <div className="navigation flex-row ">
                 <div className="logo">
-                <Link to="/"><img src={logo} alt="chaoss-logo" /></Link>
+                <Link to="/"><img src={chaossBadgingLogo} alt="chaoss-logo" /></Link>
 
                 </div>
                 <ul className='flex-row '>
