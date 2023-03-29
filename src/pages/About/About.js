@@ -1,18 +1,20 @@
-import { BadgeLevels } from "../components";
-import Frame68 from "../assets/logos/Frame68.png";
-import ChaossWhite from "../assets/logos/chaoss-white.png";
-import LinuxFoundation from "../assets/logos/linuxfoundation-logo.png";
-import aboutHeroBackground from "../assets/images/about/bg/about-hero-bg.png";
-import OsSustainAfrica from "../assets/logos/os+sustainAfrica.png";
-import SheCodeAfrica from "../assets/logos/shecodeafrica-logo.png";
-import badgingLogo from "../assets/images/about/icons/dei-logo.png";
-import establishIcon from "../assets/images/about/icons/establish-icon.png";
-import connectIcon from "../assets/images/about/icons/connect-icon.png";
-import openIcon from "../assets/images/about/icons/open-icon.png";
-import alignIcon from "../assets/images/about/icons/align-icon.png";
-import { Footer, Header } from "../layouts";
+import { BadgeLevels } from "../../components";
+import { Footer, Header } from "../../layouts";
 import { Box, Grid, Flex, HStack, Text, Img } from "@chakra-ui/react";
-import BadgeEvents from "../components/BadgeEvents";
+import BadgeEvents from "../../components/BadgeEvents";
+
+import {
+  alignIcon,
+  connectIcon,
+  establishIcon,
+  openIcon,
+  DEIMiniLogo,
+  sheCodeAfricaLogo,
+  osSustainAfricaLogo,
+  linuxFoundationLogo,
+  heroTwo,
+  chaossWhiteLogo,
+} from "../../assets/images";
 
 const About = () => {
   return (
@@ -21,7 +23,7 @@ const About = () => {
       <Box
         height={"478px"}
         width={"100%"}
-        backgroundImage={aboutHeroBackground}
+        backgroundImage={heroTwo}
         backgroundRepeat="no-repeat"
         backgroundSize={"cover"}
       >
@@ -33,7 +35,7 @@ const About = () => {
             gap={"27px"}
           >
             <Text>About</Text>
-            <Img src={badgingLogo} width={"166.91px"} height={"65.01px"} />
+            <Img src={DEIMiniLogo} width={"166.91px"} height={"65.01px"} />
             <Text>Badge</Text>
           </HStack>
           <Text

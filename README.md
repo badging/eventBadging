@@ -10,7 +10,7 @@ The DEI Badging initiative is an award system whereby open-source events earn ba
 - Aligning the badging program with best practices, guidelines, and recommendations from Diversity & Inclusion efforts on the CHAOSS project
 - Connect with existing badging standards of IMS Global including
 - Building an open, peer-review system for the D&I Badging Program
-**To learn more about DEI Badging, please check out the CHAOSS Community Handbook.**
+  **To learn more about DEI Badging, please check out the CHAOSS Community Handbook.**
 
 ## Badging Website
 

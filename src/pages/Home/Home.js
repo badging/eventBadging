@@ -1,37 +1,40 @@
 import React, { useState } from "react";
-import { Header, Footer } from "../layouts";
-import "../assets/styles/global.css";
-import heroBackground from "../assets/images/hero-bg.png";
-import heroLogoTwo from "../assets/images/dei-02.png";
-import heroLogoOne from "../assets/images/dei-01.png";
-import gold from "../assets/images/gold.png";
-import silver from "../assets/images/silver.png";
-import passing from "../assets/images/passing.png";
-import pending from "../assets/images/pending.png";
-import eventBadging from "../assets/images/event-badging.png";
+import { Header, Footer } from "../../layouts";
+import "../../assets/styles/global.css";
 import { Link } from "react-router-dom";
 
-import {Testimonial, Faq} from "../components"
-import { testimonialData } from "../components/testimonial/testimonialData";
-import { faqData } from "../components/faq/FAQData";
+import {
+  pendingBadge,
+  passingBadge,
+  silverBadge,
+  goldBadge,
+  eventBadging,
+  DEIBadgingLogo,
+  award,
+  heroOne,
+} from "../../assets/images";
+
+import { Testimonial, Faq } from "../../components";
+import { testimonialData } from "../../components/testimonial/testimonialData";
+import { faqData } from "../../components/faq/FAQData";
 // import Faq from "../components/faq/Faq";
 // import Testimonial from "../components/testimonial/Testimonial";
 
 const Home = () => {
   return (
     <div className="home">
-      <Header/>
+      <Header />
       <div
         className="hero-section"
         style={{
-          backgroundImage: `url(${heroBackground})`,
+          backgroundImage: `url(${heroOne})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
         <div className="hero-section-text">
           <div className="hero-main">
-            <img src={heroLogoOne} />
+            <img src={DEIBadgingLogo} />
             <div className="hero-main-text">
               <p>
                 The primary motivation to apply for a CHAOSS D&I event or
@@ -55,7 +58,7 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-logo">
-            <img src={heroLogoTwo} alt="rect" />
+            <img src={award} alt="rect" />
           </div>
         </div>
       </div>
@@ -70,10 +73,10 @@ const Home = () => {
           </p>
         </div>
         <div className="badging-image-container">
-          <img src={gold} alt="gold" />
-          <img src={silver} alt="gold" />
-          <img src={passing} alt="gold" />
-          <img src={pending} alt="gold" />
+          <img src={goldBadge} alt="gold" />
+          <img src={silverBadge} alt="gold" />
+          <img src={passingBadge} alt="gold" />
+          <img src={pendingBadge} alt="gold" />
         </div>
       </div>
       <div className="section-5 ">
@@ -124,7 +127,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
