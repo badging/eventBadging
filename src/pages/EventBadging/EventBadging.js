@@ -1,3 +1,4 @@
+import { SubmitEvent } from "../../components";
 import { Header, Footer } from "../../layouts";
 
 const EventBadging = () => {
@@ -5,6 +6,7 @@ const EventBadging = () => {
     <>
       <Header />
       <h1>Apply For Badge</h1>
+      < SubmitEvent />
       <Footer />
     </>
   );

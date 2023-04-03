@@ -1,6 +1,6 @@
 import Faq from "./faq/Faq";
 import Testimonial from "./testimonial/Testimonial";
 import BadgeLevels from "./BadgeLevels";
-import BadgeEvents from "./BadgeEvents";
+import SubmitEvent from "./SubmitEvent/SubmitEvent";
 
-export { Faq, Testimonial, BadgeLevels, BadgeEvents };
+export { Faq, Testimonial, BadgeLevels, SubmitEvent };

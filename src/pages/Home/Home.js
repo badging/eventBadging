@@ -52,7 +52,7 @@ const Home = () => {
 
               <button className="button apply" type="button">
                 <Link className="link" to="/apply">
-                  Apply for badging
+                  Apply for a Badge
                 </Link>
               </button>
             </div>

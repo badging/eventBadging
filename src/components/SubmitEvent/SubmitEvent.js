@@ -1,13 +1,15 @@
 import React from "react";
-import "../assets/styles/badgeEvents.scss";
+
+import { Link } from "react-router-dom";
+import "./SubmitEvent.scss";
 import {
   linuxFoundationLogo,
   osSustainAfricaLogo,
   chaossWhiteLogo,
   sheCodeAfricaLogo,
-} from "../assets/images";
+} from "../../assets/images";
 
-const BadgeEvents = () => {
+const SubmitEvent = () => {
   return (
     <>
       <div className="badge-events">
@@ -19,8 +21,16 @@ const BadgeEvents = () => {
           foster healthy D&I practices with a CHAOSS badge.{" "}
         </p>
         <div className="buttons">
-          <button>Apply for a badge</button>
-          <button>Badge Events</button>
+          <button>
+            <Link className="link" to="/apply">
+              Apply for a Badge
+            </Link>
+          </button>
+          <button>
+            <Link className="link" to="/badged-events">
+              Badged Events
+            </Link>
+          </button>
         </div>
         <p>
           Applying for a badge supports D&I efforts within an open source
@@ -47,4 +57,4 @@ const BadgeEvents = () => {
   );
 };
 
-export default BadgeEvents;
+export default SubmitEvent;

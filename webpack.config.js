@@ -32,7 +32,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "src", "index.html"),
-      favicon: path.join(__dirname, "/src/assets", "logos", "badging-logo.svg"),
+      favicon: path.join(
+        __dirname,
+        "/src/assets/images",
+        "logos",
+        "badging-logo.svg"
+      ),
     }),
   ],
   devServer: {

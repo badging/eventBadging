@@ -1,7 +1,7 @@
 import { BadgeLevels } from "../../components";
 import { Footer, Header } from "../../layouts";
 import { Box, Grid, Flex, HStack, Text, Img } from "@chakra-ui/react";
-import BadgeEvents from "../../components/BadgeEvents";
+import { SubmitEvent } from "../../components";
 
 import {
   alignIcon,
@@ -223,7 +223,7 @@ const About = () => {
         </Flex>
       </Box>
       <BadgeLevels />
-      <BadgeEvents />
+      <SubmitEvent />
 
       <Footer />
     </>
