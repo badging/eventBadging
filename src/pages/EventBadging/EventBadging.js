@@ -6,7 +6,7 @@ const EventBadging = () => {
     <>
       <Header />
       <h1>Apply For Badge</h1>
-      < SubmitEvent />
+      <SubmitEvent />
       <Footer />
     </>
   );
