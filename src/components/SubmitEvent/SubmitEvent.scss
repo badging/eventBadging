@@ -3,6 +3,7 @@ $secondary-color: #d61b5e;
 $background-color: #070010;
 $primary-container-color: #afffec;
 $secondary-container-color: #ffe7ef;
+$breakpoint: 768px;
 
 * {
   padding: 0;
@@ -13,13 +14,32 @@ $secondary-container-color: #ffe7ef;
 .badge-events {
   background-color: $background-color;
   margin-top: 3rem;
+<<<<<<< HEAD
+=======
+  padding: 3.8rem 1.5rem;
+>>>>>>> 9183e33 (ch(about-page): implement responsiveness)
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: $breakpoint) {
+    padding: 3rem 10rem;
+    display: block;
+  }
 
   h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    max-width: 14.5rem;
+
+    @media screen and (min-width: $breakpoint) {
+      font-size: 2rem;
+      max-width: 100%;
+    }
   }
 
   p {
@@ -28,9 +48,12 @@ $secondary-container-color: #ffe7ef;
 
   .buttons {
     margin-top: 2rem;
-    gap: 2rem;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 2rem;
 
     button {
@@ -50,13 +73,23 @@ $secondary-container-color: #ffe7ef;
         color: white;
       }
     }
+
+    @media screen and (min-width: $breakpoint) {
+      flex-direction: row;
+    }
   }
 
   .logos {
     display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
     justify-content: space-between;
     margin-top: 4rem;
     align-items: center;
+
+    @media screen and (min-width: $breakpoint) {
+      flex-direction: row;
+    }
 
     .image-container {
       width: 150px;
