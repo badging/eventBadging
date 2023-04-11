@@ -13,27 +13,53 @@ import {
   FormLabel,
   Input
 } from "@chakra-ui/react";
-// import "../assets/styles/global.css";
 import { Link } from "react-router-dom";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+
+const validationSchema = Yup.object({
+  event_name: Yup.string().required(),
+  event_website: Yup.string().required().url().nullable(),
+  event_organizer: Yup.string().required(),
+  diversity_and_inclusion: Yup.object().shape({
+    speaker_diversity_and_inclusion: Yup.boolean().equals([true]),
+    process_for_measuring_even_demographics: Yup.string().required(),
+    example_of_an_optOut_option: Yup.string(),
+    example_of_a_demographics_text: Yup.string()
+  }),
+  family_friendliness: Yup.object().shape({
+    event_family_friendliness: Yup.boolean().equals([true]),
+    provide_childcare_facilities: Yup.string().required(),
+    ways_provided_for_family_friendly_environment: Yup.string(),
+    relevant_links_related_to_family_friendliness: Yup.string()
+  })
+});
 
 const ApplyForBadging = () => {
-  const initialValues = {
-    event_name: "",
-    event_website: "",
-    event_organizer: "",
-    speaker_diversity_and_inclusion: "",
-    process_for_measuring_even_demographics: ""
-  };
-  const [inputValues, setInputValues] = useState(initialValues);
+  const formik = useFormik({
+    initialValues: {
+      event_name: "",
+      event_website: "",
+      event_organizer: "",
+      diversity_and_inclusion: {
+        speaker_diversity_and_inclusion: false,
+        process_for_measuring_even_demographics: "",
+        example_of_an_optOut_option: "",
+        example_of_a_demographics_text: ""
+      },
+      family_friendliness: {
+        event_family_friendliness: false,
+        provide_childcare_facilities: "",
+        ways_provided_for_family_friendly_environment: "",
+        relevant_links_related_to_family_friendliness: ""
+      }
+    },
+    onSubmit: (values, actions) => {
+      alert(JSON.stringify(values, null, 2));
+      actions.resetForm();
+    }
+  });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-
-    setInputValues({
-      ...inputValues,
-      [name]: value
-    });
-  };
   return (
     <>
       <Header />
@@ -73,6 +99,7 @@ const ApplyForBadging = () => {
         w={["md", "6xl"]}
         p={0}
         mt={[20, "10vh"]}
+        mb={"50px"}
         mx={"auto"}
         borderRadius={"20px"}
       >
@@ -104,61 +131,66 @@ const ApplyForBadging = () => {
               color="#000"
             >
               Make sure to fill out all the fields. Please, note that once you
-              click &quot;submit&quot;, you must use your GitHub account to finalize the
-              issue on their Website by clicking&quot;Create New Issue&quot;.
+              click &quot;submit&quot;, you must use your GitHub account to
+              finalize the issue on their Website by clicking&quot;Create New
+              Issue&quot;.
             </Text>
           </VStack>
-
-          <FormControl>
-            <FormLabel
-              fontWeight={500}
-              fontSize={"20px"}
-              lineHeight="40px"
-              letterSpacing={"2%"}
-            >
-              Event Name
-            </FormLabel>
-            <Input
-              type="text"
-              value={inputValues.event_name}
-              name="event_name"
-              onChange={handleInputChange}
-              size="lg"
-            />
-            <FormLabel
-              fontWeight={500}
-              fontSize={"20px"}
-              lineHeight="40px"
-              letterSpacing={"2%"}
-              mt={"24px"}
-            >
-              Link to the Event Website
-            </FormLabel>
-            <Input
-              type="text"
-              value={inputValues.event_website}
-              name="event_website"
-              onChange={handleInputChange}
-              size="lg"
-            />
-            <FormLabel
-              fontWeight={500}
-              fontSize={"20px"}
-              lineHeight="40px"
-              letterSpacing={"2%"}
-              mt={"24px"}
-            >
-              Are you an organizer of this event?
-            </FormLabel>
-            <Input
-              type="text"
-              value={inputValues.event_organizer}
-              name="event_organizer"
-              onChange={handleInputChange}
-              size="lg"
-            />
-            <EventDemographics />
-          </FormControl>
+          <form onSubmit={formik.handleSubmit}>
+            <FormControl>
+              <FormLabel
+                fontWeight={500}
+                fontSize={"20px"}
+                lineHeight="40px"
+                letterSpacing={"2%"}
+              >
+                Event Name
+              </FormLabel>
+              <Input
+                type="text"
+                value={formik.values.event_name}
+                name="event_name"
+                onChange={formik.handleChange}
+                size="lg"
+              />
+              <FormLabel
+                fontWeight={500}
+                fontSize={"20px"}
+                lineHeight="40px"
+                letterSpacing={"2%"}
+                mt={"24px"}
+              >
+                Link to the Event Website
+              </FormLabel>
+              <Input
+                type="text"
+                value={formik.values.event_website}
+                name="event_website"
+                onChange={formik.handleChange}
+                size="lg"
+              />
+              <FormLabel
+                fontWeight={500}
+                fontSize={"20px"}
+                lineHeight="40px"
+                letterSpacing={"2%"}
+                mt={"24px"}
+              >
+                Are you an organizer of this event?
+              </FormLabel>
+              <Input
+                type="text"
+                value={formik.values.event_organizer}
+                name="event_organizer"
+                onChange={formik.handleChange}
+                size="lg"
+              />
+              <EventDemographics
+                diversity_and_inclusion={formik.values.diversity_and_inclusion}
+                handleChange={formik.handleChange}
+              />
+            </FormControl>
+          </form>
         </VStack>
       </Box>
       <Footer />

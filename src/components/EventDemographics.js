@@ -10,17 +10,26 @@ import {
 } from "@chakra-ui/react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const EventDemographics = () => {
+const EventDemographics = (props) => {
+  console.log(props.diversity_and_inclusion);
+  const {
+    speaker_diversity_and_inclusion,
+    process_for_measuring_even_demographics,
+    example_of_an_optOut_option,
+    example_of_a_demographics_text
+  } = props.diversity_and_inclusion;
+
   return (
     <>
       <Text fontWeight={600} fontSize={"34px"} lineHeight="43.52px" mt={"48px"}>
         Event Demographics
       </Text>
       <Checkbox
-        //   value={inputValues.speaker_diversity_and_inclusion}
+        value={speaker_diversity_and_inclusion}
         name="speaker_diversity_and_inclusion"
-        //   onChange={handleInputChange}
+        onChange={props.handleChange}
         fontWeight={600}
         fontSize={"20px"}
         lineHeight="34px"
@@ -50,8 +59,8 @@ const EventDemographics = () => {
         Detail the process for measuring even Demographics
       </FormLabel>
       <Textarea
-        //   value={inputValues.process_for_measuring_even_demographics}
-        //   onChange={handleInputChange}
+        value={process_for_measuring_even_demographics}
+        onChange={props.handleChange}
         size="lg"
         h={"189px"}
         background={"#ffffff"}
@@ -78,8 +87,8 @@ const EventDemographics = () => {
         (For example, the option of “Prefer not to answer”)
       </Text>
       <Textarea
-        //   value={inputValues.process_for_measuring_even_demographics}
-        //   onChange={handleInputChange}
+        value={example_of_an_optOut_option}
+        onChange={props.handleChange}
         size="lg"
         h={"189px"}
         background={"#ffffff"}
@@ -106,8 +115,8 @@ const EventDemographics = () => {
         (For example, an alternative identity input for gender)
       </Text>
       <Textarea
-        //   value={inputValues.process_for_measuring_even_demographics}
-        //   onChange={handleInputChange}
+        value={example_of_a_demographics_text}
+        onChange={props.handleChange}
         size="lg"
         h={"189px"}
         background={"#ffffff"}
@@ -139,20 +148,36 @@ const EventDemographics = () => {
         </Text>
       </HStack>
       <ButtonGroup gap="4" mt={"96px"}>
-        <Button 
-        leftIcon={<AiOutlineArrowLeft />}
-        background={"#FFFFFF"}
-        border={"1px"}
-        borderColor={"#070010"}
-        borderRadius={"4px"}>Previous</Button>
-        <Button rightIcon={<AiOutlineArrowRight />}
-        background={"#070010"}
-        color={"#FFFFFF"}
-        borderRadius={"4px"}
-        p={4}>Next</Button>
+        <Button
+          leftIcon={<AiOutlineArrowLeft />}
+          background={"#FFFFFF"}
+          border={"1px"}
+          borderColor={"#070010"}
+          borderRadius={"4px"}
+        >
+          Previous
+        </Button>
+        <Button
+          rightIcon={<AiOutlineArrowRight />}
+          background={"#070010"}
+          color={"#FFFFFF"}
+          borderRadius={"4px"}
+          p={4}
+        >
+          Next
+        </Button>
       </ButtonGroup>
     </>
   );
+};
+
+EventDemographics.propTypes = {
+  speaker_diversity_and_inclusion: PropTypes.bool.isRequired,
+  process_for_measuring_even_demographics: PropTypes.string.isRequired,
+  example_of_an_optOut_option: PropTypes.string,
+  example_of_a_demographics_text: PropTypes.string,
+  diversity_and_inclusion: PropTypes.object.isRequired,
+  handleChange: PropTypes.func.isRequired
 };
 
 export default EventDemographics;

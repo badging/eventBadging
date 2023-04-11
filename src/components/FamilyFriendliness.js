@@ -8,8 +8,10 @@ import {
   Button
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const FamilyFriendliness = () => {
+const FamilyFriendliness = (props) => {
+  console.log(props);
   return (
     <>
       <Text fontWeight={600} fontSize={"34px"} lineHeight="43.52px" mt={"48px"}>
@@ -17,7 +19,7 @@ const FamilyFriendliness = () => {
       </Text>
       <Checkbox
         //   value={inputValues.speaker_diversity_and_inclusion}
-        name="family_friendliness"
+        name="event_family_friendliness"
         //   onChange={handleInputChange}
         fontWeight={600}
         fontSize={"20px"}
@@ -51,6 +53,7 @@ const FamilyFriendliness = () => {
       <Textarea
         //   value={inputValues.process_for_measuring_even_demographics}
         //   onChange={handleInputChange}
+        name="provide_childcare_facilities"
         size="lg"
         h={"189px"}
         background={"#ffffff"}
@@ -64,12 +67,13 @@ const FamilyFriendliness = () => {
         lineHeight="26px"
         mt={"24px"}
       >
-        What are the other ways that a family-firiendly environment is being
+        What are the other ways that a family-friendly environment is being
         created in the Event?
       </FormLabel>
       <Textarea
         //   value={inputValues.process_for_measuring_even_demographics}
         //   onChange={handleInputChange}
+        name="ways_provided_for_family_friendly_environment"
         size="lg"
         h={"189px"}
         background={"#ffffff"}
@@ -83,11 +87,12 @@ const FamilyFriendliness = () => {
         lineHeight="26px"
         mt={"24px"}
       >
-        Provide relevant links realted to family friendliness at the Event.
+        Provide relevant links related to family friendliness at the Event.
       </FormLabel>
       <Textarea
         //   value={inputValues.process_for_measuring_even_demographics}
         //   onChange={handleInputChange}
+        name="relevant_links_related_to_family_friendliness"
         size="lg"
         h={"189px"}
         background={"#ffffff"}
@@ -117,9 +122,25 @@ const FamilyFriendliness = () => {
         &quot;Create New Issue&quot;.
       </Text>
 
-      <Button>Submit</Button>
+      <Button
+        background={"#070010"}
+        color={"#FFFFFF"}
+        borderRadius={"4px"}
+        p={4}
+      >
+        Submit
+      </Button>
     </>
   );
+};
+
+FamilyFriendliness.propTypes = {
+  event_family_friendliness: PropTypes.bool.isRequired,
+  provide_childcare_facilities: PropTypes.string.isRequired,
+  ways_provided_for_family_friendly_environment: PropTypes.string,
+  relevant_links_related_to_family_friendliness: PropTypes.string,
+  family_friendliness: PropTypes.object.isRequired,
+  handleChange: PropTypes.func.isRequired
 };
 
 export default FamilyFriendliness;
