@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Header, Footer } from "../layouts";
 import heroBackground from "../assets/images/hero-bg.png";
 import badgingLogo from "../assets/images/about/icons/dei-logo.png";
@@ -11,25 +11,29 @@ import {
   VStack,
   FormControl,
   FormLabel,
-  Input
+  Input,
+  FormErrorMessage
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
 const validationSchema = Yup.object({
-  event_name: Yup.string().required(),
-  event_website: Yup.string().required().url().nullable(),
-  event_organizer: Yup.string().required(),
+  event_name: Yup.string().required("Event name is required"),
+  event_website: Yup.string()
+    .required("Event website is required")
+    .url()
+    .nullable(),
+  event_organizer: Yup.string().required("Event organizer input is required"),
   diversity_and_inclusion: Yup.object().shape({
-    speaker_diversity_and_inclusion: Yup.boolean().equals([true]),
-    process_for_measuring_even_demographics: Yup.string().required(),
+    speaker_diversity_and_inclusion: Yup.boolean().equals([true]).required('Please tick the diversity and inclusion checkbox'),
+    process_for_measuring_even_demographics: Yup.string(),
     example_of_an_optOut_option: Yup.string(),
     example_of_a_demographics_text: Yup.string()
   }),
   family_friendliness: Yup.object().shape({
-    event_family_friendliness: Yup.boolean().equals([true]),
-    provide_childcare_facilities: Yup.string().required(),
+    event_family_friendliness: Yup.boolean().equals([true]).required('Please tick the family friendliness checkbox'),
+    provide_childcare_facilities: Yup.string().required('Childcare facilities provision required'),
     ways_provided_for_family_friendly_environment: Yup.string(),
     relevant_links_related_to_family_friendliness: Yup.string()
   })
@@ -100,7 +104,7 @@ const ApplyForBadging = () => {
         w={["md", "6xl"]}
         p={0}
         mt={[20, "10vh"]}
-        mb={"50px"}
+        mb={"5rem"}
         mx={"auto"}
         borderRadius={"20px"}
       >
@@ -138,7 +142,7 @@ const ApplyForBadging = () => {
             </Text>
           </VStack>
           <form onSubmit={formik.handleSubmit}>
-            <FormControl>
+            <FormControl isInvalid={formik.errors.event_name && formik.touched.event_name}>
               <FormLabel
                 fontWeight={500}
                 fontSize={"20px"}
@@ -154,6 +158,9 @@ const ApplyForBadging = () => {
                 onChange={formik.handleChange}
                 size="lg"
               />
+              <FormErrorMessage>{formik.errors.event_name}</FormErrorMessage>
+            </FormControl>
+            <FormControl isInvalid={formik.errors.event_website && formik.touched.event_website}>
               <FormLabel
                 fontWeight={500}
                 fontSize={"20px"}
@@ -170,6 +177,10 @@ const ApplyForBadging = () => {
                 onChange={formik.handleChange}
                 size="lg"
               />
+              <FormErrorMessage>{formik.errors.event_website}</FormErrorMessage>
+            </FormControl>
+
+            <FormControl isInvalid={formik.errors.event_organizer && formik.touched.event_organizer}>
               <FormLabel
                 fontWeight={500}
                 fontSize={"20px"}
@@ -186,11 +197,16 @@ const ApplyForBadging = () => {
                 onChange={formik.handleChange}
                 size="lg"
               />
-              <EventDemographics
-                diversity_and_inclusion={formik.values.diversity_and_inclusion}
-                handleChange={formik.handleChange}
-              />
+              <FormErrorMessage>
+                {formik.errors.event_organizer}
+              </FormErrorMessage>
             </FormControl>
+
+            <EventDemographics
+              diversity_and_inclusion={formik.values.diversity_and_inclusion}
+              handleChange={formik.handleChange}
+              error={formik.errors.diversity_and_inclusion}
+            />
           </form>
         </VStack>
       </Box>
