@@ -57,7 +57,8 @@ const ApplyForBadging = () => {
     onSubmit: (values, actions) => {
       alert(JSON.stringify(values, null, 2));
       actions.resetForm();
-    }
+    },
+    validationSchema: validationSchema
   });
 
   return (
