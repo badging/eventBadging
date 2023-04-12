@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/variables.scss";
 import logo from "../assets/logos/chaoss-white.png";
 import Deilogo from "../assets/logos/dei-logo.png";
 import ReactReadMoreReadLess from "react-read-more-read-less";
-
+import SearchIcon from "@mui/icons-material/Search";
 import slack2 from "../assets/social/slack.png";
 import facebook from "../assets/social/facebook.png";
 import twitter from "../assets/social/twitter.png";
 import linkedin from "../assets/social/linkedin.png";
 
 const Footer = () => {
+  const [searchValue, setSearchValue] = useState("");
   return (
     <footer>
       <div className="main-div">
-        <img src={logo} alt="chaoss logo" className="logo" />
-        <img src={Deilogo} alt="Dei  logo" className="logo2" />
+        <div className="top">
+          <img src={logo} alt="chaoss logo" className="logo1" />
+          <img src={Deilogo} alt="Dei  logo" className="logo2" />
+        </div>
+        <div className="search">
+          <SearchIcon fontSize="large" />
+          <input
+            placeholder="What are you looking for"
+            value={searchValue}
+            onChange={(e) => {
+              setSearchValue(e.target.value);
+            }}
+          />
+        </div>
         <div className="minidiv">
           <div className="innerdiv">
             <h2>Community</h2>

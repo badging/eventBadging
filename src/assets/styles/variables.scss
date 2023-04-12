@@ -19,12 +19,10 @@ body {
 
 footer {
   background-color: $background-color;
-  height: 100vh;
-  bottom: 0;
   color: #fff;
-  padding: 50px 0 30px;
   font-family: "Poppins";
   font-style: normal;
+  padding: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 164%;
@@ -48,6 +46,7 @@ footer {
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
+
   h2 {
     text-transform: uppercase;
     font-weight: 600;
@@ -86,6 +85,9 @@ a {
     text-align: center;
     padding-top: 30px;
   }
+  .search {
+    display: none;
+  }
 }
 .dei1 {
   display: flex;
@@ -93,11 +95,17 @@ a {
   margin-bottom: 20px;
   flex-direction: row;
 }
-.logo {
-  width: 100px;
-}
-.logo2 {
-  width: 100px;
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .logo1 {
+    width: 100px;
+  }
+  .logo2 {
+    width: 100px;
+  }
 }
 
 // media queries
@@ -118,20 +126,57 @@ a {
   }
 
   .minidiv {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .innerdiv {
     flex-basis: 20%;
     margin: 20px 0 40px;
-    text-align: justify;
+    text-align: left;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 164%;
+    font-weight: lighter;
 
     .social-media a > img {
       display: inline;
       margin-right: 8px;
+      width: 30px;
+    }
+  }
+
+  .top {
+    margin-top: 10px;
+    .logo1 {
+      width: 100px;
+    }
+    .logo2 {
+      width: 100px;
+    }
+  }
+
+  .main-div {
+    p {
+      font-size: 10px;
+      width: 100%;
+    }
+    .search {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      input {
+        outline: none;
+        background-color: transparent;
+      }
     }
   }
 }
