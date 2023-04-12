@@ -28,7 +28,7 @@ const EventDemographics = (props) => {
       <Text fontWeight={600} fontSize={"34px"} lineHeight="43.52px" mt={"48px"}>
         Event Demographics
       </Text>
-      <FormControl isInvalid={props.error?.speaker_diversity_and_inclusion}>
+      <FormControl isInvalid={props.error?.speaker_diversity_and_inclusion && props.touched?.diversity_and_inclusion.speaker_diversity_and_inclusion}>
         <Checkbox
           value={speaker_diversity_and_inclusion}
           name="speaker_diversity_and_inclusion"
@@ -186,7 +186,8 @@ EventDemographics.propTypes = {
   example_of_a_demographics_text: PropTypes.string,
   diversity_and_inclusion: PropTypes.object.isRequired,
   handleChange: PropTypes.func.isRequired,
-  error: PropTypes.object
+  error: PropTypes.object,
+  touched: PropTypes.object
 };
 
 export default EventDemographics;
