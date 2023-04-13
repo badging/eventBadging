@@ -1,4 +1,4 @@
-import "../../assets/styles/global.css";
+import "../../assets/styles/global.scss";
 import { chaossBadgingLogo } from "../../assets/images";
 import { Link } from "react-router-dom";
 import "./Header.scss";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Header, Footer } from "../../layouts";
-import "../../assets/styles/global.css";
+import "../../assets/styles/global.scss";
 import { Link } from "react-router-dom";
 
 import {
