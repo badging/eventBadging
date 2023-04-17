@@ -1,27 +1,29 @@
-name: Test and Build
+name: build
 
 on:
   push:
     branches:
       - '*'
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 19.x]
+
     steps:
-    - name: Checkout branch
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
       with:
-        node-version: '19.x'
+        node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build and test
+    - name: Build
       run: |
-        npm run format
-        npm run build
+        npm install
+        npx webpack
