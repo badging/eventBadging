@@ -1,11 +1,15 @@
 import React from "react";
-import "../assets/styles/badgeEvents.scss";
-import Linuxfoundationlogo from "../assets/logos/linuxfoundation-logo.png";
-import Ossustainafrica from "../assets/logos/os+sustainAfrica.png";
-import Chaosswhite from "../assets/logos/chaoss-white.png";
-import Shecodeafrica from "../assets/logos/shecodeafrica.png";
 
-const BadgeEvents = () => {
+import { Link } from "react-router-dom";
+import "./SubmitEvent.scss";
+import {
+  linuxFoundationLogo,
+  osSustainAfricaLogo,
+  chaossWhiteLogo,
+  sheCodeAfricaLogo,
+} from "../../assets/images";
+
+const SubmitEvent = () => {
   return (
     <>
       <div className="badge-events">
@@ -17,8 +21,16 @@ const BadgeEvents = () => {
           foster healthy D&I practices with a CHAOSS badge.{" "}
         </p>
         <div className="buttons">
-          <button>Apply for a badge</button>
-          <button>Badge Events</button>
+          <button>
+            <Link className="link" to="/apply">
+              Apply for a Badge
+            </Link>
+          </button>
+          <button>
+            <Link className="link" to="/badged-events">
+              Badged Events
+            </Link>
+          </button>
         </div>
         <p>
           Applying for a badge supports D&I efforts within an open source
@@ -28,16 +40,16 @@ const BadgeEvents = () => {
         </p>
         <div className="logos">
           <div className="image-container">
-            <img src={Chaosswhite} />
+            <img src={chaossWhiteLogo} />
           </div>
           <div className="image-container">
-            <img src={Linuxfoundationlogo} />
+            <img src={linuxFoundationLogo} />
           </div>
           <div className="image-container-os">
-            <img src={Ossustainafrica} />
+            <img src={osSustainAfricaLogo} />
           </div>
           <div className="image-container-sca">
-            <img src={Shecodeafrica} />
+            <img src={sheCodeAfricaLogo} />
           </div>
         </div>
       </div>
@@ -45,4 +57,4 @@ const BadgeEvents = () => {
   );
 };
 
-export default BadgeEvents;
+export default SubmitEvent;
