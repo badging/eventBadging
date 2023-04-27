@@ -1,4 +1,3 @@
-import { Header, Footer } from "./layouts";
 import { Route, Routes } from "react-router-dom";
 import {
   Home,
