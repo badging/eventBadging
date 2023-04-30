@@ -8,69 +8,77 @@
   width: 90%;
   margin: auto;
   height: 76px;
-  align-items: center;
 
   .logo {
+    max-width: 166px;
+    width: 100%;
+    height: 44px;
+    margin: 0;
     img {
-      height: 30px;
+      height: 100%;
+      width: 100%;
     }
   }
 
-  ul {
+  .navigation-menu {
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    justify-content: center;
     align-items: center;
-
-    li {
-      margin-right: 1rem;
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       height: 100%;
+      justify-content: center;
+      align-items: center;
 
-      .nav-link {
-        position: relative;
-        color: #000;
+      li {
+        height: 100%;
+        margin-right: 1rem;
 
-        &:after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -5px;
-          width: 100%;
-          height: 2px;
-          background-color: transparent;
-          transition: all 0.3s ease-in-out;
-        }
+        .nav-link {
+          position: relative;
+          color: #000;
 
-        &:hover {
           &:after {
-            background-color: #d61b5e;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -27px;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            transition: all 0.3s ease-in-out;
           }
-        }
 
-        &.active {
-          &:after {
-            background-color: #d61b5e;
+          &:hover {
+            &:after {
+              background-color: #d61b5e;
+            }
+          }
+
+          &.activenav {
+            &:after {
+              background-color: #d61b5e;
+            }
           }
         }
       }
     }
-  }
 
-  button.apply {
-    background-color: #d61b5e;
-    color: #fff;
-    border: none;
-    /* Updated */
-
-    &:hover {
-      border: solid #d61b5e;
+    button.apply {
+      background-color: #d61b5e;
+      color: #fff;
+      border: none;
       /* Updated */
-      background-color: #fff;
-      color: #d61b5e;
-      transition-duration: 0.3s;
+
+      &:hover {
+        border: solid #d61b5e;
+        /* Updated */
+        background-color: #fff;
+        color: #d61b5e;
+        transition-duration: 0.3s;
+      }
     }
   }
 }

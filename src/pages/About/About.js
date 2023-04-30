@@ -19,7 +19,7 @@ import {
 const About = () => {
   return (
     <>
-      <Header />
+      <Header pathName="About us" />
       <Box
         height={"478px"}
         width={"100%"}
