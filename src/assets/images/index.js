@@ -26,6 +26,7 @@ export { default as facebookLogo } from "./logos/facebook.png";
 export { default as twitterLogo } from "./logos/twitter.png";
 export { default as linkedinLogo } from "./logos/linkedin.png";
 export { default as slackLogo } from "./logos/slack.png";
+export { default as chaossLogo } from "./logos/CHAOSS-logo-2.png";
 
 // Others
 export { default as award } from "./others/award.png";
