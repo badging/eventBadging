@@ -5,7 +5,7 @@ import {
   HStack,
   FormLabel,
   Textarea,
-  Button
+  Button,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -140,7 +140,7 @@ FamilyFriendliness.propTypes = {
   ways_provided_for_family_friendly_environment: PropTypes.string,
   relevant_links_related_to_family_friendliness: PropTypes.string,
   family_friendliness: PropTypes.object.isRequired,
-  handleChange: PropTypes.func.isRequired
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default FamilyFriendliness;

@@ -1,11 +1,11 @@
 .testimonial {
   width: 310px;
   height: 310px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  padding: 50px 20px 0px 20px;
+  padding: 50px 20px 0;
 }
 
 .testimonial > .user {
@@ -22,7 +22,7 @@
 }
 
 .user-details > h4 {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -30,7 +30,7 @@
 }
 
 .user-details > p {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -38,7 +38,7 @@
 }
 
 .message > p {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

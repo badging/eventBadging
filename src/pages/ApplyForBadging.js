@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Footer } from "../layouts";
-import heroBackground from "../assets/images/hero-bg.png";
-import badgingLogo from "../assets/images/about/icons/dei-logo.png";
+import heroBackground from "../assets/images/others/hero_two.png";
+import badgingLogo from "../assets/images/logos/DEI-mini-logo.png";
 import EventDemographics from "../components/EventDemographics";
 import {
   Box,
@@ -12,7 +12,7 @@ import {
   FormControl,
   FormLabel,
   Input,
-  FormErrorMessage
+  FormErrorMessage,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Formik } from "formik";
@@ -22,7 +22,7 @@ const validationSchema = Yup.object({
   event_name: Yup.string().required("Event name is required"),
   event_website: Yup.string()
     .required("Event website is required")
-    .url('Event website must be a valid url')
+    .url("Event website must be a valid url")
     .nullable(),
   event_organizer: Yup.string().required("Required"),
   diversity_and_inclusion: Yup.object().shape({
@@ -31,18 +31,16 @@ const validationSchema = Yup.object({
       .required("Required"),
     process_for_measuring_even_demographics: Yup.string(),
     example_of_an_optOut_option: Yup.string(),
-    example_of_a_demographics_text: Yup.string()
+    example_of_a_demographics_text: Yup.string(),
   }),
   family_friendliness: Yup.object().shape({
     event_family_friendliness: Yup.boolean()
       .equals([true])
       .required("Please tick the family friendliness checkbox"),
-    provide_childcare_facilities: Yup.string().required(
-      "Required"
-    ),
+    provide_childcare_facilities: Yup.string().required("Required"),
     ways_provided_for_family_friendly_environment: Yup.string(),
-    relevant_links_related_to_family_friendliness: Yup.string()
-  })
+    relevant_links_related_to_family_friendliness: Yup.string(),
+  }),
 });
 
 const ApplyForBadging = () => {
@@ -131,14 +129,14 @@ const ApplyForBadging = () => {
                 speaker_diversity_and_inclusion: false,
                 process_for_measuring_even_demographics: "",
                 example_of_an_optOut_option: "",
-                example_of_a_demographics_text: ""
+                example_of_a_demographics_text: "",
               },
               family_friendliness: {
                 event_family_friendliness: false,
                 provide_childcare_facilities: "",
                 ways_provided_for_family_friendly_environment: "",
-                relevant_links_related_to_family_friendliness: ""
-              }
+                relevant_links_related_to_family_friendliness: "",
+              },
             }}
             validationSchema={validationSchema}
             onSubmit={(values, actions) => {
@@ -148,9 +146,7 @@ const ApplyForBadging = () => {
           >
             {({ errors, touched, values, handleSubmit, handleChange }) => (
               <form onSubmit={handleSubmit}>
-                <FormControl
-                  isInvalid={errors.event_name }
-                >
+                <FormControl isInvalid={errors.event_name}>
                   <FormLabel
                     fontWeight={500}
                     fontSize={"20px"}
@@ -168,9 +164,7 @@ const ApplyForBadging = () => {
                   />
                   <FormErrorMessage>{errors.event_name}</FormErrorMessage>
                 </FormControl>
-                <FormControl
-                  isInvalid={errors.event_website}
-                >
+                <FormControl isInvalid={errors.event_website}>
                   <FormLabel
                     fontWeight={500}
                     fontSize={"20px"}

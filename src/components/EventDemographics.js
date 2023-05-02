@@ -8,7 +8,7 @@ import {
   Button,
   ButtonGroup,
   FormControl,
-  FormErrorMessage
+  FormErrorMessage,
 } from "@chakra-ui/react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ const EventDemographics = (props) => {
     speaker_diversity_and_inclusion,
     process_for_measuring_even_demographics,
     example_of_an_optOut_option,
-    example_of_a_demographics_text
+    example_of_a_demographics_text,
   } = props.diversity_and_inclusion;
 
   return (
@@ -28,7 +28,12 @@ const EventDemographics = (props) => {
       <Text fontWeight={600} fontSize={"34px"} lineHeight="43.52px" mt={"48px"}>
         Event Demographics
       </Text>
-      <FormControl isInvalid={props.error?.speaker_diversity_and_inclusion && props.touched?.diversity_and_inclusion.speaker_diversity_and_inclusion}>
+      <FormControl
+        isInvalid={
+          props.error?.speaker_diversity_and_inclusion &&
+          props.touched?.diversity_and_inclusion.speaker_diversity_and_inclusion
+        }
+      >
         <Checkbox
           value={speaker_diversity_and_inclusion}
           name="speaker_diversity_and_inclusion"
@@ -187,7 +192,7 @@ EventDemographics.propTypes = {
   diversity_and_inclusion: PropTypes.object.isRequired,
   handleChange: PropTypes.func.isRequired,
   error: PropTypes.object,
-  touched: PropTypes.object
+  touched: PropTypes.object,
 };
 
 export default EventDemographics;
