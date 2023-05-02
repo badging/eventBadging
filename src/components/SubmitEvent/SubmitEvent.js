@@ -40,16 +40,16 @@ const SubmitEvent = () => {
         </p>
         <div className="logos">
           <div className="image-container">
-            <img src={chaossWhiteLogo} />
+            <img src={chaossWhiteLogo} alt="CHAOSS white logo" />
           </div>
           <div className="image-container">
-            <img src={linuxFoundationLogo} />
+            <img src={linuxFoundationLogo} alt="Linux Foundation logo" />
           </div>
           <div className="image-container-os">
-            <img src={osSustainAfricaLogo} />
+            <img src={osSustainAfricaLogo} alt="OSS Africa logo" />
           </div>
           <div className="image-container-sca">
-            <img src={sheCodeAfricaLogo} />
+            <img src={sheCodeAfricaLogo} alt="She Code Africa logo" />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Header, Footer } from "../../layouts";
 import "../../assets/styles/global.scss";
 import { Link } from "react-router-dom";
@@ -34,7 +34,7 @@ const Home = () => {
       >
         <div className="hero-section-text">
           <div className="hero-main">
-            <img src={DEIBadgingLogo} />
+            <img src={DEIBadgingLogo} alt="DEI Badging Logo" />
             <div className="hero-main-text">
               <p>
                 The primary motivation to apply for a CHAOSS D&I event or
@@ -105,6 +105,7 @@ const Home = () => {
 
               return (
                 <Testimonial
+                  key={id}
                   image={image}
                   name={name}
                   title={title}
