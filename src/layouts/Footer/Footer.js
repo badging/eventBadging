@@ -8,7 +8,6 @@ import {
   twitterLogo,
   facebookLogo,
   DEIBadgingLogo,
-  DEIMiniLogo,
 } from "../../assets/images";
 
 const Footer = () => {
@@ -28,7 +27,7 @@ const Footer = () => {
               CHAOSS is an open source project at the Linux Foundation focused
               on creating analytics and metrics to help define community health.
               Work in the CHAOSS Project community is largely organized around
-              software and metrics. More
+              software and metrics.
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
@@ -42,7 +41,7 @@ const Footer = () => {
               CHAOSS is an open source project at the Linux Foundation focused
               on creating analytics and metrics to help define community health.
               Work in the CHAOSS Project community is largely organized around
-              software and metrics. More
+              software and metrics.
             </ReactReadMoreReadLess>
           </div>
           <div className="innerdiv">
@@ -56,6 +55,7 @@ const Footer = () => {
             <NavLink className="links" to="/faq">
               FAQs
             </NavLink>
+            <a href="https://badging.allinopensource.org">Wiki</a>
           </div>
           <div className="innerdiv">
             <h2>Social Media</h2>
@@ -85,9 +85,6 @@ const Footer = () => {
               >
                 <img width="40px" src={slackLogo} alt="slack logo" />
               </a>
-            </div>
-            <div className="dei1">
-              <img src={DEIMiniLogo} alt="Dei  logo" />{" "}
             </div>
           </div>
         </div>
