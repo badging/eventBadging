@@ -35,17 +35,19 @@
   border-bottom: 1px solid #999;
 }
 
-.badgelevels-table tr td:last-child {
-  text-decoration: none;
-}
-
 .badgelevels-table tr td:nth-child(1) {
   width: 20%;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.badgelevels-table tr td:last-child,
 .badgelevels-table tr td:nth-child(2) {
+  width: 35%;
+}
+
+.badgelevels-table tr td:last-child {
   width: auto;
+  text-decoration: none;
 }
 
 .badge-image {
