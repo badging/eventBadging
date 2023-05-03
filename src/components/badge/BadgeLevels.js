@@ -5,7 +5,7 @@ import {
   passingBadge,
   pendingBadge,
   badgingLogo,
-} from "../assets/images";
+} from "../../assets/images";
 
 const BadgeLevels = () => {
   return (
