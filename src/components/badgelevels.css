@@ -1,5 +1,5 @@
 .badgelevels-container {
-  padding: 3em 6em;
+  padding: 3em 1em;
 }
 
 .motivation-heading {
@@ -20,6 +20,15 @@
   font-size: 34px;
 }
 
+.badgelevels-table-container {
+  overflow-x: scroll;
+}
+
+.badgelevels-table {
+  width: 100%;
+  white-space: nowrap;
+}
+
 .badgelevels-table th,
 .badgelevels-table tr:nth-child(even) {
   background-color: transparent;
@@ -33,6 +42,10 @@
 .badgelevels-table td {
   padding: 0.8em 0;
   border-bottom: 1px solid #999;
+}
+
+.badgelevels-table tr td {
+  padding-right: 1em;
 }
 
 .badgelevels-table tr td:nth-child(1) {
@@ -53,4 +66,14 @@
 .badge-image {
   max-width: 250px;
   height: 32px;
+}
+
+@media (width >= 60rem) {
+  .badgelevels-container {
+    padding-inline: 6em;
+  }
+
+  .badgelevels-table tr td {
+    padding-right: 0;
+  }
 }
