@@ -20,9 +20,5 @@
     "font-family-no-missing-generic-family-keyword": null,
     "comment-whitespace-inside": null
   },
-  "ignoreFiles": [
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.json"
-  ]
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.json"]
 }
