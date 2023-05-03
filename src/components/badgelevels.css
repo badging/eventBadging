@@ -1,0 +1,54 @@
+.badgelevels-container {
+  padding: 0 6em;
+}
+
+.motivation-heading {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.badging-logo {
+  margin: 1em 0;
+}
+
+.badging-levels-container {
+  margin: 2em 0;
+}
+
+.badging-levels {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.badgelevels-table th,
+.badgelevels-table tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.badgelevels-table th {
+  border-bottom: none;
+  padding: 0;
+}
+
+.badgelevels-table td {
+  padding: 0.8em 0;
+  border-bottom: 1px solid #999;
+}
+
+.badgelevels-table tr td:last-child {
+  text-decoration: none;
+}
+
+.badgelevels-table tr td:nth-child(1) {
+  width: 20%;
+}
+
+.badgelevels-table tr td:last-child,
+.badgelevels-table tr td:nth-child(2) {
+  width: auto;
+}
+
+.badge-image {
+  max-width: 250px;
+  height: 32px;
+}
