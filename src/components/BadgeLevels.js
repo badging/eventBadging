@@ -36,56 +36,57 @@ const BadgeLevels = () => {
           checks, based of the average of checklists of at least two reviewers.
         </p>
       </article>
-
-      <table className="badgelevels-table">
-        <thead>
-          <th>Level</th>
-          <th>Badge</th>
-          <th>Percentage of Requirements Met</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Pending</td>
-            <td>
-              <img
-                src={pendingBadge}
-                alt="Pending Badge"
-                className="badge-image"
-              />
-            </td>
-            <td>Less than 40%</td>
-          </tr>
-          <tr>
-            <td>Passing</td>
-            <td>
-              <img
-                src={passingBadge}
-                alt="Passing Badge"
-                className="badge-image"
-              />
-            </td>
-            <td>Greater than or equal to 40% and less than 60%</td>
-          </tr>
-          <tr>
-            <td>Silver</td>
-            <td>
-              <img
-                src={silverBadge}
-                alt="Silver Badge"
-                className="badge-image"
-              />
-            </td>
-            <td>Greater than 60% or less than 80%</td>
-          </tr>
-          <tr>
-            <td>Gold</td>
-            <td>
-              <img src={goldBadge} alt="Gold Badge" className="badge-image" />
-            </td>
-            <td>Greater than 80%</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="badgelevels-table-container">
+        <table className="badgelevels-table">
+          <thead>
+            <th>Level</th>
+            <th>Badge</th>
+            <th>Percentage of Requirements Met</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pending</td>
+              <td>
+                <img
+                  src={pendingBadge}
+                  alt="Pending Badge"
+                  className="badge-image"
+                />
+              </td>
+              <td>Less than 40%</td>
+            </tr>
+            <tr>
+              <td>Passing</td>
+              <td>
+                <img
+                  src={passingBadge}
+                  alt="Passing Badge"
+                  className="badge-image"
+                />
+              </td>
+              <td>Greater than or equal to 40% and less than 60%</td>
+            </tr>
+            <tr>
+              <td>Silver</td>
+              <td>
+                <img
+                  src={silverBadge}
+                  alt="Silver Badge"
+                  className="badge-image"
+                />
+              </td>
+              <td>Greater than 60% or less than 80%</td>
+            </tr>
+            <tr>
+              <td>Gold</td>
+              <td>
+                <img src={goldBadge} alt="Gold Badge" className="badge-image" />
+              </td>
+              <td>Greater than 80%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 };
