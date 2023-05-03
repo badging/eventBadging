@@ -24,6 +24,10 @@
   overflow-x: scroll;
 }
 
+.badgelevels-table-container::-webkit-scrollbar {
+  appearance: none;
+}
+
 .badgelevels-table {
   width: 100%;
   white-space: nowrap;
