@@ -23,7 +23,7 @@ import { faqData } from "../../components/faq/FAQData";
 const Home = () => {
   return (
     <div className="home">
-      <Header />
+      <Header pathName="Home" />
       <div
         className="hero-section"
         style={{
