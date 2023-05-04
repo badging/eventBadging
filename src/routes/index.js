@@ -1,4 +1,4 @@
-export const navPaths = [
+export const routes = [
   {
     id: 1,
     pathname: "Home",

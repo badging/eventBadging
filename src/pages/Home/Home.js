@@ -110,7 +110,6 @@ const Home = () => {
                   name={name}
                   title={title}
                   message={message}
-                  key={id}
                 />
               );
             })}

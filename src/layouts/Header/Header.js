@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import "../../assets/styles/global.scss";
-import { chaossLogo } from "../../assets/images";
+import { chaossBadgingLogoBlack } from "../../assets/images";
 import { Link } from "react-router-dom";
 import "./Header.scss";
-import { navPaths } from "../../data";
+import { routes } from "../../routes";
 
 const Header = ({ pathName }) => {
   return (
@@ -12,14 +12,14 @@ const Header = ({ pathName }) => {
       <nav className="navigation flex-row">
         <div className="logo">
           <Link to="/">
-            <img src={chaossLogo} alt="chaoss-logo" />
+            <img src={chaossBadgingLogoBlack} alt="chaoss-logo" />
           </Link>
         </div>
 
         <section className="navigation-menu">
           <ul className="flex-row ">
-            {navPaths.map((navItems) => {
-              let { pathname, path, id } = navItems;
+            {routes.map((route) => {
+              let { pathname, path, id } = route;
               return (
                 <li className="nav-items" key={id}>
                   <Link
