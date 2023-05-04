@@ -1,41 +1,45 @@
+/* eslint-disable react/prop-types */
+import React from "react";
 import "../../assets/styles/global.scss";
-import { chaossBadgingLogo } from "../../assets/images";
+import { chaossBadgingLogoBlack } from "../../assets/images";
 import { Link } from "react-router-dom";
 import "./Header.scss";
+import { routes } from "../../routes";
 
-const Header = () => {
+const Header = ({ pathName }) => {
   return (
     <>
-      <div className="navigation flex-row ">
+      <nav className="navigation flex-row">
         <div className="logo">
           <Link to="/">
-            <img src={chaossBadgingLogo} alt="chaoss-logo" />
+            <img src={chaossBadgingLogoBlack} alt="chaoss-logo" />
           </Link>
         </div>
-        <ul className="flex-row ">
-          <li>
-            <Link to="/" className="nav-link">
-              {" "}
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="nav-link">
-              {" "}
-              About us
-            </Link>
-          </li>
-          <li>
-            <Link to="/event" className="nav-link">
-              {" "}
-              Event Badging
-            </Link>
-          </li>
-        </ul>
-        <button className="apply">
-          <Link to="/apply">Apply for a Badge</Link>
-        </button>
-      </div>
+
+        <section className="navigation-menu">
+          <ul className="flex-row ">
+            {routes.map((route) => {
+              let { pathname, path, id } = route;
+              return (
+                <li className="nav-items" key={id}>
+                  <Link
+                    to={path}
+                    className={`nav-link ${
+                      pathname === pathName && "activenav"
+                    }`}
+                  >
+                    {" "}
+                    {pathname}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <button className="apply">
+            <Link to="/apply">Apply for a Badge</Link>
+          </button>
+        </section>
+      </nav>
     </>
   );
 };
