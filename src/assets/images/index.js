@@ -7,6 +7,7 @@ export { default as goldBadgeSVG } from "./badges/gold.svg";
 export { default as silverBadgeSVG } from "./badges/silver.svg";
 export { default as passingBadgeSVG } from "./badges/passing.svg";
 export { default as pendingBadgeSVG } from "./badges/pending.svg";
+export { default as badgingLogo } from "./badges/badging.png";
 
 // icons
 export { default as alignIcon } from "./icons/align-icon.png";
