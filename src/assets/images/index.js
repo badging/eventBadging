@@ -7,6 +7,8 @@ export { default as goldBadgeSVG } from "./badges/gold.svg";
 export { default as silverBadgeSVG } from "./badges/silver.svg";
 export { default as passingBadgeSVG } from "./badges/passing.svg";
 export { default as pendingBadgeSVG } from "./badges/pending.svg";
+export { default as noBadgeSVG } from "./badges/none.svg";
+
 
 // icons
 export { default as alignIcon } from "./icons/align-icon.png";
@@ -26,6 +28,7 @@ export { default as facebookLogo } from "./logos/facebook.png";
 export { default as twitterLogo } from "./logos/twitter.png";
 export { default as linkedinLogo } from "./logos/linkedin.png";
 export { default as slackLogo } from "./logos/slack.png";
+export { default as chaossLogo } from "./logos/chaoss-logo.png";
 
 // Others
 export { default as award } from "./others/award.png";

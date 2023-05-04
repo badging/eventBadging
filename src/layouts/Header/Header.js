@@ -1,5 +1,5 @@
 import "../../assets/styles/global.scss";
-import { chaossBadgingLogo } from "../../assets/images";
+import { chaossLogo } from "../../assets/images";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
@@ -9,7 +9,7 @@ const Header = () => {
       <div className="navigation flex-row ">
         <div className="logo">
           <Link to="/">
-            <img src={chaossBadgingLogo} alt="chaoss-logo" />
+            <img src={chaossLogo} alt="chaoss-logo" />
           </Link>
         </div>
         <ul className="flex-row ">
