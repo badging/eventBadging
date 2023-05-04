@@ -1,0 +1,44 @@
+
+.errorPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+
+    &__image{
+        height: 80vh;
+        // border: 1px solid red;
+        margin: 0 auto;
+    }
+
+    &__actions{
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        min-width: max-content;
+        width: 50vw;
+    }
+
+    &__actions--btn{
+        padding: 1rem 2rem;
+        font-weight: bold;
+        // background-color: ;
+        // color: ;
+        border-radius: 8px;
+        border: 2px solid #d61b5e;
+        transition-duration: 0.8s;
+        cursor: pointer;
+        min-width: fit-content;
+
+        &:hover{
+            background-color: #d61b5e;
+            color: #fff;
+        }
+    }
+
+}
