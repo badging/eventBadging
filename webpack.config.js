@@ -24,7 +24,9 @@ module.exports = {
         use: ["file-loader"],
       },
       {
-        test: /\.svg$/,
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        resourceQuery: /svgr/,
         use: ["@svgr/webpack"],
       },
     ],

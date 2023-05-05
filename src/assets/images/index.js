@@ -7,6 +7,8 @@ export { default as goldBadgeSVG } from "./badges/gold.svg";
 export { default as silverBadgeSVG } from "./badges/silver.svg";
 export { default as passingBadgeSVG } from "./badges/passing.svg";
 export { default as pendingBadgeSVG } from "./badges/pending.svg";
+export { default as noBadgeSVG } from "./badges/none.svg";
+export { default as badgingLogo } from "./badges/badging.png";
 
 // icons
 export { default as alignIcon } from "./icons/align-icon.png";
@@ -15,7 +17,8 @@ export { default as establishIcon } from "./icons/establish-icon.png";
 export { default as openIcon } from "./icons/open-icon.png";
 
 // logos
-export { default as chaossBadgingLogo } from "./logos/chaoss-badging-logo.png";
+export { default as chaossBadgingLogoWhite } from "./logos/chaoss-badging-logo-white.png";
+export { default as chaossBadgingLogoBlack } from "./logos/chaoss-badging-logo-black.png";
 export { default as sheCodeAfricaLogo } from "./logos/shecodeafrica-logo.png";
 export { default as osSustainAfricaLogo } from "./logos/os+sustainAfrica.png";
 export { default as linuxFoundationLogo } from "./logos/linuxfoundation-logo.png";
@@ -26,6 +29,7 @@ export { default as facebookLogo } from "./logos/facebook.png";
 export { default as twitterLogo } from "./logos/twitter.png";
 export { default as linkedinLogo } from "./logos/linkedin.png";
 export { default as slackLogo } from "./logos/slack.png";
+export { default as chaossLogo } from "./logos/chaoss-logo.png";
 
 // Others
 export { default as award } from "./others/award.png";
