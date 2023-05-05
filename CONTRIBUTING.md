@@ -4,7 +4,6 @@ This project has issues that are organized on [this github project board](https:
 
 ## Design Contribution
 
-
 We are currently working with on [figma designs](https://www.figma.com/file/7tiuJbwakgDu15mOjzKTDK/Badging-Website) for this website that are being translated into the code. Most of the Design contributions are made on request to access the file. Issues that are related to Designing the UI/UX will be labelled with the `design` label in the issues tab.
 
 **NB**: _Unless otherwise, all Frontend UI/UX visual modifications and new features should align with the figma design. Also, all assets (anything that is no-code and is a resource), should be under the [assets folder](assets)_
