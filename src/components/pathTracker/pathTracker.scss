@@ -1,0 +1,22 @@
+.pathTracker {
+  display: flex;
+  gap: 0.25rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item--icon {
+    font-size: 1.2rem;
+    color: #777777;
+  }
+  &__item--link {
+    text-transform: capitalize;
+    color: #3eb7ef;
+  }
+  &__item--loc {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}
