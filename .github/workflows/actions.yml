@@ -24,6 +24,8 @@ jobs:
       - run: npm ci
       - run: npm run format
       - run: npm run build
+      - run: install firebase-tools
+      - run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v2
