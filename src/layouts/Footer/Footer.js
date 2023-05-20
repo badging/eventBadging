@@ -7,15 +7,15 @@ import {
   linkedinLogo,
   twitterLogo,
   facebookLogo,
-  DEIBadgingLogo,
   DEIMiniLogo,
+  chaossBadgingLogo,
 } from "../../assets/images";
 
 const Footer = () => {
   return (
     <footer>
       <div className="main-div">
-        <img src={DEIBadgingLogo} alt="chaoss logo" className="logo" />
+        <img src={chaossBadgingLogo} alt="chaoss logo" className="logo" />
         <div className="minidiv">
           <div className="innerdiv">
             <h2>Community</h2>
