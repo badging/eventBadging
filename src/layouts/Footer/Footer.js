@@ -51,9 +51,9 @@ const Footer = () => {
             <NavLink className="links" to="/event">
               Event badging
             </NavLink>
-            <NavLink className="links" to="/faq">
-              FAQs
-            </NavLink>
+            <a className="links" href="/#faqs">
+              FAQs{" "}
+            </a>
           </div>
           <div className="innerdiv">
             <h2>Social Media</h2>
