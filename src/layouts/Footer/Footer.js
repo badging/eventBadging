@@ -7,7 +7,6 @@ import {
   linkedinLogo,
   twitterLogo,
   facebookLogo,
-  DEIMiniLogo,
   chaossBadgingLogo,
 } from "../../assets/images";
 
@@ -91,9 +90,6 @@ const Footer = () => {
               >
                 <img width="40px" src={slackLogo} alt="slack logo" />
               </a>
-            </div>
-            <div className="dei1">
-              <img src={DEIMiniLogo} alt="Dei  logo" />{" "}
             </div>
           </div>
         </div>
