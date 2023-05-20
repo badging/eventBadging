@@ -20,9 +20,8 @@ const Footer = () => {
           <div className="innerdiv">
             <h2>Community</h2>
             <ReactReadMoreReadLess
-              charLimit={220}
+              charLimit={320}
               readMoreText={"Learn more "}
-              readLessText={"Show less "}
               readMoreClassName="readMoreClassName"
             >
               CHAOSS is an open source project at the Linux Foundation focused
@@ -34,9 +33,8 @@ const Footer = () => {
           <div className="innerdiv">
             <h2>Join us</h2>
             <ReactReadMoreReadLess
-              charLimit={220}
+              charLimit={320}
               readMoreText={"Learn more"}
-              readLessText={"Show less"}
               readMoreClassName="readMoreClassName"
             >
               CHAOSS is an open source project at the Linux Foundation focused
