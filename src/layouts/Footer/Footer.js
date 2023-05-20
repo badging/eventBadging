@@ -51,6 +51,14 @@ const Footer = () => {
             <NavLink className="links" to="/event">
               Event badging
             </NavLink>
+            <a
+              className="links"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://badging.allinopensource.org"
+            >
+              Project Badging
+            </a>
             <a className="links" href="/#faqs">
               FAQs{" "}
             </a>
