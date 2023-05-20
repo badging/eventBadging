@@ -116,7 +116,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="faq-container">
+        <div className="faq-container" id="faqs">
           <div className="title">
             <h2>FAQ</h2>
           </div>
