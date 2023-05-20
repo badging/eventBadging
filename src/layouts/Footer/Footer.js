@@ -7,6 +7,7 @@ import {
   linkedinLogo,
   twitterLogo,
   facebookLogo,
+  DEIMiniLogo,
   chaossBadgingLogo,
 } from "../../assets/images";
 
