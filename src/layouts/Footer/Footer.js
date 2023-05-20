@@ -90,7 +90,17 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <p>2023 Copyright CHAOSS Community | All Rights Reserved</p>
+        <p>
+          2023 Copyright{" "}
+          <a
+            href="https://chaoss.community"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CHAOSS Community
+          </a>{" "}
+          | All Rights Reserved
+        </p>
       </div>
     </footer>
   );
