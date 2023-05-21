@@ -58,6 +58,7 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_EVENT_BADGING }}"
           projectId: event-badging
+          entryPoint: "/firebase.json"
 
   deploy_remote_server:
     needs: build
