@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - "*"
   pull_request:
     branches:
       - main
@@ -82,13 +82,13 @@ jobs:
             mkdir -p /var/www/badging.chaoss.community/
 
       - name: Deploy new build to remote server
-        uses: appleboy/scp-action@master
+        uses: garygrossgarten/github-action-scp@release
         with:
           host: ${{ secrets.DROPLET_IP_ADDRESS }}
           username: ${{ secrets.SSHUSERNAME }}
           password: ${{ secrets.SSHPASSWORD }}
-          source: ${{ github.workspace }}/build
-          target: "/var/www/badging.chaoss.community/"
+          local: ${{ github.workspace }}/build
+          remote: "/var/www/badging.chaoss.community/"
 
       - name: Restart Nginx on remote server
         uses: appleboy/ssh-action@master
