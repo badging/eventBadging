@@ -7,12 +7,19 @@ import {
   osSustainAfricaLogo,
   chaossWhiteLogo,
   sheCodeAfricaLogo,
+  submitSectionBg,
 } from "../../assets/images";
+import { Box } from "@chakra-ui/react";
 
 const SubmitEvent = () => {
   return (
-    <>
-      <div className="badge-events">
+    <section className="badge-events">
+      <Box
+        p="3rem 10rem"
+        backgroundImage={submitSectionBg}
+        backgroundRepeat="no-repeat"
+        backgroundSize={"cover"}
+      >
         <h2> Submit your Event for a DEI Badge</h2>
 
         <p>
@@ -40,20 +47,20 @@ const SubmitEvent = () => {
         </p>
         <div className="logos">
           <div className="image-container">
-            <img src={chaossWhiteLogo} />
+            <img src={chaossWhiteLogo} alt="CHAOSS white logo" />
           </div>
           <div className="image-container">
-            <img src={linuxFoundationLogo} />
+            <img src={linuxFoundationLogo} alt="Linux Foundation logo" />
           </div>
           <div className="image-container-os">
-            <img src={osSustainAfricaLogo} />
+            <img src={osSustainAfricaLogo} alt="OSS Africa logo" />
           </div>
           <div className="image-container-sca">
-            <img src={sheCodeAfricaLogo} />
+            <img src={sheCodeAfricaLogo} alt="She Code Africa logo" />
           </div>
         </div>
-      </div>
-    </>
+      </Box>
+    </section>
   );
 };
 

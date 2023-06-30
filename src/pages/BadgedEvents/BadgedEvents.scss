@@ -1,35 +1,158 @@
-table {
-  border-collapse: collapse;
-  width: calc(100% - 32px);
-  margin: 16px;
+.BadgedEvents {
+  background-color: #f2f2f2;
+  padding-bottom: 4rem;
 
-  th,
+  &__pathTracker {
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0.35rem;
+    height: 60px;
+  }
+
+  &__actions--filterBtn {
+    cursor: pointer;
+    padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition-duration: 1s;
+
+    background-color: #f2f2f2;
+
+    span {
+      background-color: transparent;
+      font-weight: bold;
+      // color: ;
+    }
+
+    i {
+      font-weight: bold;
+      font-size: 1.5rem;
+      // color: ;
+    }
+
+    &:hover {
+      background-color: #d61b5e;
+
+      i,
+      span {
+        color: #f2f2f2;
+      }
+    }
+  }
+
+  &__actions--serachBox {
+    position: relative;
+    border-radius: 5px;
+    width: 13rem;
+
+    input {
+      border: 1px solid #f2f2f2;
+      width: 100%;
+      height: 100%;
+      padding-left: 5rem;
+      // color: ;
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20%;
+      font-size: 1.2rem;
+      // color: ;
+    }
+  }
+}
+
+// loading
+.loaderCon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #000000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+table {
+  background-color: #fff;
+  border-collapse: separate !important;
+  border-spacing: 2px;
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+
+  thead {
+    tr {
+      height: 50px;
+    }
+  }
+
   td {
     text-align: left;
-    padding: 8px;
+    padding: 1rem;
     font-weight: normal;
+    padding-left: 16px;
   }
 
   th {
     background-color: #f2f2f2;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1rem;
     text-align: left;
+    border-bottom: 1px solid #b0b0b0;
     padding-left: 16px;
-    border-bottom: 2px solid black;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
   }
 
   tr td:first-child {
-    font-weight: bold;
-    width: 20%;
+    width: 15%;
   }
 
   tr td:nth-child(2) {
-    width: 30%;
+    width: 25%;
   }
 
   tr td:nth-child(3) {
@@ -41,27 +164,8 @@ table {
   }
 
   tr td:last-child {
-    width: 10%;
+    width: 30%;
     text-decoration: underline;
-  }
-}
-
-.search-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 16px;
-
-  input[type="text"] {
-    padding: 8px;
-    border-radius: 4px;
-    border: none;
-    box-shadow: none;
-    outline: none;
-    font-size: 16px;
-
-    &::placeholder {
-      color: #a0a0a0;
-    }
   }
 }
 
@@ -71,20 +175,37 @@ table {
   align-items: center;
   margin-top: 16px;
 
+  .paginationAction {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .rows-per-page-container {
     display: flex;
     align-items: center;
 
+    span {
+      font-size: 0.9rem;
+    }
+
     select {
-      margin-left: 8px;
+      margin: 0 1rem;
       font-size: 16px;
       border-radius: 4px;
-      border-color: #a0a0a0;
+      border: 1px solid #b0b0b0ed;
+      padding: 0.5rem 1rem;
+      outline: none;
+      cursor: pointer;
 
-      &:focus {
-        outline-color: #0078d4;
+      :focus {
+        outline: none;
       }
     }
+  }
+
+  .pgActionIcon {
+    font-size: 1.6rem;
   }
 
   .pagination {
@@ -97,15 +218,10 @@ table {
       a {
         color: black;
         text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
       }
 
-      &.active a {
-        color: white;
-        background-color: black;
+      &.active {
+        display: none;
       }
     }
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./testimonial.css";
 
 const Testimonial = ({ image, name, title, message }) => {
@@ -16,6 +17,14 @@ const Testimonial = ({ image, name, title, message }) => {
       </div>
     </div>
   );
+};
+
+Testimonial.propTypes = {
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(File)])
+    .isRequired,
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
 };
 
 export default Testimonial;

@@ -1,6 +1,6 @@
 import { BadgeLevels } from "../../components";
 import { Footer, Header } from "../../layouts";
-import { Box, Grid, Flex, HStack, Text, Img } from "@chakra-ui/react";
+import { Box, Flex, HStack, Text, Img } from "@chakra-ui/react";
 import { SubmitEvent } from "../../components";
 
 import {
@@ -9,17 +9,13 @@ import {
   establishIcon,
   openIcon,
   DEIMiniLogo,
-  sheCodeAfricaLogo,
-  osSustainAfricaLogo,
-  linuxFoundationLogo,
   heroTwo,
-  chaossWhiteLogo,
 } from "../../assets/images";
 
 const About = () => {
   return (
     <>
-      <Header />
+      <Header pathName="About us" />
       <Box
         height={"478px"}
         width={"100%"}

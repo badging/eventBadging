@@ -156,9 +156,9 @@ function ApplyForBadge() {
               />
             </label>
             <label>
-              Is the event team using feedback from previous event's attendees,
-              speakers, and volunteers to improve DEI at this event? (If so,
-              provide an example)
+              Is the event team using feedback from previous event&apos;s
+              attendees, speakers, and volunteers to improve DEI at this event?
+              (If so, provide an example)how
               <input
                 type="text"
                 name="eventFeedbackUse"
@@ -168,7 +168,7 @@ function ApplyForBadge() {
               />
             </label>
             <label>
-              Does the event team plan to use feedback from this event's
+              Does the event team plan to use feedback from this event&apos;s
               attendees, speakers, and volunteers to improve DEI at future
               events? (If so, provide a summary of the strategy involved)
               <input

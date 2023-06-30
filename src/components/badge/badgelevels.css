@@ -1,0 +1,83 @@
+.badgelevels-container {
+  padding: 3em 1em;
+}
+
+.motivation-heading {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.badging-logo {
+  margin: 1em 0;
+}
+
+.badging-levels-container {
+  margin: 2em 0;
+}
+
+.badging-levels {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.badgelevels-table-container {
+  overflow-x: scroll;
+}
+
+.badgelevels-table-container::-webkit-scrollbar {
+  appearance: none;
+}
+
+.badgelevels-table {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.badgelevels-table th,
+.badgelevels-table tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.badgelevels-table th {
+  border-bottom: none;
+  padding: 0;
+}
+
+.badgelevels-table td {
+  padding: 0.8em 0;
+  border-bottom: 1px solid #999;
+}
+
+.badgelevels-table tr td {
+  padding-right: 1em;
+}
+
+.badgelevels-table tr td:nth-child(1) {
+  width: 20%;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.badgelevels-table tr td:nth-child(2) {
+  width: 35%;
+}
+
+.badgelevels-table tr td:last-child {
+  width: auto;
+  text-decoration: none;
+}
+
+.badge-image {
+  max-width: 250px;
+  height: 32px;
+}
+
+@media (width >= 60rem) {
+  .badgelevels-container {
+    padding-inline: 6em;
+  }
+
+  .badgelevels-table tr td {
+    padding-right: 0;
+  }
+}

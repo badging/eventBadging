@@ -7,15 +7,22 @@ import {
   linkedinLogo,
   twitterLogo,
   facebookLogo,
-  DEIBadgingLogo,
   DEIMiniLogo,
+  chaossBadgingLogoWhite,
 } from "../../assets/images";
 
 const Footer = () => {
   return (
     <footer>
       <div className="main-div">
-        <img src={DEIBadgingLogo} alt="chaoss logo" className="logo" />
+        <div className="footer-logo-wrapper">
+          <img
+            src={chaossBadgingLogoWhite}
+            alt="chaoss logo"
+            className="logo"
+          />
+        </div>
+
         <div className="minidiv">
           <div className="innerdiv">
             <h2>Community</h2>
@@ -60,16 +67,29 @@ const Footer = () => {
           <div className="innerdiv">
             <h2>Social Media</h2>
             <div className="social-media">
-              <a href="https://twitter.com">
+              <a
+                href="https://twitter.com/chaossproj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img width="40px" src={twitterLogo} alt="slack logo" />
               </a>
               <a href="https://facebook.com">
                 <img width="43px" src={facebookLogo} alt="slack logo" />
               </a>
-              <a href="https://linkedin.com">
+              <a
+                href="https://www.linkedin.com/company/chaoss?original_referer="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img width="40px" src={linkedinLogo} alt="slack logo" />
               </a>
-              <a href="https://slack.com">
+
+              <a
+                href="https://join.slack.com/t/chaoss-workspace/shared_invite/zt-1fah5gu35-5oUQEPT32O2Zt~3MFVNMlw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img width="40px" src={slackLogo} alt="slack logo" />
               </a>
             </div>
