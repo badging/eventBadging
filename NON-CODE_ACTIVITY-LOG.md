@@ -13,8 +13,8 @@ You can make a pull request to this file by adding:
 
 | Author Name    | Contribution Type                       | Link to Contribution |
 | -------------- | --------------------------------------- | -------------------- |
-| Victoria Ottah | Landing page and about us mobile design |                      |
-|                |                                         |                      |
+| Victoria Ottah | Landing page and about us mobile design | https://www.figma.com/file/7tiuJbwakgDu15mOjzKTDK/Badging-Website?type=design&node-id=1289-2903&t=V2yaQ9V1yeQ0bgD1-0                     |
+| Kingsley Mkpandiok    | Badging Desktop Design                                   |   https://www.figma.com/file/7tiuJbwakgDu15mOjzKTDK/Badging-Website?type=design&node-id=243-994&t=V2yaQ9V1yeQ0bgD1-0                   |
 |                |                                         |                      |
 |                |                                         |                      |
 |                |                                         |                      |
