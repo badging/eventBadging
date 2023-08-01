@@ -8,8 +8,9 @@ $secondary-container-color: #ffe7ef;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
 }
+
 .badge-events {
   background-color: $background-color;
   margin-top: 3rem;
@@ -63,6 +64,7 @@ $secondary-container-color: #ffe7ef;
         width: 100%;
       }
     }
+
     .image-container-sca {
       width: 50px;
 

@@ -19,7 +19,6 @@ body {
 
 footer {
   background-color: $background-color;
-  // position: absolute;
   bottom: 0;
   color: #fff;
   padding: 50px 0 30px;
@@ -37,7 +36,7 @@ footer {
   }
 }
 
-.readMoreClassName {
+.read-more-class-name {
   display: block;
   font-weight: bold;
   width: fit-content;
@@ -68,12 +67,13 @@ footer {
   font-size: 14px;
   line-height: 164%;
 
+  .dei1 img {
+    width: 250px;
+  }
+
   .social-media a > img {
     display: inline;
     margin-right: 8px;
-  }
-  .dei1 img {
-    width: 250px;
   }
 }
 

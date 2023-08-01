@@ -1,4 +1,4 @@
-# Non-code Activity Log
+## Non-code Activity Log
 
 We value and accept Non-code contributions, so we created a way for you to log in your contributions. This file contains a table that shows all non-code contributions made in the CHAOSS Badging website.
 
