@@ -12,12 +12,16 @@ import {
 
 const SubmitEvent = () => {
   return (
-    <section className="badge-events">
+    <Box
+      as="section"
+      className="badge-events"
+      backgroundImage={submitSectionBg}
+    >
       <Box
         p="3rem 10rem"
-        backgroundImage={submitSectionBg}
         backgroundRepeat="no-repeat"
         backgroundSize={"cover"}
+        backgroundColor="rgba(7,0,16,0.9)"
       >
         <h2> Submit your Event for a DEI Badge</h2>
 
@@ -59,7 +63,7 @@ const SubmitEvent = () => {
           </div>
         </div>
       </Box>
-    </section>
+    </Box>
   );
 };
 
