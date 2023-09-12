@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "./SubmitEvent.scss";
 import {
@@ -7,12 +7,22 @@ import {
   osSustainAfricaLogo,
   chaossWhiteLogo,
   sheCodeAfricaLogo,
+  submitSectionBg,
 } from "../../assets/images";
 
 const SubmitEvent = () => {
   return (
-    <>
-      <div className="badge-events">
+    <Box
+      as="section"
+      className="badge-events"
+      backgroundImage={submitSectionBg}
+    >
+      <Box
+        p="3rem 10rem"
+        backgroundRepeat="no-repeat"
+        backgroundSize={"cover"}
+        backgroundColor="rgba(7,0,16,0.9)"
+      >
         <h2> Submit your Event for a DEI Badge</h2>
 
         <p>
@@ -52,8 +62,8 @@ const SubmitEvent = () => {
             <img src={sheCodeAfricaLogo} alt="She Code Africa logo" />
           </div>
         </div>
-      </div>
-    </>
+      </Box>
+    </Box>
   );
 };
 

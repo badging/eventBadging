@@ -36,6 +36,7 @@ export { default as award } from "./others/award.png";
 export { default as eventBadging } from "./others/event-badging.png";
 export { default as heroOne } from "./others/hero_one.png";
 export { default as heroTwo } from "./others/hero_two.png";
+export { default as submitSectionBg } from "./others/submit-dei-bg.png";
 
 // testimonial
 export { default as boy } from "./avatars/boy.png";
