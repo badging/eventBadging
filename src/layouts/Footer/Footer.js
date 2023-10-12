@@ -7,22 +7,20 @@ import {
   linkedinLogo,
   twitterLogo,
   facebookLogo,
-  DEIBadgingLogo,
-  DEIMiniLogo,
+  chaossBadgingLogo,
 } from "../../assets/images";
 
 const Footer = () => {
   return (
     <footer>
       <div className="main-div">
-        <img src={DEIBadgingLogo} alt="chaoss logo" className="logo" />
+        <img src={chaossBadgingLogo} alt="chaoss logo" className="logo" />
         <div className="minidiv">
           <div className="innerdiv">
             <h2>Community</h2>
             <ReactReadMoreReadLess
-              charLimit={220}
+              charLimit={320}
               readMoreText={"Learn more "}
-              readLessText={"Show less "}
               readMoreClassName="readMoreClassName"
             >
               CHAOSS is an open source project at the Linux Foundation focused
@@ -34,9 +32,8 @@ const Footer = () => {
           <div className="innerdiv">
             <h2>Join us</h2>
             <ReactReadMoreReadLess
-              charLimit={220}
+              charLimit={320}
               readMoreText={"Learn more"}
-              readLessText={"Show less"}
               readMoreClassName="readMoreClassName"
             >
               CHAOSS is an open source project at the Linux Foundation focused
@@ -53,9 +50,17 @@ const Footer = () => {
             <NavLink className="links" to="/event">
               Event badging
             </NavLink>
-            <NavLink className="links" to="/faq">
-              FAQs
-            </NavLink>
+            <a
+              className="links"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://badging.allinopensource.org"
+            >
+              Project Badging
+            </a>
+            <a className="links" href="/#faqs">
+              FAQs{" "}
+            </a>
           </div>
           <div className="innerdiv">
             <h2>Social Media</h2>
@@ -86,13 +91,20 @@ const Footer = () => {
                 <img width="40px" src={slackLogo} alt="slack logo" />
               </a>
             </div>
-            <div className="dei1">
-              <img src={DEIMiniLogo} alt="Dei  logo" />{" "}
-            </div>
           </div>
         </div>
         <hr />
-        <p>2023 Copyright CHAOSS Community | All Rights Reserved</p>
+        <p>
+          2023 Copyright{" "}
+          <a
+            href="https://chaoss.community"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CHAOSS Community
+          </a>{" "}
+          | All Rights Reserved
+        </p>
       </div>
     </footer>
   );
