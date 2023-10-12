@@ -137,93 +137,6 @@ table {
       width: calc(100% - 32px);
       margin: 16px;
 
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    font-size: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #b0b0b0;
-    padding-left: 16px;
-    border-bottom: 2px solid #000;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-
-  tr td:first-child {
-    width: 15%;
-  }
-
-  tr td:nth-child(2) {
-    width: 25%;
-  }
-
-  tr td:nth-child(3) {
-    width: 20%;
-  }
-
-  tr td:nth-child(4) {
-    width: 20%;
-  }
-
-  tr td:last-child {
-    width: 30%;
-    text-decoration: underline;
-  }
-}
-
-.pagination-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
-
-  .paginationAction {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .rows-per-page-container {
-    display: flex;
-    align-items: center;
-
-    span {
-      font-size: 0.9rem;
-    }
-
-    select {
-      margin: 0 1rem;
-      font-size: 16px;
-      border-radius: 4px;
-      border: 1px solid #b0b0b0ed;
-      padding: 0.5rem 1rem;
-      outline: none;
-      cursor: pointer;
-
-      :focus {
-        outline: none;
-      }
-    }
-  }
-
-  .pgActionIcon {
-    font-size: 1.6rem;
-  }
-
-  .pagination {
-    display: flex;
-    list-style-type: none;
-
-    li {
-      margin-right: 8px;
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
       th {
         background-color: #f2f2f2;
         font-weight: bold;
@@ -231,6 +144,11 @@ table {
         text-align: left;
         border-bottom: 1px solid #b0b0b0;
         padding-left: 16px;
+        border-bottom: 2px solid #000;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
       }
 
       tr td:first-child {
@@ -254,60 +172,144 @@ table {
         text-decoration: underline;
       }
     }
+  }
 
-    .pagination-container {
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+
+    .paginationAction {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-top: 16px;
+      gap: 1rem;
+    }
 
-      .paginationAction {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+    .rows-per-page-container {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 0.9rem;
       }
 
-      .rows-per-page-container {
-        display: flex;
-        align-items: center;
+      select {
+        margin: 0 1rem;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #b0b0b0ed;
+        padding: 0.5rem 1rem;
+        outline: none;
+        cursor: pointer;
 
-        span {
-          font-size: 0.9rem;
-        }
-
-        select {
-          margin: 0 1rem;
-          font-size: 16px;
-          border-radius: 4px;
-          border: 1px solid #b0b0b0ed;
-          padding: 0.5rem 1rem;
+        :focus {
           outline: none;
-          cursor: pointer;
+        }
+      }
+    }
 
-          :focus {
-            outline: none;
-          }
+    .pgActionIcon {
+      font-size: 1.6rem;
+    }
+
+    .pagination {
+      display: flex;
+      list-style-type: none;
+
+      li {
+        margin-right: 8px;
+
+        a {
+          color: #000000;
+          text-decoration: none;
+        }
+
+        th {
+          background-color: #f2f2f2;
+          font-weight: bold;
+          font-size: 1rem;
+          text-align: left;
+          border-bottom: 1px solid #b0b0b0;
+          padding-left: 16px;
+        }
+
+        tr td:first-child {
+          width: 15%;
+        }
+
+        tr td:nth-child(2) {
+          width: 25%;
+        }
+
+        tr td:nth-child(3) {
+          width: 20%;
+        }
+
+        tr td:nth-child(4) {
+          width: 20%;
+        }
+
+        tr td:last-child {
+          width: 30%;
+          text-decoration: underline;
         }
       }
 
-      .pgActionIcon {
-        font-size: 1.6rem;
-      }
-
-      .pagination {
+      .pagination-container {
         display: flex;
-        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
 
-        li {
-          margin-right: 8px;
+        .paginationAction {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
 
-          a {
-            color: black;
-            text-decoration: none;
+        .rows-per-page-container {
+          display: flex;
+          align-items: center;
+
+          span {
+            font-size: 0.9rem;
           }
 
-          &.active {
-            display: none;
+          select {
+            margin: 0 1rem;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #b0b0b0ed;
+            padding: 0.5rem 1rem;
+            outline: none;
+            cursor: pointer;
+
+            :focus {
+              outline: none;
+            }
+          }
+        }
+
+        .pgActionIcon {
+          font-size: 1.6rem;
+        }
+
+        .pagination {
+          display: flex;
+          list-style-type: none;
+
+          li {
+            margin-right: 8px;
+
+            a {
+              color: black;
+              text-decoration: none;
+            }
+
+            &.active {
+              display: none;
+            }
           }
         }
       }
