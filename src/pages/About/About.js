@@ -17,29 +17,29 @@ const About = () => {
     <>
       <Header pathName="About us" />
       <Box
-        height={"478px"}
         width={"100%"}
         backgroundImage={heroTwo}
         backgroundRepeat="no-repeat"
         backgroundSize={"cover"}
       >
-        <Box pl={"100px"} pt={"153.5px"}>
+        <Box px={{ base: "15px", md: "100px"}} py={{ base: "52px", md: "153.5px" }}>
           <HStack
-            fontSize={"60px"}
+            fontSize={{ base: "32px", md: "60px" }}
             fontWeight={600}
             color={"#fff"}
-            gap={"27px"}
+            gap={{ md: "27px" }}
           >
             <Text>About</Text>
-            <Img src={DEIMiniLogo} width={"166.91px"} height={"65.01px"} />
+            <Img src={DEIMiniLogo} width={{ base: "120px", md: "166.91px" }} />
             <Text>Badge</Text>
           </HStack>
           <Text
             as={"p"}
-            fontWeight={600}
-            fontSize={"20px"}
+            fontWeight={{ base: 400, md: 600 }}
+            fontSize={{ base: "14px", lg: "20px" }}
             color="#fff"
-            width={"1070px"}
+            maxWidth={"1070px"}
+            marginTop={{base: "8px", md: "10px"}}
           >
             The program is affiliated with the CHAOSS project and a proud
             initiative of CHAOSS. The work of the Badging Program is closely
@@ -47,15 +47,25 @@ const About = () => {
           </Text>
         </Box>
       </Box>
-      <Box as={"section"} backgroundColor={"#fff"} pl={"100px"} py={"80px"}>
+      <Box 
+        as={"section"} 
+        backgroundColor={"#fff"} 
+        px={{ base: "15px", md: "100px"}}
+        mx={{base: '16px', md: "0"}}
+        mt={{base: '23px', md: "0"}}
+        mb={{base: '12px', md: "0"}}
+        py={{ base: "27px", md: "80px"}}
+        shadow={{base: "md", md: "none"}}
+        rounded={{base: "2xl", md: 'none'}}
+      >
         <Box as={"article"}>
-          <Text as={"h3"} fontSize={"48px"} fontWeight={500} color={"#000"}>
+          <Text as={"h3"} fontSize={{base: "24px", md:"48px"}} fontWeight={600} color={"#000"}>
             What is DEI Badging?
           </Text>
           <Text
             as={"p"}
-            width={"1074px"}
-            fontSize={"16px"}
+            maxWidth={"1074px"}
+            fontSize={{ base: "14px", md: "16px"}}
             fontWeight={400}
             color={"#000"}
           >
@@ -65,14 +75,14 @@ const About = () => {
             to building the Internet as a social good.
           </Text>
         </Box>
-        <Box as={"article"} my={"48px"}>
-          <Text as={"h4"} fontSize={"34px"} fontWeight={600} color={"#000"}>
+        <Box as={"article"} my={{ base: "32px", md: "48px"}}>
+          <Text as={"h4"} fontSize={{ base: "22px", md: "34px"}} fontWeight={600} color={"#000"}>
             Problem Statement
           </Text>
           <Text
             as={"p"}
-            width={"1074px"}
-            fontSize={"16px"}
+            maxWidth={"1074px"}
+            fontSize={{ base: "14px", md: "16px"}}
             fontWeight={400}
             color={"#000"}
           >
@@ -85,13 +95,13 @@ const About = () => {
           </Text>
         </Box>
         <Box as={"article"}>
-          <Text as={"h4"} fontSize={"34px"} fontWeight={600} color={"#000"}>
+          <Text as={"h4"} fontSize={{ base: "22px", md: "34px"}} fontWeight={600} color={"#000"}>
             Opportunity
           </Text>
           <Text
             as={"p"}
-            width={"1074px"}
-            fontSize={"16px"}
+            maxWidth={"1074px"}
+            fontSize={{ base: "14px", md: "16px"}}
             fontWeight={400}
             color={"#000"}
           >
@@ -104,18 +114,26 @@ const About = () => {
           </Text>
         </Box>
       </Box>
-      <Box as={"section"} bgColor={"#FAF9FC"} pl={"100px"} py={"80px"}>
+      <Box 
+        as={"section"} 
+        bgColor={{ md: "#FAF9FC"}} 
+        px={{base: "15px", md: "100px"}}
+        py={{ base: "27px", md: "80px"}}
+        mx={{base: '16px', md: "0"}}
+        shadow={{base: "md", md: "none"}}
+        rounded={{base: "2xl", md: 'none'}}
+      >
         <Box as={"article"}>
-          <Text as={"h4"} fontSize={"48px"} fontWeight={500} color={"#070010"}>
-            Building the internet as a social good.
+          <Text as={"h4"} fontSize={{ base: "24px", md: "48px"}} fontWeight={500} color={"#070010"}>
+            Building the Internet as a social good.
           </Text>
           <Text
             as={"p"}
-            width={"1074px"}
-            fontSize={"16px"}
+            maxWidth={"1074px"}
+            fontSize={{base: "14px", md: "16px"}}
             fontWeight={400}
             color={"#070010"}
-            mt={"12px"}
+            mt={{base: "8px", md: "12px"}}
             mb={"48px"}
           >
             The goal of the Diversity & Inclusion Badging Program is to
@@ -125,7 +143,16 @@ const About = () => {
             deliverables of the Diversity & Inclusion Badging Program:
           </Text>
         </Box>
-        <Flex gap={"24px"}>
+        <Flex
+          gap={"24px"}
+          justify={"space-between"} 
+          overflowX={"scroll"}
+          sx={{
+            "::-webkit-scrollbar": {
+              display: "none",
+            },
+          }}
+        >
           <Box
             width={"286px"}
             height={"336px"}
