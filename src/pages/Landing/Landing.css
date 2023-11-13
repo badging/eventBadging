@@ -1,0 +1,35 @@
+.Landing {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (min-width: 768px) {
+    .button-container {
+      flex-direction: row;
+    }
+  }
+  
