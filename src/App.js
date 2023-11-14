@@ -6,7 +6,7 @@ import {
   ApplyForBadge,
   ErrorPage,
   BadgedEvents,
-  Landing
+  Landing,
 } from "./pages";
 
 const App = () => {

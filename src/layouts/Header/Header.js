@@ -36,7 +36,9 @@ const Header = ({ pathName }) => {
             })}
           </ul>
           <button className="apply">
-            <a href="https://chaoss.community/diversity-and-inclusion-badging/">Apply for a Badge</a>
+            <a href="https://chaoss.community/diversity-and-inclusion-badging/">
+              Apply for a Badge
+            </a>
           </button>
         </section>
       </nav>

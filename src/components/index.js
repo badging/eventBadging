@@ -4,5 +4,4 @@ import BadgeLevels from "./badge/BadgeLevels";
 import SubmitEvent from "./SubmitEvent/SubmitEvent";
 import PathTracker from "./pathTracker/PathTracker";
 
-
 export { Faq, Testimonial, BadgeLevels, SubmitEvent, PathTracker };
