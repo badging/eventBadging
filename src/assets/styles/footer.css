@@ -20,17 +20,17 @@
 }
 
 .top h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   padding: 10px;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
-  color: #000000;
+  color: #000;
 }
 
 .top p {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -38,7 +38,7 @@
   padding: 10px;
   padding-bottom: 50px;
   text-align: center;
-  color: #000000;
+  color: #000;
 }
 
 .top button {

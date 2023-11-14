@@ -6,4 +6,12 @@ import ErrorPage from "./ErrorPage/ErrorPage";
 import BadgedEvents from "./BadgedEvents/BadgedEvents";
 import Landing from "./Landing/Landing";
 
-export { Landing, Home, About, EventBadging, ApplyForBadge, ErrorPage, BadgedEvents };
+export {
+  Landing,
+  Home,
+  About,
+  EventBadging,
+  ApplyForBadge,
+  ErrorPage,
+  BadgedEvents,
+};
