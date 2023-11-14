@@ -9,7 +9,9 @@ const Landing = () => {
         <button className="button">
           <Link to="/event-badging">Event Badging</Link>
         </button>
-        <button className="button">Project Badging</button>
+        <button className="button">
+          <a href="badging.chaoss.community/project-badging">Project Badging</a>
+        </button>
       </div>
     </div>
   );
