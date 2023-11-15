@@ -1,5 +1,5 @@
-import { Footer } from "../../layouts";
-import "../../assets/styles/footer.css";
+import { Footer } from "../../components";
+import "./footer.css";
 // eslint-disable-next-line import/no-unresolved
 import robotparts from "../../assets/images/Robot-Parts.png";
 import { Link } from "react-router-dom";

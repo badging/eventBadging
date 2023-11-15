@@ -16,4 +16,9 @@ export const routes = [
     pathname: "Event Badging",
     path: "/event",
   },
+  {
+    id: 4,
+    pathname: "Project Badging",
+    path: "/project",
+  }
 ];

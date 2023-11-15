@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../../assets/styles/variables.scss";
+import "./variables.scss";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 import {
   slackLogo,

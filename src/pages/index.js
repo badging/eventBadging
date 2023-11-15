@@ -4,13 +4,13 @@ import EventBadging from "./EventBadging/EventBadging";
 import ApplyForBadge from "./ApplyForBadge/ApplyForBadge";
 import ErrorPage from "./ErrorPage/ErrorPage";
 import BadgedEvents from "./BadgedEvents/BadgedEvents";
-import Landing from "./Landing/Landing";
+import ProjectBadging from "./ProjectBadging/ProjectBadging";
 
 export {
-  Landing,
   Home,
   About,
   EventBadging,
+  ProjectBadging,
   ApplyForBadge,
   ErrorPage,
   BadgedEvents,

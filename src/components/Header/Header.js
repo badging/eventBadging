@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "../../assets/styles/global.scss";
+import "./global.scss";
 import { chaossBadgingLogoBlack } from "../../assets/images";
 import { Link } from "react-router-dom";
 import "./Header.scss";

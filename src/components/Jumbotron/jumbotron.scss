@@ -1,0 +1,54 @@
+@import '../../assets/styles/variables';
+
+.jumbo-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding-top: 3rem;
+
+  h1 {
+    font-size: 3.2rem;
+    padding-left: 1.4rem;
+    font-family: $font-family_1;
+    background: $heroTitleBackground2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p {
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    color: $chaossPink;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.jumbotron {
+  padding: 5.5rem 0 1.8rem 0;
+  margin: 0rem 0rem;
+  max-width: 70.875rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .jumbo-main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    p {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      padding: 4px 8px;
+    }
+  }
+  .jumbotron {
+    margin: 0rem auto;
+  }
+}

@@ -1,96 +1,103 @@
-$primary-color: #46ba8a;
-$secondary-color: #d61b5e;
-$background-color: #070010;
-$primary-container-color: #afffec;
-$secondary-container-color: #ffe7ef;
+/* ==================== START IMPORT FONTS ======================= */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: lighter;
+	font-display: swap;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
 }
 
-footer {
-  background-color: $background-color;
-  bottom: 0;
-  color: #fff;
-  padding: 50px 0 30px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 164%;
-  p {
-    margin: 12px 0;
-  }
-  h2 {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
 }
 
-.read-more-class-name {
-  display: block;
-  font-weight: bold;
-  width: fit-content;
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: bolder;
+	font-display: swap;
 }
 
-.logo {
-  width: 100px;
-  margin-bottom: 20px;
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
 }
 
-.minidiv {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  h2 {
-    text-transform: uppercase;
-    font-weight: 600;
-  }
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
 }
 
-.innerdiv {
-  flex-basis: 20%;
-  margin: 20px 0 40px;
-  text-align: justify;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 164%;
-
-  .dei1 img {
-    width: 250px;
-  }
-
-  .social-media a > img {
-    display: inline;
-    margin-right: 8px;
-  }
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
+@font-face {
+	font-family: "Poppins";
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap");
+	font-style: normal;
+	font-weight: bolder;
+	font-display: swap;
 }
 
-.links {
-  display: block;
-}
+/* ==================== END IMPORT FONTS ======================= */
 
-.main-div {
-  width: 90%;
-  margin: auto;
-  p {
-    text-align: center;
-    padding-top: 30px;
-  }
-}
+$font-family_1: "JetBrains Mono";
+$font-family_2: "Theinhardt", sans-serif;
+$sectionTitleBackground: radial-gradient(
+	34.77% 34.77% at 50% 50%,
+	rgba(29, 232, 98, 0.2) 0%,
+	rgba(29, 232, 98, 0) 100%
+);
+$primaryTextColor: #fff;
+$textColor2: #24292e;
+$textColor3: #000000;
+$textColor4: #030303;
+$headingColor: #030303;
+$secondaryTextColor: #858c90;
+$primaryBackgroundColor: #000;
+$primaryBorderColor: #454c53;
+$borderColor2: #bebebe;
+$borderColor3: #222d33;
+$projectsBackgroundColor: #090909;
+$heroTitleBackground: linear-gradient(184deg, #69c7b9 0%, #e1b1ee 100%);
+$heroTitleBackground2: linear-gradient(164deg, #e9e9e9 41.39%, #bababa 80.66%);
+$cardTitleBackground: linear-gradient(
+	123.52deg,
+	#ffffff -36.16%,
+	rgba(255, 255, 255, 0) 219.41%
+);
+$borderHoverGradient: linear-gradient(to top, rgba(40, 47, 55, 0), #aeadab) 1;
+$secondaryBtnColor: #04e28a;
+$secondaryBtnColor2: #06f395;
+$chaossBlue: #199ad6;
+$chaossPink: #d61b5e;
+$congratulationTextColor: linear-gradient(
+	rgba(233, 233, 233, 1),
+	rgba(186, 186, 186, 1)
+);
+$disabledBtnColor: #f3f5f6;

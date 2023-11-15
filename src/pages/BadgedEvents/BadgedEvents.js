@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 import "./BadgedEvents.scss";
-import { Header, Footer } from "../../layouts";
 import {
   goldBadgeSVG,
   silverBadgeSVG,
@@ -11,7 +10,7 @@ import {
   noBadgeSVG,
 } from "../../assets/images";
 import { useLocation } from "react-router-dom";
-import { PathTracker } from "../../components";
+import { PathTracker,Header, Footer } from "../../components";
 
 const BadgedEvents = () => {
   const [tableData, setTableData] = useState([]);

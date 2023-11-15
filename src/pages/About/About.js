@@ -1,8 +1,5 @@
-import { BadgeLevels } from "../../components";
-import { Footer, Header } from "../../layouts";
+import { BadgeLevels, Footer, Header,SubmitEvent } from "../../components";
 import { Box, Flex, HStack, Text, Img } from "@chakra-ui/react";
-import { SubmitEvent } from "../../components";
-
 import {
   alignIcon,
   connectIcon,

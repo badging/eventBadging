@@ -1,6 +1,6 @@
 import React from "react";
-import { Header, Footer } from "../../layouts";
-import "../../assets/styles/global.scss";
+import { Header, Footer } from "../../components";
+import "./Home.scss";
 import { Link } from "react-router-dom";
 
 import {
