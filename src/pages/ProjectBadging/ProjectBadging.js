@@ -1,15 +1,15 @@
-import '../../assets/styles/global.scss';
-import './ProjectBadging.scss';
+import "../../assets/styles/global.scss";
+import "./ProjectBadging.scss";
 import {
   Footer,
   Header,
   // Faq,
   CardComponent,
   CardCarousel,
-} from '../../components';
+} from "../../components";
 
 // import { faqData } from '../../components/Faq/data';
-import { howItWorksData } from './data';
+import { howItWorksData } from "./data";
 import {
   howItWorksBgMobile,
   howItWorksBgWeb,
@@ -17,9 +17,9 @@ import {
   // faqBgMobile,
   heroSectionBgWeb,
   heroSectionBgMobile,
-} from '../../assets/images';
+} from "../../assets/images";
 // import zIndex from '@mui/material/styles/zIndex';
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 const ProjectBadging = () => {
   const isMobile = useMediaQuery({ maxWidth: 650 });
@@ -27,10 +27,10 @@ const ProjectBadging = () => {
     backgroundImage: `url(${
       isMobile ? heroSectionBgMobile : heroSectionBgWeb
     })`,
-    height: '100%',
-    backgroundPosition: 'center top',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
+    height: "100%",
+    backgroundPosition: "center top",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   };
   return (
     <div>

@@ -1,70 +1,70 @@
 @import "../../assets/styles/variables";
 
 .about-dei {
-	.MuiAccordion-root {
-		box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
-		border-radius: 0.25rem;
-		border: none;
+  .MuiAccordion-root {
+    box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 0.25rem;
+    border: none;
 
-		&:not(.Mui-expanded) {
-			height: 5rem;
-		}
+    &:not(.Mui-expanded) {
+      height: 5rem;
+    }
 
-		&:not(:first-child) {
-			margin-top: 0.25rem;
-		}
+    &:not(:first-child) {
+      margin-top: 0.25rem;
+    }
 
-		&::before {
-			background-color: transparent;
-		}
+    &::before {
+      background-color: transparent;
+    }
 
-		// Accordion active state
-		&.Mui-expanded {
-			.MuiAccordionSummary-root {
-				padding-top: 32px;
-				.MuiAccordionSummary-content {
-					.MuiTypography-root {
-						font-size: 1.5rem;
-						color: $chaossPink;
-					}
-				}
+    // Accordion active state
+    &.Mui-expanded {
+      .MuiAccordionSummary-root {
+        padding-top: 32px;
+        .MuiAccordionSummary-content {
+          .MuiTypography-root {
+            font-size: 1.5rem;
+            color: $chaossPink;
+          }
+        }
 
-				.MuiSvgIcon-root {
-					color: $chaossPink;
-				}
-			}
-		}
+        .MuiSvgIcon-root {
+          color: $chaossPink;
+        }
+      }
+    }
 
-		.MuiAccordionSummary-root {
-			padding: 12px 23px;
-			justify-content: space-between;
-			align-items: center;
-			height: 100%;
-			gap: 0 2rem;
+    .MuiAccordionSummary-root {
+      padding: 12px 23px;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      gap: 0 2rem;
 
-			.MuiAccordionSummary-content {
-				margin: 0;
+      .MuiAccordionSummary-content {
+        margin: 0;
 
-				.MuiTypography-root {
-					font-size: 1.125rem;
-					font-weight: bolder;
-					font-family: $font-family_1;
-					line-height: normal;
-				}
-			}
+        .MuiTypography-root {
+          font-size: 1.125rem;
+          font-weight: bolder;
+          font-family: $font-family_1;
+          line-height: normal;
+        }
+      }
 
-			.MuiSvgIcon-root {
-				font-size: 1.8rem;
-				color: $headingColor;
-			}
-		}
+      .MuiSvgIcon-root {
+        font-size: 1.8rem;
+        color: $headingColor;
+      }
+    }
 
-		.MuiAccordionDetails-root {
-			padding: 0.75rem 1.4rem 2rem;
+    .MuiAccordionDetails-root {
+      padding: 0.75rem 1.4rem 2rem;
 
-			.MuiTypography-root {
-				font-family: $font-family_2;
-			}
-		}
-	}
+      .MuiTypography-root {
+        font-family: $font-family_2;
+      }
+    }
+  }
 }

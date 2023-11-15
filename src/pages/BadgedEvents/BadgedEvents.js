@@ -10,7 +10,7 @@ import {
   noBadgeSVG,
 } from "../../assets/images";
 import { useLocation } from "react-router-dom";
-import { PathTracker,Header, Footer } from "../../components";
+import { PathTracker, Header, Footer } from "../../components";
 
 const BadgedEvents = () => {
   const [tableData, setTableData] = useState([]);

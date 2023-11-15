@@ -20,5 +20,5 @@ export const routes = [
     id: 4,
     pathname: "Project Badging",
     path: "/project",
-  }
+  },
 ];

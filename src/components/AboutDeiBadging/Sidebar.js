@@ -1,6 +1,6 @@
-import { NavLink } from 'react-router-dom';
-import { arrowRight } from '../../assets/images';
-import { useState } from 'react';
+import { NavLink } from "react-router-dom";
+import { arrowRight } from "../../assets/images";
+import { useState } from "react";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(1);

@@ -14,11 +14,8 @@ import {
   heroOne,
 } from "../../assets/images";
 
-import { Testimonial, Faq } from "../../components";
-import { testimonialData } from "../../components/testimonial/testimonialData";
+import { Faq } from "../../components";
 import { faqData } from "../../components/faq/FAQData";
-// import Faq from "../components/faq/Faq";
-// import Testimonial from "../components/testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -95,27 +92,6 @@ const Home = () => {
         </div>
       </div>
       <div className="section-6">
-        <div className="testimonial-container">
-          <div className="title">
-            <h2>-Testimonial-</h2>
-          </div>
-          <div className="testimonials">
-            {testimonialData.map((item, id) => {
-              let { image, name, title, message } = item;
-
-              return (
-                <Testimonial
-                  key={id}
-                  image={image}
-                  name={name}
-                  title={title}
-                  message={message}
-                />
-              );
-            })}
-          </div>
-        </div>
-
         <div className="faq-container" id="faqs">
           <div className="title">
             <h2>FAQ</h2>

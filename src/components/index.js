@@ -1,9 +1,8 @@
 import Faq from "./faq/Faq";
-import Testimonial from "./testimonial/Testimonial";
 import BadgeLevels from "./badge/BadgeLevels";
 import SubmitEvent from "./SubmitEvent/SubmitEvent";
 import PathTracker from "./pathTracker/PathTracker";
-import Footer from "./Footer/Footer"
+import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import CardComponent from "./HowItWorks/Card";
 import CardCarousel from "./Carousel/CardCarousel";
@@ -20,18 +19,25 @@ import Layout from "./Layout/Layout";
 import Spinner from "./loader/Spinner";
 import Loader from "./loader/Loader";
 
-export { Header, Footer, Faq, Testimonial, BadgeLevels, SubmitEvent, PathTracker,
-    CardComponent,
-	CardCarousel,
-	Jumbotron,
-	SearchBar,
-	Sidebar,
-	AboutDeiMobile,
-	WhatIsDeiBadging,
-	ApplicationProcess,
-	DeiFile,
-	DeiBadge,
-	SelectedProjects,
-	Layout,
-	Spinner,
-	Loader, };
+export {
+  Header,
+  Footer,
+  Faq,
+  BadgeLevels,
+  SubmitEvent,
+  PathTracker,
+  CardComponent,
+  CardCarousel,
+  Jumbotron,
+  SearchBar,
+  Sidebar,
+  AboutDeiMobile,
+  WhatIsDeiBadging,
+  ApplicationProcess,
+  DeiFile,
+  DeiBadge,
+  SelectedProjects,
+  Layout,
+  Spinner,
+  Loader,
+};

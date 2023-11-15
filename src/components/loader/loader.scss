@@ -6,41 +6,41 @@
   justify-content: center;
   row-gap: 53px;
 
-  p{
+  p {
     font-family: $font-family_2;
     font-size: 1.25rem;
     font-weight: 500;
   }
 
-	.spinner {
-		width: 3.5rem;
-		flex-shrink: 0;
-		aspect-ratio: 1;
-		display: grid;
-		background: linear-gradient(0deg, #06f395 30%, #0000 0 70%, #253127 0) 50%/8%
-				100%,
-			linear-gradient(90deg, #06f395 30%, #0000 0 70%, #253127 0) 50%/100% 8%;
-		background-repeat: no-repeat;
-		// background-size: 100% 100%;
-		animation: spin 0.4s infinite steps(8);
-		transition: all 0.4s ease-in-out;
-	}
-	.spinner::before,
-	.spinner::after {
-		content: "";
-		grid-area: 1/1;
-		background: inherit;
-		opacity: 0.915;
-		transform: rotate(45deg);
-	}
-	.spinner::after {
-		opacity: 0.83;
-		transform: rotate(90deg);
-	}
+  .spinner {
+    width: 3.5rem;
+    flex-shrink: 0;
+    aspect-ratio: 1;
+    display: grid;
+    background: linear-gradient(0deg, #06f395 30%, #0000 0 70%, #253127 0) 50%/8%
+        100%,
+      linear-gradient(90deg, #06f395 30%, #0000 0 70%, #253127 0) 50%/100% 8%;
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    animation: spin 0.4s infinite steps(8);
+    transition: all 0.4s ease-in-out;
+  }
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    background: inherit;
+    opacity: 0.915;
+    transform: rotate(45deg);
+  }
+  .spinner::after {
+    opacity: 0.83;
+    transform: rotate(90deg);
+  }
 
-	@keyframes spin {
-		100% {
-			transform: rotate(1turn);
-		}
-	}
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
 }

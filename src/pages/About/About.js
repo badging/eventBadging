@@ -1,4 +1,4 @@
-import { BadgeLevels, Footer, Header,SubmitEvent } from "../../components";
+import { BadgeLevels, Footer, Header, SubmitEvent } from "../../components";
 import { Box, Flex, HStack, Text, Img } from "@chakra-ui/react";
 import {
   alignIcon,

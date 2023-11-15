@@ -1,7 +1,7 @@
 function RandomString() {
   const generateRandomString = (length = 7) => {
-    const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let randomString = '';
+    const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let randomString = "";
 
     for (let i = 0; i < length; i++) {
       const randomIndex = Math.floor(Math.random() * characters.length);
@@ -13,7 +13,7 @@ function RandomString() {
 
   const randomString = generateRandomString();
 
-  return randomString
+  return randomString;
 }
 
 export default RandomString;

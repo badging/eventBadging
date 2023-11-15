@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
-import { Footer, Header } from '../../components';
-import { getBadgedFullBG, getBadgedMobile } from '../../assets/images';
-import './Layout.scss';
+import React from "react";
+import { Footer, Header } from "../../components";
+import { getBadgedFullBG, getBadgedMobile } from "../../assets/images";
+import "./Layout.scss";
 
 // Pass the child props
 const Layout = ({ children, className }) => {

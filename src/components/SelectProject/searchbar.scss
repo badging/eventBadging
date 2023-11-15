@@ -3,84 +3,83 @@
 .searchbar {
   position: relative;
 
-	.search {
-		display: flex;
-		border: 1px solid $headingColor;
-		border-radius: 4px;
-		background: #ffffff;
-		padding: 13px 0;
+  .search {
+    display: flex;
+    border: 1px solid $headingColor;
+    border-radius: 4px;
+    background: #ffffff;
+    padding: 13px 0;
 
-		input[type="text"] {
-			width: 100%;
-			border: none;
-			outline: none;
-			background: transparent;
-			font-size: 1rem;
-			color: $headingColor;
-			caret-color: $chaossPink;
-		}
+    input[type="text"] {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 1rem;
+      color: $headingColor;
+      caret-color: $chaossPink;
+    }
 
-		// button {
-		// 	border: 1px solid #fff;
-		// 	outline: none;
-		// 	background: $headingColor;
-		// 	padding: 13px 16px;
-		// 	width: 11rem;
-		// 	color: #fff;
-		// }
+    // button {
+    // 	border: 1px solid #fff;
+    // 	outline: none;
+    // 	background: $headingColor;
+    // 	padding: 13px 16px;
+    // 	width: 11rem;
+    // 	color: #fff;
+    // }
 
-		img {
-			margin: 0 0.2rem 0 1rem;
-		}
-	}
+    img {
+      margin: 0 0.2rem 0 1rem;
+    }
+  }
 
-	.suggestions {
-		display: flex;
-		flex-direction: column;
-		column-gap: 1.3rem;
+  .suggestions {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1.3rem;
     position: absolute;
     width: 100%;
-		border-radius: 0.25rem;
-		border: 0.5px solid #ededed;
-		background: #fff;
-		box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 0.25rem;
+    border: 0.5px solid #ededed;
+    background: #fff;
+    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.05);
     z-index: 2;
     padding: 1.44rem 0 0.88rem 0;
 
+    li {
+      list-style-type: none;
+      display: flex;
 
-		li {
-			list-style-type: none;
-			display: flex;
-
-			button {
+      button {
         width: 100%;
         padding: 0.5rem 1rem;
-				text-align: left;
-				transition: all 0.2s ease-out;
+        text-align: left;
+        transition: all 0.2s ease-out;
         display: flex;
         justify-content: space-between;
-			}
-			button:focus,
-			button:active,
-			button.focused {
-				background: $chaossPink;
+      }
+      button:focus,
+      button:active,
+      button.focused {
+        background: $chaossPink;
         color: #fff;
 
         svg path {
           fill: #fff;
         }
-			}
-		}
+      }
+    }
 
     li:not(:last-child) {
       button {
-        border-bottom: 0.5px solid #BEBEBE;
-			}
+        border-bottom: 0.5px solid #bebebe;
+      }
     }
-	}
+  }
 
-	> button {
-		background: #fff;
-		padding: 1.25rem 0;
-	}
+  > button {
+    background: #fff;
+    padding: 1.25rem 0;
+  }
 }

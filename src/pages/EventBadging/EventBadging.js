@@ -1,4 +1,4 @@
-import { SubmitEvent,Header, Footer } from "../../components";
+import { SubmitEvent, Header, Footer } from "../../components";
 
 const EventBadging = () => {
   return (

@@ -17,6 +17,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+  color: #000;
 }
 
 .head > button {
@@ -30,4 +31,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
+  color: #000;
 }

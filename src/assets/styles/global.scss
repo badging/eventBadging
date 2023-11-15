@@ -1,109 +1,109 @@
 @import "variables";
 
 * > * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: $font-family_2;
-	color: $primaryTextColor;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $font-family_2;
+  color: $primaryTextColor;
 }
 
 a {
-	text-decoration: none;
-	color: $primaryTextColor;
+  text-decoration: none;
+  color: $primaryTextColor;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 body {
-	background-color: $primaryBackgroundColor;
+  background-color: $primaryBackgroundColor;
 }
 
 .container {
-	max-width: 100%;
-	margin: auto;
-	padding: 10px 119px;
-	// background-color: #fff;
+  max-width: 100%;
+  margin: auto;
+  padding: 10px 119px;
+  // background-color: #fff;
 }
 
 .loading,
 .info {
-	color: $headingColor;
-	margin-top: 20px;
+  color: $headingColor;
+  margin-top: 20px;
 }
 
 .error {
-	color: $chaossPink;
-	margin-top: 20px;
+  color: $chaossPink;
+  margin-top: 20px;
 }
 
 h2 {
-	font-size: 3rem;
-	background: linear-gradient(164deg, #e9e9e9 41.39%, #bababa 80.66%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	color: transparent;
-	font-family: $font-family_1;
+  font-size: 3rem;
+  background: linear-gradient(164deg, #e9e9e9 41.39%, #bababa 80.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: $font-family_1;
 }
 
 h3 {
-	background: $cardTitleBackground;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	color: transparent;
-	margin: 1rem 0 0.5rem;
-	font-family: $font-family_1, sans-serif;
-	line-height: 2;
+  background: $cardTitleBackground;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 1rem 0 0.5rem;
+  font-family: $font-family_1, sans-serif;
+  line-height: 2;
 }
 
 main {
-	// max-width: 100%;
-	height: auto;
-	// padding: 0px 40px;
+  // max-width: 100%;
+  height: auto;
+  // padding: 0px 40px;
 }
 
 .jumbotron {
-	max-width: 1340px;
-	margin: auto;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	justify-content: center;
-	padding: 180px 0px 70px 40px;
-	p {
-		font-family: $font-family_2;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 180%;
-		color: $secondaryTextColor;
-		max-width: 840px;
-	}
+  max-width: 1340px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 180px 0px 70px 40px;
+  p {
+    font-family: $font-family_2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: $secondaryTextColor;
+    max-width: 840px;
+  }
 }
 
 nav .mobileNav.toggleDesctiptionButton {
-	.getStarted-button button {
-		display: none !important;
-		background-color: red;
-	}
+  .getStarted-button button {
+    display: none !important;
+    background-color: red;
+  }
 }
 
 @media screen and (max-width: 768px) {
-	h2 {
-		font-size: 1.9rem;
-	}
-	.faq {
-		h2 {
-			text-align: left !important;
-		}
-	}
-	.jumbotron {
-		width: 100% !important;
-		padding: 180px 20px 70px 30px;
-	}
+  h2 {
+    font-size: 1.9rem;
+  }
+  .faq {
+    h2 {
+      text-align: left !important;
+    }
+  }
+  .jumbotron {
+    width: 100% !important;
+    padding: 180px 20px 70px 30px;
+  }
 }
 
 // @media screen and (max-width: 1030px) {
@@ -127,31 +127,30 @@ nav .mobileNav.toggleDesctiptionButton {
 // }
 
 @media screen and (max-width: 1030px) {
-	nav {
-		.web {
-			display: none !important;
-		}
-	}
+  nav {
+    .web {
+      display: none !important;
+    }
+  }
 
-	// .get-started {
-	// 	// display: none;
-	// }
-	.logo {
-		width: auto;
-	}
-	.container {
-		padding: 30px 30px;
-	}
-	.hero-section {
-		padding: 0px 20px;
-	}
-	 
+  // .get-started {
+  // 	// display: none;
+  // }
+  .logo {
+    width: auto;
+  }
+  .container {
+    padding: 30px 30px;
+  }
+  .hero-section {
+    padding: 0px 20px;
+  }
 }
 
 @media screen and (max-width: 650px) {
-	.get-started {
-		display: none;
-	}
+  .get-started {
+    display: none;
+  }
 }
 
 // .faq {

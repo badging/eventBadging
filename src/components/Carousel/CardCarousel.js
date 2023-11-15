@@ -1,6 +1,6 @@
-import React, { useState, useCallback } from 'react';
-import { loginArrow } from '../../assets/images';
-import './carousel.scss';
+import React, { useState, useCallback } from "react";
+import { loginArrow } from "../../assets/images";
+import "./carousel.scss";
 
 const cardItems = [
   {
@@ -11,7 +11,7 @@ const cardItems = [
         <b>Step I:</b> Project Demographics
       </p>
     ),
-    copy: '',
+    copy: "",
     // button: <button className="card-carousel-btn">Get Started </button>,
     blankDiv: (
       <div className="blank_div">
@@ -89,7 +89,7 @@ const cardItems = [
         <b>Step II:</b> Project Review
       </p>
     ),
-    copy: '',
+    copy: "",
     blankDiv: (
       <div className="blank_div">
         <div className="mobile_blank">
@@ -163,11 +163,11 @@ const cardItems = [
     hidden_title: <p>Step III</p>,
     title: (
       <p>
-        {' '}
-        <b>Step III:</b> DEI Badge{' '}
+        {" "}
+        <b>Step III:</b> DEI Badge{" "}
       </p>
     ),
-    copy: '',
+    copy: "",
     blankDiv: (
       <div className="blank_div">
         <div className="mobile_blank">
@@ -239,13 +239,13 @@ const cardItems = [
 ];
 function determineClasses(indexes, cardIndex) {
   if (indexes.currentIndex === cardIndex) {
-    return 'active';
+    return "active";
   } else if (indexes.nextIndex === cardIndex) {
-    return 'next';
+    return "next";
   } else if (indexes.previousIndex === cardIndex) {
-    return 'prev';
+    return "prev";
   }
-  return 'inactive';
+  return "inactive";
 }
 const CardCarousel = () => {
   const [indexes, setIndexes] = useState({
@@ -277,8 +277,8 @@ const CardCarousel = () => {
   return (
     <div className="carousel-container">
       <div className="getStarted-button">
-        <button type='button'>
-          Get Started{' '}
+        <button type="button">
+          Get Started{" "}
           <span>
             <img className="arrow" src={loginArrow} alt="arrow icon" />
           </span>

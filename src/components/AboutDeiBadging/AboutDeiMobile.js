@@ -1,16 +1,16 @@
-import './about-dei-mobile.scss';
-import '../../assets/styles/global.scss';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import "./about-dei-mobile.scss";
+import "../../assets/styles/global.scss";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
   goldBadge,
   silverBadge,
   bronzeBadge,
   platinumBadge,
-} from '../../assets/images';
+} from "../../assets/images";
 
 const AboutDeiMobile = () => {
   return (
@@ -21,13 +21,13 @@ const AboutDeiMobile = () => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography component={'div'}>
+          <Typography component={"div"}>
             What is All in CHAOSS
             <br /> DEI Badging
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography component={'div'}>
+          <Typography component={"div"}>
             <div>
               <p>
                 The All In CHAOSS DEI Project Badging is an initiative developed
@@ -79,13 +79,13 @@ const AboutDeiMobile = () => {
           <Typography>How It Works</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography component={'div'}>
+          <Typography component={"div"}>
             <div>
               <h3>Self-Assessment and Documentation:</h3>
               <p>
                 Before applying for a DEI badge, maintainers or project admins
                 are encouraged to conduct a self-assessment of their
-                project&#39;s DEI efforts based on the following{' '}
+                project&#39;s DEI efforts based on the following{" "}
                 <strong>CHAOSS DEI metrics:</strong> Project Access, Inclusive
                 Leadership, Communication Transparency, and Newcomer Experience.
                 After the reflective process, maintainers can document how the
@@ -154,7 +154,7 @@ const AboutDeiMobile = () => {
           <Typography>DEI.md File</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography component={'div'}>
+          <Typography component={"div"}>
             <p>
               The DEI.md file is an essential component of the All In CHAOSS DEI
               badging initiative. It serves as a benchmark for open source
@@ -175,7 +175,7 @@ const AboutDeiMobile = () => {
             <ul>
               <li>
                 If using a development platform, place the DEI.md file in an
-                organizationally available repository, similar to your{' '}
+                organizationally available repository, similar to your{" "}
                 <strong>CODE_OF_CONDUCT.md file</strong>
               </li>
               <li>
@@ -200,7 +200,7 @@ const AboutDeiMobile = () => {
           <Typography>DEI Badge</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography component={'div'}>
+          <Typography component={"div"}>
             <div className="badges">
               <img src={bronzeBadge} alt="Bronze badge" />
               <img src={silverBadge} alt="Silver badge" />
@@ -246,7 +246,7 @@ const AboutDeiMobile = () => {
                   join us in our open and collaborative conversations when
                   considering what CHAOSS metrics would be best suited as
                   indicators of these badges. You can join the CHAOSS project
-                  through their{' '}
+                  through their{" "}
                   <a href="https://join.slack.com/t/chaoss-workspace/shared_invite/zt-1fah5gu35-5oUQEPT32O2Zt~3MFVNMlw">
                     Slack workspace
                   </a>

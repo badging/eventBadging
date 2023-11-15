@@ -3,7 +3,7 @@ import {
   // goldBadge,
   // silverBadge,
   // platinumBadge,
-} from '../../assets/images';
+} from "../../assets/images";
 
 const DeiBadge = () => {
   return (
@@ -51,7 +51,7 @@ const DeiBadge = () => {
             Silver, Gold and Platinum Badges will be coming soon. Please join us
             in our open and collaborative conversations when considering what
             CHAOSS metrics would be best suited as indicators of these badges.
-            You can join the CHAOSS project through their{' '}
+            You can join the CHAOSS project through their{" "}
             <a href="https://join.slack.com/t/chaoss-workspace/shared_invite/zt-1fah5gu35-5oUQEPT32O2Zt~3MFVNMlw">
               Slack workspace
             </a>

@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import '../../assets/styles/global.scss';
-import './jumbotron.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import "../../assets/styles/global.scss";
+import "./jumbotron.scss";
 const Jumbotron = ({
   title,
   description,
