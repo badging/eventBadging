@@ -21,6 +21,10 @@ $background-color_1: transparent;
   display: flex;
 }
 
+.home {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: $color_1;
