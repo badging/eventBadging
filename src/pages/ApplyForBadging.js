@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer } from "../layouts";
+import { Header, Footer } from "../components";
 import heroBackground from "../assets/images/others/hero_two.png";
 import badgingLogo from "../assets/images/logos/DEI-mini-logo.png";
 import EventDemographics from "../components/EventDemographics";
