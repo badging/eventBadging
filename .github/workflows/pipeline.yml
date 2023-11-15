@@ -55,7 +55,7 @@ jobs:
       - name: Remove old build from remote server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.DROPLET_IP_ADDRESS }}
+          host: "badging.chaoss.community"
           username: ${{ secrets.SSHUSERNAME }}
           password: ${{ secrets.SSHPASSWORD }}
           script: |
@@ -65,7 +65,7 @@ jobs:
       - name: Deploy new build to remote server
         uses: garygrossgarten/github-action-scp@release
         with:
-          host: ${{ secrets.DROPLET_IP_ADDRESS }}
+          host: "badging.chaoss.community"
           username: ${{ secrets.SSHUSERNAME }}
           password: ${{ secrets.SSHPASSWORD }}
           local: ${{ github.workspace }}/build
@@ -74,7 +74,7 @@ jobs:
       - name: Restart Nginx on remote server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.DROPLET_IP_ADDRESS }}
+          host: "badging.chaoss.community"
           username: ${{ secrets.SSHUSERNAME }}
           password: ${{ secrets.SSHPASSWORD }}
           script: |
