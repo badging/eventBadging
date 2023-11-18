@@ -29,9 +29,9 @@ const About = () => {
             color={"#fff"}
             gap={{ md: "27px" }}
           >
-            <Text>About</Text>
+            
             <Img src={DEIMiniLogo} width={{ base: "120px", md: "166.91px" }} />
-            <Text>Badge</Text>
+            <Text>Badging</Text>
           </HStack>
           <Text
             as={"p"}
@@ -41,9 +41,8 @@ const About = () => {
             maxWidth={"1070px"}
             marginTop={{ base: "8px", md: "10px" }}
           >
-            The program is affiliated with the CHAOSS project and a proud
-            initiative of CHAOSS. The work of the Badging Program is closely
-            associated with the CHAOSS D&I working group.{" "}
+            This program is a proud initiative of the CHAOSS project 
+            and is closely associated with the CHAOSS DEI working group.{" "}
           </Text>
         </Box>
       </Box>
@@ -65,7 +64,7 @@ const About = () => {
             fontWeight={600}
             color={"#000"}
           >
-            What is DEI Badging?
+            Objective
           </Text>
           <Text
             as={"p"}
@@ -74,10 +73,10 @@ const About = () => {
             fontWeight={400}
             color={"#000"}
           >
-            The goal of the Diversity & Inclusion Badging Program is to
-            encourage projects and events to obtain D&I badges for reasons of
-            leadership, self-reflection, and self-improvement on issues critical
-            to building the Internet as a social good.
+            The DEI Event Badging initiative is an award system whereby open-source events 
+            earn badges that acknowledge their ongoing commitment to improving and supporting diversity, 
+            equity, and inclusion in open-source environments.
+
           </Text>
         </Box>
         <Box as={"article"} my={{ base: "32px", md: "48px" }}>
@@ -96,12 +95,10 @@ const About = () => {
             fontWeight={400}
             color={"#000"}
           >
-            Diversity in open source is opaque to participants, newcomers, and
-            stakeholders because contributors are distributed, and in many cases
-            are an agglomeration of individuals in different locations.
-            Inclusivity for open source projects is impeded by long standing
-            practices that have side effects that act to reproduce the current
-            state of limited diversity.
+           Diversity in open source is opaque to contributors (participants, newcomers, and stakeholders) 
+           due to the fact that contributors are distributed, and in many cases are an agglomeration of individuals 
+           in different locations. The existing longstanding practices hinder inclusivity in open-source initiatives
+            with accompanying side effects that serve to perpetuate the current state of limited diversity.
           </Text>
         </Box>
         <Box as={"article"}>
@@ -120,12 +117,9 @@ const About = () => {
             fontWeight={400}
             color={"#000"}
           >
-            Diversity in open source is opaque to participants, newcomers, and
-            stakeholders because contributors are distributed, and in many cases
-            are an agglomeration of individuals in different locations.
-            Inclusivity for open source projects is impeded by long standing
-            practices that have side effects that act to reproduce the current
-            state of limited diversity.
+            There is still much progress needed in the areas of diversity, equity, and inclusion in open source.
+             Through this event badge application process, event organizers have an opportunity to not only look 
+             inward and reflect on their current practices, they are able to identify potential areas for improvement.
           </Text>
         </Box>
       </Box>
@@ -138,7 +132,7 @@ const About = () => {
         shadow={{ base: "md", md: "none" }}
         rounded={{ base: "2xl", md: "none" }}
       >
-        <Box as={"article"}>
+        {/* <Box as={"article"}>
           <Text
             as={"h4"}
             fontSize={{ base: "24px", md: "48px" }}
@@ -156,13 +150,12 @@ const About = () => {
             mt={{ base: "8px", md: "12px" }}
             mb={"48px"}
           >
-            The goal of the Diversity & Inclusion Badging Program is to
-            encourage projects and events to obtain D&I badges for reasons of
-            leadership, self-reflection, and self-improvement on issues critical
-            to building the Internet as a social good. Here are the primary
-            deliverables of the Diversity & Inclusion Badging Program:
+            Creating open source communities and events that are welcoming and inclusive better 
+            enables a diverse set of contributors and contributions. This strengthens the community, provides individual career and growth 
+            opportunities on a global scale, and reinforces opportunities to use open source to solve a wider array of social issues.          
+  
           </Text>
-        </Box>
+        </Box> */}
         <Flex
           gap={"24px"}
           justify={"space-between"}
@@ -192,7 +185,7 @@ const About = () => {
               margin={"auto"}
               lineHeight={"200%"}
             >
-              Establish an environment where projects and events can engage in
+              an environment where projects and events can engage in
               the badging program
             </Text>
           </Box>
@@ -215,8 +208,8 @@ const About = () => {
               margin={"auto"}
               lineHeight={"200%"}
             >
-              Aligning best practices, guidelines, and recommendations from
-              Diversity & Inclusion efforts on the CHAOSS project
+              best practices, guidelines, and recommendations from
+              Diversity, Equity & Inclusion efforts on the CHAOSS project
             </Text>
           </Box>
           <Box
@@ -238,7 +231,7 @@ const About = () => {
               margin={"auto"}
               lineHeight={"200%"}
             >
-              Connecting with existing badging standards of IMS Global including
+              with existing badging standards of IMS Global including
             </Text>
           </Box>
           <Box

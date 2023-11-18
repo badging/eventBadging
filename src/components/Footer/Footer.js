@@ -6,7 +6,7 @@ import {
   slackLogo,
   linkedinLogo,
   twitterLogo,
-  facebookLogo,
+  // facebookLogo,
   chaossBadgingLogo,
 } from "../../assets/images";
 
@@ -25,11 +25,11 @@ const Footer = () => {
             >
               CHAOSS is an open source project at the Linux Foundation focused
               on creating analytics and metrics to help define community health.
-              Work in the CHAOSS Project community is largely organized around
-              software and metrics. More
+              Work in the CHAOSS community is largely organized around
+              software and metrics.   More
             </ReactReadMoreReadLess>
           </div>
-          <div className="innerdiv">
+          {/* <div className="innerdiv">
             <h2>Join us</h2>
             <ReactReadMoreReadLess
               charLimit={320}
@@ -41,7 +41,7 @@ const Footer = () => {
               Work in the CHAOSS Project community is largely organized around
               software and metrics. More
             </ReactReadMoreReadLess>
-          </div>
+  </div> */}
           <div className="innerdiv">
             <h2>Quick Links</h2>
             <NavLink className="links" to="/about">
@@ -72,9 +72,9 @@ const Footer = () => {
               >
                 <img width="40px" src={twitterLogo} alt="slack logo" />
               </a>
-              <a href="https://facebook.com">
+              {/*<a href="https://facebook.com">
                 <img width="43px" src={facebookLogo} alt="slack logo" />
-              </a>
+</a> */}
               <a
                 href="https://www.linkedin.com/company/chaoss?original_referer="
                 target="_blank"

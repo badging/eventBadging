@@ -16,13 +16,13 @@ const BadgeLevels = () => {
           <p>
             The primary motivation to apply for a CHAOSS D&I Badge is the badge
             itself! The awarded event can show the open source community that
-            they foster healthy D&I practices with a CHAOSS badge.
+            they foster healthy DEI practices with a CHAOSS badge.
           </p>
           <img src={badgingLogo} alt="Badging" className="badging-logo" />
           <p>
             Applying for a badge supports D&I efforts within an open source
             community by expressing that your event is willing to improve the
-            ways the work. These efforts can have affects to D&I practices in
+            ways the work. These efforts can have affects to DEI practices in
             your event and even outside of your project space.
           </p>
         </section>
@@ -30,7 +30,7 @@ const BadgeLevels = () => {
       <article className="badging-levels-container">
         <h2 className="badging-levels">Badge Levels</h2>
         <p>
-          Badges are assigned according to how the Reviewers mark out the review
+          Badges are assigned according to how the reviewers mark out the review
           checklist according to the the information initially filled in by the
           Applicant. The percentages are calculated excluding the initial
           checks, based of the average of checklists of at least two reviewers.
