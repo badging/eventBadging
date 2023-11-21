@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 import "./BadgedEvents.scss";
@@ -12,6 +12,7 @@ import {
 } from "../../assets/images";
 import { useLocation } from "react-router-dom";
 import { PathTracker } from "../../components";
+import debounce from "lodash/debounce";
 
 const BadgedEvents = () => {
   const [tableData, setTableData] = useState([]);
@@ -23,14 +24,15 @@ const BadgedEvents = () => {
   const location = useLocation();
   console.log(location);
 
-  // extracts url for type of badge and returns relevent icon
-  const extractTypeReturnIcon = (url) => {
-    if (url.includes("Gold")) return goldBadgeSVG;
-    if (url.includes("Silver")) return silverBadgeSVG;
-    if (url.includes("Passing")) return passingBadgeSVG;
-    if (url.includes("Pending")) return pendingBadgeSVG;
-    return noBadgeSVG;
-  };
+  const memoizedExtractTypeReturnIcon = useMemo(() => {
+    return (url) => {
+      if (url.includes("Gold")) return goldBadgeSVG;
+      if (url.includes("Silver")) return silverBadgeSVG;
+      if (url.includes("Passing")) return passingBadgeSVG;
+      if (url.includes("Pending")) return pendingBadgeSVG;
+      return noBadgeSVG;
+    };
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -81,35 +83,23 @@ const BadgedEvents = () => {
 
   const rowsPerPageOptions = [5, 10, 15, 20];
 
-  // add your logic for filter BTN
   const handleFilter = () => {};
 
-  const handlePageClick = ({ selected }) => {
-    setPageNumber(selected);
-  };
-
-  const handleRowsPerPageChange = (e) => {
-    setRowsPerPage(parseInt(e.target.value));
+  const debouncedSearchTermChange = debounce((value) => {
+    setSearchTerm(value);
     setPageNumber(0);
-  };
-
-  const handleSearchTermChange = (e) => {
-    setSearchTerm(e.target.value);
-    setPageNumber(0);
-  };
+  }, 300);
 
   const filteredTableData = tableData.filter((event) =>
     event.eventName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const pageCount = Math.ceil(filteredTableData.length / rowsPerPage);
-
-  //pagination items count
   const pageStartingItemNumber = pageNumber * rowsPerPage;
   const pageEndingItemNumber = pageNumber * rowsPerPage + rowsPerPage;
   const allItemsCount = filteredTableData.length;
 
-  const showingFrom = pageNumber == 0 ? 1 : pageStartingItemNumber;
+  const showingFrom = pageNumber === 0 ? 1 : pageStartingItemNumber + 1;
   const showingTo =
     pageEndingItemNumber >= allItemsCount
       ? allItemsCount
@@ -128,12 +118,10 @@ const BadgedEvents = () => {
             <div className="BadgedEvents__actions">
               <div
                 role="button"
-                onKeyDown={(e) => console.log(e.eventPhase)}
                 tabIndex={0}
                 onClick={handleFilter}
                 className="BadgedEvents__actions--filterBtn"
               >
-                {/* form Box icons--you can replace this with your own icon */}
                 <i className="bx bx-filter"></i>
                 <span>Filter</span>
               </div>
@@ -142,7 +130,7 @@ const BadgedEvents = () => {
                   type="text"
                   placeholder="Search"
                   value={searchTerm}
-                  onChange={handleSearchTermChange}
+                  onChange={(e) => debouncedSearchTermChange(e.target.value)}
                 />
                 <i className="bx bx-search bx-rotate-90"></i>
               </div>
@@ -180,7 +168,7 @@ const BadgedEvents = () => {
                         </td>
                         <td>
                           <img
-                            src={extractTypeReturnIcon(event.badge)}
+                            src={memoizedExtractTypeReturnIcon(event.badge)}
                             alt="badge"
                           />
                         </td>
@@ -202,7 +190,7 @@ const BadgedEvents = () => {
                   <select
                     className="selectPerPage"
                     value={rowsPerPage}
-                    onChange={handleRowsPerPageChange}
+                    onChange={(e) => handleRowsPerPageChange(e)}
                   >
                     {rowsPerPageOptions.map((option) => (
                       <option key={option} value={option}>
@@ -245,3 +233,4 @@ const BadgedEvents = () => {
 };
 
 export default BadgedEvents;
+
