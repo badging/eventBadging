@@ -22,7 +22,10 @@ const About = () => {
         backgroundRepeat="no-repeat"
         backgroundSize={"cover"}
       >
-        <Box px={{ base: "15px", md: "100px"}} py={{ base: "52px", md: "153.5px" }}>
+        <Box
+          px={{ base: "15px", md: "100px" }}
+          py={{ base: "52px", md: "153.5px" }}
+        >
           <HStack
             fontSize={{ base: "32px", md: "60px" }}
             fontWeight={600}
@@ -39,7 +42,7 @@ const About = () => {
             fontSize={{ base: "14px", lg: "20px" }}
             color="#fff"
             maxWidth={"1070px"}
-            marginTop={{base: "8px", md: "10px"}}
+            marginTop={{ base: "8px", md: "10px" }}
           >
             The program is affiliated with the CHAOSS project and a proud
             initiative of CHAOSS. The work of the Badging Program is closely
@@ -47,25 +50,30 @@ const About = () => {
           </Text>
         </Box>
       </Box>
-      <Box 
-        as={"section"} 
-        backgroundColor={"#fff"} 
-        px={{ base: "15px", md: "100px"}}
-        mx={{base: '16px', md: "0"}}
-        mt={{base: '23px', md: "0"}}
-        mb={{base: '12px', md: "0"}}
-        py={{ base: "27px", md: "80px"}}
-        shadow={{base: "md", md: "none"}}
-        rounded={{base: "2xl", md: 'none'}}
+      <Box
+        as={"section"}
+        backgroundColor={"#fff"}
+        px={{ base: "15px", md: "100px" }}
+        mx={{ base: "16px", md: "0" }}
+        mt={{ base: "23px", md: "0" }}
+        mb={{ base: "12px", md: "0" }}
+        py={{ base: "27px", md: "80px" }}
+        shadow={{ base: "md", md: "none" }}
+        rounded={{ base: "2xl", md: "none" }}
       >
         <Box as={"article"}>
-          <Text as={"h3"} fontSize={{base: "24px", md:"48px"}} fontWeight={600} color={"#000"}>
+          <Text
+            as={"h3"}
+            fontSize={{ base: "24px", md: "48px" }}
+            fontWeight={600}
+            color={"#000"}
+          >
             What is DEI Badging?
           </Text>
           <Text
             as={"p"}
             maxWidth={"1074px"}
-            fontSize={{ base: "14px", md: "16px"}}
+            fontSize={{ base: "14px", md: "16px" }}
             fontWeight={400}
             color={"#000"}
           >
@@ -75,14 +83,19 @@ const About = () => {
             to building the Internet as a social good.
           </Text>
         </Box>
-        <Box as={"article"} my={{ base: "32px", md: "48px"}}>
-          <Text as={"h4"} fontSize={{ base: "22px", md: "34px"}} fontWeight={600} color={"#000"}>
+        <Box as={"article"} my={{ base: "32px", md: "48px" }}>
+          <Text
+            as={"h4"}
+            fontSize={{ base: "22px", md: "34px" }}
+            fontWeight={600}
+            color={"#000"}
+          >
             Problem Statement
           </Text>
           <Text
             as={"p"}
             maxWidth={"1074px"}
-            fontSize={{ base: "14px", md: "16px"}}
+            fontSize={{ base: "14px", md: "16px" }}
             fontWeight={400}
             color={"#000"}
           >
@@ -95,13 +108,18 @@ const About = () => {
           </Text>
         </Box>
         <Box as={"article"}>
-          <Text as={"h4"} fontSize={{ base: "22px", md: "34px"}} fontWeight={600} color={"#000"}>
+          <Text
+            as={"h4"}
+            fontSize={{ base: "22px", md: "34px" }}
+            fontWeight={600}
+            color={"#000"}
+          >
             Opportunity
           </Text>
           <Text
             as={"p"}
             maxWidth={"1074px"}
-            fontSize={{ base: "14px", md: "16px"}}
+            fontSize={{ base: "14px", md: "16px" }}
             fontWeight={400}
             color={"#000"}
           >
@@ -114,26 +132,31 @@ const About = () => {
           </Text>
         </Box>
       </Box>
-      <Box 
-        as={"section"} 
-        bgColor={{ md: "#FAF9FC"}} 
-        px={{base: "15px", md: "100px"}}
-        py={{ base: "27px", md: "80px"}}
-        mx={{base: '16px', md: "0"}}
-        shadow={{base: "md", md: "none"}}
-        rounded={{base: "2xl", md: 'none'}}
+      <Box
+        as={"section"}
+        bgColor={{ md: "#FAF9FC" }}
+        px={{ base: "15px", md: "100px" }}
+        py={{ base: "27px", md: "80px" }}
+        mx={{ base: "16px", md: "0" }}
+        shadow={{ base: "md", md: "none" }}
+        rounded={{ base: "2xl", md: "none" }}
       >
         <Box as={"article"}>
-          <Text as={"h4"} fontSize={{ base: "24px", md: "48px"}} fontWeight={500} color={"#070010"}>
+          <Text
+            as={"h4"}
+            fontSize={{ base: "24px", md: "48px" }}
+            fontWeight={500}
+            color={"#070010"}
+          >
             Building the Internet as a social good.
           </Text>
           <Text
             as={"p"}
             maxWidth={"1074px"}
-            fontSize={{base: "14px", md: "16px"}}
+            fontSize={{ base: "14px", md: "16px" }}
             fontWeight={400}
             color={"#070010"}
-            mt={{base: "8px", md: "12px"}}
+            mt={{ base: "8px", md: "12px" }}
             mb={"48px"}
           >
             The goal of the Diversity & Inclusion Badging Program is to
@@ -145,7 +168,7 @@ const About = () => {
         </Box>
         <Flex
           gap={"24px"}
-          justify={"space-between"} 
+          justify={"space-between"}
           overflowX={"scroll"}
           sx={{
             "::-webkit-scrollbar": {

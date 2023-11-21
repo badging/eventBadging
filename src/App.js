@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import {
+  Landing,
   Home,
   About,
   EventBadging,
@@ -12,7 +13,8 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Landing />} />
+        <Route exact path="/home" element={<Home />} />
         <Route path="/apply" element={<ApplyForBadge />} />
         <Route path="/event" element={<EventBadging />} />
         <Route path="/about" element={<About />} />

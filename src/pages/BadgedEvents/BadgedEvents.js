@@ -116,7 +116,7 @@ const BadgedEvents = () => {
       : pageEndingItemNumber;
 
   return (
-    <div className='badged_event'>
+    <div className="badged_event">
       <Header />
       <main className="BadgedEvents">
         <div className="BadgedEvents__pathTracker">
